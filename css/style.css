@@ -1,0 +1,59 @@
+.lnkdn_form {
+	display: inline-block;
+	max-width: 800px;
+	padding-right: 1px;
+}
+.lnkdn_form input[type=text],
+.lnkdn_form .form-table th {
+	width: 265px;
+}
+.lnkdn-first {
+	border-top: 1px solid #ccc;
+}
+tr.lnkdn-follow-options input[name="lnkdn_follow_page_name"] {
+	width: 91%;
+	display: inline-block;
+}
+.lnkdn-follow-options .bws_help_box.dashicons-editor-help {
+	margin: 5px 0;
+}
+.lnkdn_buttons {
+	display: inline-block;
+	margin: 3px 0;
+}
+.lnkdn-share-button,
+.lnkdn-follow-button {
+	display: inline-block;
+	margin: -3px 3px 0 0;
+	vertical-align: bottom;
+}
+.lnkdn-button-certain-theme .lnkdn-share-button {
+	display: inline-flex;
+}
+.lnkdn-button-certain-theme .lnkdn-follow-button {
+	display: inline-flex;
+	vertical-align: middle;
+}
+.lnkdn-button-twenty-twelve-theme .lnkdn-share-button {
+	vertical-align: top;
+}
+div[id*="lnkdn_main"] .lnkdn-hide-option {
+	display: none;
+}
+div[id*="lnkdn_main"] select[name*="select_widget"] {
+	width: 100%;
+}
+.lnkdn_company_profile_help,
+.lnkdn_company_insider_help,
+.lnkdn_jymbii_help,
+.lnkdn_alumni_tool_help {
+	min-width: 200px;
+}
+@media screen and (max-width: 590px) {
+	.lnkdn_company_profile_help,
+	.lnkdn_company_insider_help,
+	.lnkdn_jymbii_help,
+	.lnkdn_alumni_tool_help {
+		min-width: 135px;
+	}
+}

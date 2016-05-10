@@ -1,0 +1,362 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: bws-linkedin\n"
+"POT-Creation-Date: 2016-05-06 17:32+0300\n"
+"PO-Revision-Date: 2016-05-06 17:32+0300\n"
+"Last-Translator: \n"
+"Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../bws-linkedin.php:34 ../bws-linkedin.php:179
+msgid "LinkedIn Settings"
+msgstr "Налаштування LinkedIn"
+
+#: ../bws-linkedin.php:165
+msgid ""
+"Enter the Company/Showcase Page ID for \"Follow\" button. Settings are not "
+"saved."
+msgstr ""
+"Вкажіть ID Компанії/Сторінки демонстрації для кнопки  \"Відслідковувати\". "
+"Налаштування не збереглися."
+
+#: ../bws-linkedin.php:169
+msgid "Settings saved"
+msgstr "Налаштування збережено"
+
+#: ../bws-linkedin.php:176
+msgid "All plugin settings were restored"
+msgstr "Всі налаштування плагіну було скинуто до стандартних"
+
+#: ../bws-linkedin.php:181 ../bws-linkedin.php:743 ../bws-linkedin.php:756
+msgid "Settings"
+msgstr "Налаштування"
+
+#: ../bws-linkedin.php:182
+msgid "Custom code"
+msgstr "Користувацький код"
+
+#: ../bws-linkedin.php:184 ../bws-linkedin.php:618
+msgid "Please, enable JavaScript in Your browser."
+msgstr "Будь ласка, дозвольте використання JavaScript у вашому браузері."
+
+#: ../bws-linkedin.php:196
+#, php-format
+msgid ""
+"If you'd like to add LinkedIn Buttons to your page or post, please use %s "
+"button"
+msgstr ""
+"Якщо ви хочете додати кнопки  LinkedIn на вашу сторінку або запис, будь "
+"ласка, використовуйте кнопку %s"
+
+#: ../bws-linkedin.php:202
+#, php-format
+msgid ""
+"You can add LinkedIn Buttons to your page or post by clicking on %s button "
+"in the content edit block using the Visual mode. If the button isn't "
+"displayed, please use the shortcode %s to show LinkedIn Buttons, or use "
+"parameter 'display' to show one of them or both, e.g. %s"
+msgstr ""
+"Ви можете додати кнопки LinkedIn на вашу сторінку або запис, натиснувши на "
+"кнопку %s в блоці редагування контенту в режимі \"Візуально\". Якщо кнопка "
+"не відображається, будь ласка, використовуйте шорткод %s для кнопок "
+"LinkedIn, або використайте параметр 'display' для відображення однієї з них "
+"або обох, наприклад  %s"
+
+#: ../bws-linkedin.php:215
+msgid "Display LinkedIn Buttons"
+msgstr " Відображати кнопки LinkedIn"
+
+#: ../bws-linkedin.php:220
+msgid "Share"
+msgstr "Поділитись"
+
+#: ../bws-linkedin.php:225
+msgid "Follow"
+msgstr "Відслідковувати"
+
+#: ../bws-linkedin.php:232
+msgid "Language"
+msgstr "Мова"
+
+#: ../bws-linkedin.php:244
+msgid "Select the language to display information on the button"
+msgstr "Оберіть мову відображення інформації на кнопці"
+
+#: ../bws-linkedin.php:250 ../bws-linkedin.php:253 ../bws-linkedin.php:260
+msgid "Use the current site language"
+msgstr "Використовувати поточну мову сайту"
+
+#: ../bws-linkedin.php:250 ../bws-linkedin.php:254 ../bws-linkedin.php:261
+msgid "Using"
+msgstr "Використовувати"
+
+#: ../bws-linkedin.php:255
+msgid "Activate"
+msgstr "Активувати"
+
+#: ../bws-linkedin.php:262
+msgid "Download"
+msgstr "Завантажити"
+
+#: ../bws-linkedin.php:270
+msgid "Buttons Position"
+msgstr "Розташування кнопок"
+
+#: ../bws-linkedin.php:273
+msgid "Before"
+msgstr "Перед"
+
+#: ../bws-linkedin.php:274
+msgid "After"
+msgstr "Після"
+
+#: ../bws-linkedin.php:275
+msgid "Before And After"
+msgstr "Перед та після"
+
+#: ../bws-linkedin.php:276
+msgid "Only Shortcode"
+msgstr "Тільки Шорткод"
+
+#: ../bws-linkedin.php:278
+msgid "Please select location for the buttons on the page"
+msgstr "Будь ласка, оберіть розташування кнопок на сторінці"
+
+#: ../bws-linkedin.php:282
+msgid "Show buttons"
+msgstr "Відображати кнопки"
+
+#: ../bws-linkedin.php:287
+msgid "Show in posts"
+msgstr "В записах"
+
+#: ../bws-linkedin.php:293
+msgid "Show in pages"
+msgstr "На сторінках"
+
+#: ../bws-linkedin.php:299
+msgid "Show on the homepage"
+msgstr "На домашній сторінці"
+
+#: ../bws-linkedin.php:303
+msgid "Please select the page on which you want to see the buttons"
+msgstr "Будь ласка, оберіть сторінку, на якій ви хочете відображати кнопки"
+
+#: ../bws-linkedin.php:313
+msgid "Settings for Share Button"
+msgstr "Налаштування для кнопки \"Поділитись\""
+
+#: ../bws-linkedin.php:316 ../bws-linkedin.php:333
+msgid "Count Mode"
+msgstr "Відображення лічильника"
+
+#: ../bws-linkedin.php:319 ../bws-linkedin.php:336
+msgid "Vertical"
+msgstr "Вертикально"
+
+#: ../bws-linkedin.php:320 ../bws-linkedin.php:337
+msgid "Horizontal"
+msgstr "Горизонтально"
+
+#: ../bws-linkedin.php:321 ../bws-linkedin.php:338
+msgid "No-count"
+msgstr "Без лічильника"
+
+#: ../bws-linkedin.php:324
+msgid "Display the number of users who have shared the page"
+msgstr "Відображати кількість людей, що поділилися сторінкою"
+
+#: ../bws-linkedin.php:330
+msgid "Settings for Follow Button"
+msgstr "Налаштування для кнопки \"Відслідковувати\""
+
+#: ../bws-linkedin.php:341
+msgid "Display the number of users who are following this page or person"
+msgstr "Відображати кількість людей, що підписалися  на сторінку або профіль"
+
+#: ../bws-linkedin.php:346
+msgid "Company/Showcase Page ID"
+msgstr "ID Компанії/Сторінки демонстрації"
+
+#: ../bws-linkedin.php:348
+msgid "Enter the Company/Showcase Page ID"
+msgstr "Вкажіть ID Компанії/Сторінки демонстрації"
+
+#: ../bws-linkedin.php:352
+#, php-format
+msgid ""
+"You can find the Company/Showcase Page ID like this: go to %s. If you have "
+"not yet signed in - click on the button 'Sign in with LinkedIn'. Enter your "
+"Company/Showcase Page Name in the appropriate field and further click the "
+"button 'Get Code'. When field appears, find %s. Number in quotes is your %s "
+"to be copied"
+msgstr ""
+"Ви можете знайти ID Компанії/Сторінки демонстрації таким чином: зайдіть на "
+"%s. Якщо Ви ще не зайшли до LinkedIn - натисніть кнопку 'Sign in with "
+"LinkedIn'. Введіть назву Вашої Компанії/Сторінки демонстрації до "
+"відповідного поля і далі натисніть кнопку 'Get Code'. В з'явившомуся полі "
+"знайдіть %s, номер в лапках - це і є ваш %s для копіювання"
+
+#: ../bws-linkedin.php:364
+msgid "Save Changes"
+msgstr "Зберегти налаштування"
+
+#: ../bws-linkedin.php:502
+msgid "LinkedIn Share Button"
+msgstr "Кнопка LinkedIn 'Поділитись'"
+
+#: ../bws-linkedin.php:507
+msgid "LinkedIn Follow Button"
+msgstr "Кнопка LinkedIn  'Відслідковувати'"
+
+#: ../bws-linkedin.php:541 ../bws-linkedin.php:620
+msgid "LinkedIn Widgets"
+msgstr "Віджети LinkedIn"
+
+#: ../bws-linkedin.php:541
+msgid "Choose one of 5 LinkedIn widgets"
+msgstr "Виберіть один із 5 віджетів LinkedIn"
+
+#: ../bws-linkedin.php:622
+msgid "Member Profile Widget"
+msgstr "Віджет Персонального Профілю"
+
+#: ../bws-linkedin.php:623
+msgid "Company Profile Widget"
+msgstr "Віджет Профілю Компанії"
+
+#: ../bws-linkedin.php:624
+msgid "Company Insider Widget"
+msgstr "Віджет Інсайдеру Компанії"
+
+#: ../bws-linkedin.php:625
+msgid "Jobs Your May Be Interested In Widget"
+msgstr "Віджет \"Вакансії, які Вас можуть зацікавити\""
+
+#: ../bws-linkedin.php:626
+msgid "Alumni Tool Widget"
+msgstr "Віджет \"Інструмент Випускника\""
+
+#: ../bws-linkedin.php:630
+msgid "Title"
+msgstr "Назва"
+
+#: ../bws-linkedin.php:634
+msgid "Public Profile URL"
+msgstr "URL загальнодоступного профілю"
+
+#: ../bws-linkedin.php:635
+msgid "Enter the Public Profile URL"
+msgstr "Вкажіть URL загальнодоступного профілю"
+
+#: ../bws-linkedin.php:638 ../bws-linkedin.php:675
+msgid "Display Mode"
+msgstr " Режим відображення"
+
+#: ../bws-linkedin.php:640
+msgid "Your Jobs"
+msgstr "Ваша вакансія"
+
+#: ../bws-linkedin.php:641
+msgid "All Jobs"
+msgstr "Всі вакансії"
+
+#: ../bws-linkedin.php:645
+msgid "Company ID"
+msgstr "ID Компанії"
+
+#: ../bws-linkedin.php:649 ../bws-linkedin.php:657 ../bws-linkedin.php:665
+#, php-format
+msgid ""
+"You can find the Company ID like this: go to %s . If you have not yet signed "
+"in - click on the button 'Sign in with LinkedIn'. Enter your Company Name in "
+"the appropriate field and further click the button 'Get Code'. When field "
+"appears, find %s. Number in quotes is your %s to be copied"
+msgstr ""
+"Ви можете знайти ID Компанії таким чином: зайдіть на %s. Якщо Ви ще не "
+"зайшли до LinkedIn - натисніть кнопку 'Sign in with LinkedIn'. Введіть назву "
+"Вашої Компанії  до відповідного поля і далі натисніть кнопку 'Get Code'. В "
+"з'явившомуся полі знайдіть %s, номер в лапках - це і є ваш %s для копіювання"
+
+#: ../bws-linkedin.php:672
+msgid "Enter the Company ID"
+msgstr "Вкажіть ID Компанії"
+
+#: ../bws-linkedin.php:677
+msgid "Inline"
+msgstr "Повністю"
+
+#: ../bws-linkedin.php:678
+msgid "Icon"
+msgstr "Іконка"
+
+#: ../bws-linkedin.php:682
+msgid "Show Connections"
+msgstr "Відображення зв'язків"
+
+#: ../bws-linkedin.php:684
+msgid "Show"
+msgstr "Показувати"
+
+#: ../bws-linkedin.php:685
+msgid "Hide"
+msgstr "Приховати"
+
+#: ../bws-linkedin.php:689
+msgid "Behavior"
+msgstr "Режим"
+
+#: ../bws-linkedin.php:691
+msgid "On Hover"
+msgstr "При наведенні"
+
+#: ../bws-linkedin.php:692
+msgid "On Click"
+msgstr "При кліці"
+
+#: ../bws-linkedin.php:696
+msgid "School ID"
+msgstr "ID Навчального закладу"
+
+#: ../bws-linkedin.php:700
+#, php-format
+msgid ""
+"You can find the School ID like this: go to %s . If you have not yet signed "
+"in - click on the button 'Sign in with LinkedIn'. Enter your School Name in "
+"the appropriate field and further click the button 'Get Code'. When field "
+"appears, find %s. Number in quotes is your %s to be copied"
+msgstr ""
+"Ви можете знайти ID Навчального закладу таким чином: зайдіть на %s. Якщо Ви "
+"ще не зайшли до LinkedIn - натисніть кнопку 'Sign in with LinkedIn'. Введіть "
+"назву Вашого Навчального закладу  до відповідного поля і далі натисніть "
+"кнопку 'Get Code'. В з'явившомуся полі знайдіть %s, номер в лапках - це і є "
+"ваш %s для копіювання"
+
+#: ../bws-linkedin.php:707
+msgid "Enter the School ID"
+msgstr "Вкажіть ID Навчального закладу"
+
+#: ../bws-linkedin.php:757
+msgid "FAQ"
+msgstr "FAQ"
+
+#: ../bws-linkedin.php:758
+msgid "Support"
+msgstr "Підтримка"
+
+#~ msgid ""
+#~ "If the company/showcase page has no followers - button won't be display"
+#~ msgstr ""
+#~ "Якщо компанію/сторінку демонстрації нікто не відслідковує - кнопка не "
+#~ "буде відображатися"
+
+#~ msgid "Add LinkedIn Buttons to your page or post"
+#~ msgstr "Додати кнопки LinkedIn на вашу сторінку або запис"
