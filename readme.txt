@@ -4,7 +4,7 @@ Donate link: http://bestwebsoft.com/donate/
 Tags: LinkedIn, linedin, linkedln, likedin, linkedin plugin, share button, follow button, linkedin widget, linkedin widgets, social buttons
 Requires at least: 3.8 
 Tested up to: 4.5.2
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -19,9 +19,13 @@ With LinkedIn plugin you can add Share & Follow buttons, and five widgets:
 * Jobs You Might Be Interested In widget can display all jobs offered on the 'LinkedIn' or jobs of your company.
 * Alumni Tool widget which shows where graduates of a high school work, live, and what they do.
 
+http://www.youtube.com/watch?v=O_ramABu8Zk
+
 <a href="http://wordpress.org/plugins/bws-linkedin/faq/" target="_blank">FAQ</a>
 
 <a href="http://support.bestwebsoft.com" target="_blank">Support</a>
+
+<a href="http://bestwebsoft.com/products/linkedin/?k=1c14e9597963e9ac70f82bd688faa03e" target="_blank">Upgrade to LinkedIn Pro by BestWebSoft</a>
 
 = Features =
 
@@ -63,10 +67,6 @@ We can fix some things for free for the users who provide a translation of our p
 
 == Frequently Asked Questions ==
 
-= How can I add Share or Follow button to my website? =
-
-You should paste the shortcode [bws_linkedin] into your page or post after plugin activation. Or you can go to plugin settings and choose where you want to display buttons, using the appropriate settings.
-
 = Why isn't the counter of Share button displaуed in horizontal display mode? =
 
 It happens when your page or post isn't shared.
@@ -97,17 +97,23 @@ Please make sure that the problem hasn't been discussed on our forum yet (<a hre
 1. LinkedIn Buttons in the front-end.
 2. Linkedin Widgets in front-end: Member Profile, Company Profile and "Jobs You May Be Interested In".
 3. LinkedIn Widgets in front-end: Company Insider and "Alumni Tool".
-4. LinkedIn Buttons Settings Page.
+4. LinkedIn Settings Page.
 5. Adding shortcode into the content.
 6. Adding LinkedIn Widget in the sidebar.
 
 == Changelog == 
+
+= V1.0.1 - 26.05.2016 =
+* Update : The filter for widget title has been added.
 
 = V1.0.0 - 10.05.2016 = 
 * Bugfix : The code refactoring was performed.
 * NEW : Css-style was added.
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+The filter for widget title has been added.
 
 = V1.0.0 =
 The code refactoring was performed. Css-style was added.

@@ -29,6 +29,10 @@
 }
 .bws-plugin-reviews-support {
 	padding: 10px;
+    border-bottom: 1px dashed #70A8C2;
+}
+.bws-plugin-reviews-donate {
+    padding: 10px;
 }
 /*
 * styles for Go PRO tab

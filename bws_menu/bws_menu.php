@@ -1,7 +1,7 @@
 <?php
 /*
 * Function for displaying BestWebSoft menu
-* Version: 1.8.6
+* Version: 1.8.7
 */
 
 if ( ! function_exists ( 'bws_admin_enqueue_scripts' ) )
@@ -477,7 +477,10 @@ if ( ! function_exists( 'bws_add_menu_render' ) ) {
 				'link'			=> 'http://bestwebsoft.com/products/pinterest/?k=504107b6213f247a67fe7ffb94e97c78&pn=' . $bws_plugin_info["id"] . '&v=' . $bws_plugin_info["version"] . '&wp_v=' . $wp_version,
 				'download'		=> 'http://bestwebsoft.com/products/pinterest/download/?k=504107b6213f247a67fe7ffb94e97c78&pn=' . $bws_plugin_info["id"] . '&v=' . $bws_plugin_info["version"] . '&wp_v=' . $wp_version,
 				'wp_install'	=> $admin_url . 'plugin-install.php?tab=search&type=term&s=Pinterest+BestWebSoft&plugin-search-input=Search+Plugins',
-				'settings'		=> 'admin.php?page=pinterest.php'
+				'settings'		=> 'admin.php?page=pinterest.php',
+				'pro_version'	=> 'bws-pinterest-pro/bws-pinterest-pro.php',
+				'purchase' 		=> 'http://bestwebsoft.com/products/pinterest/buy/?k=ab0069edd1914a3ca8f541bfd88bb0bb&pn=' . $bws_plugin_info["id"] . '&v=' . $bws_plugin_info["version"] . '&wp_v=' . $wp_version,
+				'pro_settings'	=> 'admin.php?page=pinterest-pro.php'
 			),
 			'bws-linkedin/bws-linkedin.php' => array(
 				'name'			=> 'LinkedIn',
@@ -485,7 +488,10 @@ if ( ! function_exists( 'bws_add_menu_render' ) ) {
 				'link'			=> 'http://bestwebsoft.com/products/linkedin/?k=d63c7319622ccc5f589dd2d545c1d77c&pn=' . $bws_plugin_info["id"] . '&v=' . $bws_plugin_info["version"] . '&wp_v=' . $wp_version,
 				'download'		=> 'http://bestwebsoft.com/products/linkedin/download/?k=d63c7319622ccc5f589dd2d545c1d77c&pn=' . $bws_plugin_info["id"] . '&v=' . $bws_plugin_info["version"] . '&wp_v=' . $wp_version,
 				'wp_install'	=> $admin_url . 'plugin-install.php?tab=search&type=term&s=LinkedIn+BestWebSoft&plugin-search-input=Search+Plugins',
-				'settings'		=> 'admin.php?page=linkedin.php'
+				'settings'		=> 'admin.php?page=linkedin.php',
+				'pro_version'	=> 'bws-linkedin-pro/bws-linkedin-pro.php',
+				'purchase' 		=> 'http://bestwebsoft.com/products/linkedin/buy/?k=41dcc36192994408d24b103a02134567&pn=' . $bws_plugin_info["id"] . '&v=' . $bws_plugin_info["version"] . '&wp_v=' . $wp_version,
+				'pro_settings'	=> 'admin.php?page=linkedin-pro.php'
 			)		
 		);
 
@@ -947,6 +953,8 @@ if ( ! function_exists( 'bws_get_banner_array' ) ) {
 	function bws_get_banner_array() {
 		global $bstwbsftwppdtplgns_banner_array;
 		$bstwbsftwppdtplgns_banner_array = array(
+			array( 'lnkdnpr_hide_banner_on_plugin_page', 'bws-linkedin/bws-linkedin.php', '1.0.1' ),
+			array( 'pntrstpr_hide_banner_on_plugin_page', 'bws-pinterest/bws-pinterest.php', '1.0.1' ),
 			array( 'zndskhcpr_hide_banner_on_plugin_page', 'zendesk-help-center/zendesk-help-center.php', '1.0.0' ),
 			array( 'gglcptch_hide_banner_on_plugin_page', 'google-captcha/google-captcha.php', '1.18' ),
 			array( 'mltlngg_hide_banner_on_plugin_page', 'multilanguage/multilanguage.php', '1.1.1' ),

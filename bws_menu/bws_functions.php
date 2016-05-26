@@ -173,7 +173,11 @@ if ( ! function_exists( 'bws_plugin_reviews_block' ) ) {
 			</div>
 			<div class="bws-plugin-reviews-support">
 				<?php _e( 'If there is something wrong about it, please contact us', 'bestwebsoft' ); ?>:
-				<a href="http://support.bestwebsoft.com">http://support.bestwebsoft.com</a>
+				<a href="http://support.bestwebsoft.com" target="_blank">http://support.bestwebsoft.com</a>
+			</div>
+			<div class="bws-plugin-reviews-donate">
+				<?php _e( 'Donations play an important role in supporting great projects', 'bestwebsoft' ); ?>:
+				<a href="https://www.2checkout.com/checkout/purchase?sid=1430388&amp;quantity=10&amp;product_id=13" target="_blank">Donate</a>
 			</div>
 		</div>
 	<?php }
@@ -377,13 +381,13 @@ if ( ! function_exists( 'bws_go_pro_tab_show' ) ) {
 					window.location.href = 'admin.php?page=<?php echo $pro_page; ?>';
 				}, 5000 );
 			</script>
-			<p><?php _e( "Congratulations! The Pro version of the plugin is successfully download and activated.", 'bestwebsoft' ); ?></p>
+			<p><?php _e( "Congratulations! Pro version of the plugin is successfully installed and activated.", 'bestwebsoft' ); ?></p>
 			<p>
 				<?php _e( "Please, go to", 'bestwebsoft' ); ?> <a href="admin.php?page=<?php echo $pro_page; ?>"><?php _e( 'the setting page', 'bestwebsoft' ); ?></a> 
 				(<?php _e( "You will be redirected automatically in 5 seconds.", 'bestwebsoft' ); ?>)
 			</p>
 		<?php } else {
-			if ( $bws_hide_premium_options_check ) { ?>
+			if ( $bws_hide_premium_options_check && ! isset( $_POST['bws_hide_premium_options_submit'] ) ) { ?>
 				<form method="post" action="">
 					<p>
 						<input type="hidden" name="bws_hide_premium_options_submit" value="submit" />
@@ -394,13 +398,13 @@ if ( ! function_exists( 'bws_go_pro_tab_show' ) ) {
 			<?php } ?>
 			<form method="post" action="">
 				<p>
-					<?php _e( 'You can download and activate', 'bestwebsoft' ); ?> 
+					<?php _e( 'Enter your license key to install and activate', 'bestwebsoft' ); ?> 
 					<a href="http://bestwebsoft.com/products/<?php echo $link_slug; ?>/?k=<?php echo $link_key; ?>&amp;pn=<?php echo $link_pn; ?>&amp;v=<?php echo $plugin_info["Version"]; ?>&amp;wp_v=<?php echo $wp_version; ?>" target="_blank" title="<?php echo $plugin_info["Name"]; ?> Pro">Pro</a> 
-					<?php _e( 'version of this plugin by entering Your license key.', 'bestwebsoft' ); ?><br />
+					<?php _e( 'version of the plugin.', 'bestwebsoft' ); ?><br />
 					<span class="bws_info">
-						<?php _e( 'You can find your license key on your personal page Client area, by clicking on the link', 'bestwebsoft' ); ?> 
-						<a href="http://bestwebsoft.com/wp-login.php">http://bestwebsoft.com/wp-login.php</a> 
-						<?php _e( '(your username is the email you specify when purchasing the product).', 'bestwebsoft' ); ?>
+						<?php _e( 'License key can be found in the', 'bestwebsoft' ); ?> 
+						<a href="http://bestwebsoft.com/wp-login.php">Client Area</a> 
+						<?php _e( '(your username is the email address specified during the purchase).', 'bestwebsoft' ); ?>
 					</span>
 				</p>
 				<?php if ( $trial_days_number !== false )
@@ -439,9 +443,9 @@ if ( ! function_exists( 'bws_go_pro_from_trial_tab' ) ) {
 					<?php echo sprintf( __( 'In order to continue using the plugin it is necessary to buy a %s license.', 'bestwebsoft' ), '<a href="http://bestwebsoft.com/products/' . $link_slug . '/?k=' . $link_key . '&amp;pn=' . $link_pn . '&amp;v=' . $plugin_info["Version"] . '&amp;wp_v=' . $wp_version .'" target="_blank" title="' . $plugin_info["Name"] . '">Pro</a>' ) . ' ';
 					_e( 'After that you can activate it by entering your license key.', 'bestwebsoft' ); ?><br />
 					<span class="bws_info">
-						<?php _e( 'You can find your license key on your personal page Client area, by clicking on the link', 'bestwebsoft' ); ?> 
-						<a href="http://bestwebsoft.com/wp-login.php">http://bestwebsoft.com/wp-login.php</a> 
-						 <?php _e( '(your username is the email you specify when purchasing the product).', 'bestwebsoft' ); ?>
+						<?php _e( 'License key can be found in the', 'bestwebsoft' ); ?> 
+						<a href="http://bestwebsoft.com/wp-login.php">Client Area</a> 
+						<?php _e( '(your username is the email address specified during the purchase).', 'bestwebsoft' ); ?>
 					</span>
 				</p>
 				<?php if ( isset( $bstwbsftwppdtplgns_options['go_pro'][ $plugin_basename ]['count'] ) &&
@@ -572,11 +576,11 @@ if ( ! function_exists ( 'bws_check_pro_license_form' ) ) {
 		$license_key = ( isset( $bstwbsftwppdtplgns_options[ $plugin_basename ] ) ) ? $bstwbsftwppdtplgns_options[ $plugin_basename ] : ''; ?>
 		<div class="clear"></div>
 		<form method="post" action="">
-			<p><?php echo _e( 'If needed you can check if the license key is correct or reenter it in the field below. You can find your license key on your personal page - Client area - on our website', 'bestwebsoft' ) . ' <a href="http://bestwebsoft.com/wp-login.php">http://bestwebsoft.com/wp-login.php</a> ' . __( '(your username is the email you specify when purchasing the product). If necessary, please submit "Lost your password?" request.', 'bestwebsoft' ); ?></p>
+			<p><?php echo _e( 'If needed you can check if the license key is correct or reenter it in the field below. You can find your license key on your personal page - Client area - on our website', 'bestwebsoft' ) . ' <a href="http://bestwebsoft.com/wp-login.php">http://bestwebsoft.com/wp-login.php</a> ' . __( '(your username is the email address specified during the purchase). If necessary, please submit "Lost your password?" request.', 'bestwebsoft' ); ?></p>
 			<p>
 				<input type="text" maxlength="100" name="bws_license_key" value="<?php echo $license_key; ?>" />
 				<input type="hidden" name="bws_license_submit" value="submit" />
-				<input type="submit" class="button-primary" value="<?php _e( 'Check license key', 'bestwebsoft' ) ?>" />
+				<input type="submit" class="button" value="<?php _e( 'Check license key', 'bestwebsoft' ) ?>" />
 				<?php wp_nonce_field( $plugin_basename, 'bws_license_nonce_name' ); ?>
 			</p>
 		</form>
