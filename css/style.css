@@ -49,6 +49,22 @@ div[id*="lnkdn_main"] select[name*="select_widget"] {
 .lnkdn_alumni_tool_help {
 	min-width: 200px;
 }
+/* link how_to_use */
+.lnkdn_how_to_use {
+	float: right;
+}
+.rtl .lnkdn_how_to_use {
+	float: left;
+}
+@media only screen and ( max-width: 782px ) {
+	.lnkdn_how_to_use {
+		float: none;
+		text-align: left;
+	}
+	.rtl .lnkdn_how_to_use {
+		text-align: right;
+	}
+}
 @media screen and (max-width: 590px) {
 	.lnkdn_company_profile_help,
 	.lnkdn_company_insider_help,

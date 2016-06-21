@@ -6,7 +6,7 @@ Description: Add LinkedIn Widgets, 'Share' and 'Follow' Buttons in the easiest w
 Author: BestWebSoft
 Text-domain: bws-linkedin
 Domain Path: /languages
-Version: 1.0.1
+Version: 1.0.2
 Author URI: http://bestwebsoft.com
 License: GPLv3 or later
 */
@@ -31,7 +31,7 @@ License: GPLv3 or later
 if ( ! function_exists( 'lnkdn_add_admin_menu' ) ) {
 	function lnkdn_add_admin_menu() {
 		bws_general_menu();
-		$settings = add_submenu_page( 'bws_plugins', __( 'LinkedIn Settings', 'bws-linkedin' ), 'LinkedIn', 'manage_options', 'linkedin.php', 'lnkdn_settings_page' );
+		$settings = add_submenu_page( 'bws_panel', __( 'LinkedIn Settings', 'bws-linkedin' ), 'LinkedIn', 'manage_options', 'linkedin.php', 'lnkdn_settings_page' );
 		add_action( 'load-' . $settings, 'lnkdn_add_tabs' );
 	}
 }
@@ -111,9 +111,9 @@ if ( ! function_exists ( 'lnkdn_settings' ) ) {
 			'use_multilanguage_locale'	=> 0			
 		);
 
-		if ( ! get_option( 'lnkdn_options' ) ) {
+		if ( ! get_option( 'lnkdn_options' ) )
 			add_option( 'lnkdn_options', $lnkdn_options_defaults );
-		}
+
 		$lnkdn_options = get_option( 'lnkdn_options' );
 
 		if ( ! isset( $lnkdn_options['plugin_option_version'] ) || $lnkdn_options['plugin_option_version'] != $lnkdn_plugin_info["Version"] ) {
@@ -162,6 +162,7 @@ if ( ! function_exists( 'lnkdn_settings_page' ) ) {
 				$error = __( 'Enter the Company/Showcase Page ID for "Follow" button. Settings are not saved.', 'bws-linkedin' );
 			}
 			if ( empty( $error ) ) {
+				$lnkdn_options = apply_filters( 'lnkdn_before_save_options', $lnkdn_options );
 				update_option( 'lnkdn_options', $lnkdn_options );
 				$message = __( 'Settings saved', 'bws-linkedin' );
 			}
@@ -174,22 +175,29 @@ if ( ! function_exists( 'lnkdn_settings_page' ) ) {
 			$message = __( 'All plugin settings were restored', 'bws-linkedin' );
 		} 
 
-		/* GO PRO */
+		/*pls GO PRO */
 		if ( isset( $_GET['action'] ) && 'go_pro' == $_GET['action'] ) {
 			$go_pro_result = bws_go_pro_tab_check( $plugin_basename, 'pntrst_options' );
 			if ( ! empty( $go_pro_result['error'] ) )
 				$error = $go_pro_result['error'];
 			elseif ( ! empty( $go_pro_result['message'] ) )
 				$message = $go_pro_result['message'];
-		}/* end GO PRO ##*/ ?>
+		}/* end GO PRO pls*/##*/ ?>
 		<!-- general -->
 		<div class="wrap">
 			<h1><?php _e( 'LinkedIn Settings', 'bws-linkedin' ); ?></h1>
+			<ul class="subsubsub lnkdn_how_to_use">
+				<li><a href="https://docs.google.com/document/d/1fc4WbNSuL-eV1gSXWR_BkMEsjy7jyFS5CRG4k7SWEeU/edit" target="_blank"><?php _e( 'How to Use Step-by-step Instruction', 'bws-linkedin' ); ?></a></li>
+			</ul>
 			<h2 class="nav-tab-wrapper">
 				<a class="nav-tab <?php if ( ! isset( $_GET['action'] ) ) echo 'nav-tab-active'; ?>" href="admin.php?page=linkedin.php"><?php _e( 'Settings', 'bws-linkedin' ); ?></a>
+				<!-- pls -->
 				<a class="nav-tab<?php if ( isset( $_GET['action'] ) && 'extra' == $_GET['action'] ) echo ' nav-tab-active'; ?>" href="admin.php?page=linkedin.php&amp;action=extra"><?php _e( 'Extra settings', 'bws-linkedin' ); ?></a>
+				<!-- end pls -->
 				<a class="nav-tab <?php if ( isset( $_GET['action'] ) && 'custom_code' == $_GET['action'] ) echo ' nav-tab-active'; ?>" href="admin.php?page=linkedin.php&amp;action=custom_code"><?php _e( 'Custom code', 'bws-linkedin' ); ?></a>
+				<!-- pls -->
 				<a class="nav-tab bws_go_pro_tab<?php if ( isset( $_GET['action'] ) && 'go_pro' == $_GET['action'] ) echo ' nav-tab-active'; ?>" href="admin.php?page=linkedin.php&amp;action=go_pro"><?php _e( 'Go PRO', 'bws-linkedin' ); ?></a>
+				<!-- end pls -->
 			</h2>
 			<!-- end general -->
 			<noscript><div class="error below-h2"><p><strong><?php _e( 'Please, enable JavaScript in Your browser.', 'bws-linkedin' ); ?></strong></p></div></noscript>
@@ -203,7 +211,7 @@ if ( ! function_exists( 'lnkdn_settings_page' ) ) {
 				} else { /* check action ##*/ ?>
 					<div class="lnkdn_settings_block">
 						<br />
-						<div><?php $icon_shortcode = ( "linkedin.php" == $_GET['page'] ) ? plugins_url( 'bws_menu/images/shortcode-icon.png', __FILE__ ) : plugins_url( 'social-buttons-pack/bws_menu/images/shortcode-icon.png' );
+						<div><?php $icon_shortcode = ( 'social-buttons.php' == $_GET['page'] ) ? plugins_url( 'social-buttons-pack/bws_menu/images/shortcode-icon.png' ) : plugins_url( 'bws_menu/images/shortcode-icon.png', __FILE__ );
 							printf( 
 								__( "If you'd like to add LinkedIn Buttons to your page or post, please use %s button", 'bws-linkedin' ), 
 								'<span class="bws_code"><img style="vertical-align: bottom;" src="' . $icon_shortcode . '" alt=""/></span>' 
@@ -316,6 +324,7 @@ if ( ! function_exists( 'lnkdn_settings_page' ) ) {
 												</p>
 											</td>
 										</tr>
+										<?php do_action( 'lnkdn_settings_page_action', $lnkdn_options ); ?>
 									</tbody>
 								</table>
 								<table class="form-table">
@@ -383,7 +392,9 @@ if ( ! function_exists( 'lnkdn_settings_page' ) ) {
 					<!-- general -->
 					<?php bws_form_restore_default_settings( $plugin_basename );
 				}
-			} elseif ( 'extra' == $_GET['action'] ) { ?>
+			} elseif ( 'custom_code' == $_GET['action'] ) {
+				bws_custom_code_tab();
+			} /*pls extra banner */ elseif ( 'extra' == $_GET['action'] ) { ?>
 				<div class="bws_pro_version_bloc">
 					<div class="bws_pro_version_table_bloc">	
 						<div class="bws_table_bg"></div>											
@@ -426,12 +437,10 @@ if ( ! function_exists( 'lnkdn_settings_page' ) ) {
 						<div class="clear"></div>					
 					</div>
 				</div>
-			<?php } elseif ( 'custom_code' == $_GET['action'] ) {
-				bws_custom_code_tab();
-			} elseif ( 'go_pro' == $_GET['action'] ) { 
+			<?php } elseif ( 'go_pro' == $_GET['action'] ) { 
 				bws_go_pro_tab_show( false, $lnkdn_plugin_info, $plugin_basename, 'linkedin.php', 'linkedin-pro.php', 'bws-linkedin-pro/bws-linkedin-pro.php', 'linkedin', 'c64e9f9106c1e15bd3f4ece9473fb80d', '588', isset( $go_pro_result['pro_plugin_is_activated'] ) ); 
-			}
-			bws_plugin_reviews_block( $lnkdn_plugin_info['Name'], 'bws-linkedin' ); ?>
+			}			
+			bws_plugin_reviews_block( $lnkdn_plugin_info['Name'], 'bws-linkedin' ); /* show reviews block pls*/ ?>
 		</div>
 		<!-- end general -->
 	<?php }
@@ -476,12 +485,8 @@ if ( ! function_exists( 'lnkdn_return_button' ) ) {
 if ( ! function_exists( 'lnkdn_position' ) ) {
 	function lnkdn_position( $content ) {
 		global $lnkdn_options;
-
-		if ( is_feed() ) {
-			return $content;
-		}
 		
-		if ( 'only_shortcode' != $lnkdn_options['position'] ) {
+		if ( ! is_feed() && 'only_shortcode' != $lnkdn_options['position'] ) {
 			if ( ( ! is_home() && ! is_front_page() ) || 1 == $lnkdn_options['homepage'] ) {
 				if ( ( is_single() && 1 == $lnkdn_options['posts'] ) || ( is_page() && 1 == $lnkdn_options['pages'] ) || ( is_home() && 1 == $lnkdn_options['homepage'] ) ) {
 					$share  = ( 1 == $lnkdn_options['share'] ) ? lnkdn_return_button( 'share' ) : '';
@@ -489,6 +494,8 @@ if ( ! function_exists( 'lnkdn_position' ) ) {
 					$button = '<div class="lnkdn_buttons">' . $share . $follow . '</div>';
 				}
 			}
+
+			$button = apply_filters( 'lnkdn_button_in_the_content', $button );
 
 			if ( ! empty( $button ) ) {
 				if ( 'before_post' == $lnkdn_options['position'] ) {
@@ -838,14 +845,16 @@ if ( ! function_exists ( 'lnkdn_admin_notices' ) ) {
 	function lnkdn_admin_notices() {
 		global $hook_suffix, $lnkdn_plugin_info, $lnkdn_options;
 
-		if ( 'plugins.php' == $hook_suffix && ! is_network_admin() ) {
-			bws_plugin_banner_to_settings( $lnkdn_plugin_info, 'lnkdn_options', 'bws-linkedin', 'admin.php?page=linkedin.php' );
-
+		if ( 'plugins.php' == $hook_suffix && ! is_network_admin() ) {			
+			/*pls show banner go pro */
 			if ( empty( $lnkdn_options ) )
 				$lnkdn_options = get_option( 'lnkdn_options' );
 
 			if ( isset( $lnkdn_options['first_install'] ) && strtotime( '-1 week' ) > $lnkdn_options['first_install'] )
 				bws_plugin_banner( $lnkdn_plugin_info, 'lnkdn', 'linkedin', '23b248c24d3fbef44d7ac493141591ab', '588', 'bws-linkedin' );
+
+			/* show banner go settings pls*/
+			bws_plugin_banner_to_settings( $lnkdn_plugin_info, 'lnkdn_options', 'bws-linkedin', 'admin.php?page=linkedin.php' );
 		}
 
 		if ( isset( $_GET['page'] ) && 'linkedin.php' == $_GET['page'] )
@@ -872,7 +881,11 @@ if ( ! function_exists( 'lnkdn_uninstall' ) ) {
 
 		$all_plugins = get_plugins();
 
-		if ( ! array_key_exists( 'bws-social-buttons/bws-social-buttons.php', $all_plugins ) ) {
+		if ( ! array_key_exists( 'bws-linkedin-pro/bws-linkedin-pro.php', $all_plugins ) && 
+			! array_key_exists( 'bws-linkedin-plus/bws-linkedin-plus.php', $all_plugins ) &&
+			! array_key_exists( 'bws-social-buttons/bws-social-buttons.php', $all_plugins ) &&
+			! array_key_exists( 'bws-social-buttons-pro/bws-social-buttons-pro.php', $all_plugins ) ) {
+
 			if ( function_exists( 'is_multisite' ) && is_multisite() ) {
 				global $wpdb;
 				$old_blog = $wpdb->blogid;

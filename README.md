@@ -1,4 +1,4 @@
-<a href="http://bestwebsoft.com/products/linkedin/" target=_blank>Linkedin WordPress Plugin</a>
+<a href="http://bestwebsoft.com/products/linkedin/" target=_blank>LinkedIn WordPress Plugin</a>
 ========================
 
 With LinkedIn plugin you can add Share &#38; Follow buttons, and five widgets:

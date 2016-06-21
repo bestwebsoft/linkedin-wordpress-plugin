@@ -4,7 +4,7 @@ Donate link: http://bestwebsoft.com/donate/
 Tags: LinkedIn, linedin, linkedln, likedin, linkedin plugin, share button, follow button, linkedin widget, linkedin widgets, social buttons
 Requires at least: 3.8 
 Tested up to: 4.5.2
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -95,13 +95,17 @@ Please make sure that the problem hasn't been discussed on our forum yet (<a hre
 == Screenshots ==
 
 1. LinkedIn Buttons in the front-end.
-2. Linkedin Widgets in front-end: Member Profile, Company Profile and "Jobs You May Be Interested In".
+2. LinkedIn Widgets in front-end: Member Profile, Company Profile and "Jobs You May Be Interested In".
 3. LinkedIn Widgets in front-end: Company Insider and "Alumni Tool".
 4. LinkedIn Settings Page.
 5. Adding shortcode into the content.
 6. Adding LinkedIn Widget in the sidebar.
 
-== Changelog == 
+== Changelog ==
+
+= V1.0.2 - 21.06.2016 =
+* Update : Instruction link was added.
+* Update : BWS plugins section is updated.
 
 = V1.0.1 - 26.05.2016 =
 * Update : The filter for widget title has been added.
@@ -111,6 +115,9 @@ Please make sure that the problem hasn't been discussed on our forum yet (<a hre
 * NEW : Css-style was added.
 
 == Upgrade Notice ==
+
+= 1.0.2 =
+Instruction link was added. BWS plugins section is updated.
 
 = 1.0.1 =
 The filter for widget title has been added.
