@@ -3,12 +3,12 @@ Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/donate/
 Tags: LinkedIn, linedin, linkedln, likedin, linkedin plugin, share button, follow button, linkedin widget, linkedin widgets, social buttons
 Requires at least: 3.8 
-Tested up to: 4.5.2
-Stable tag: 1.0.2
+Tested up to: 4.6
+Stable tag: 1.0.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Add LinkedIn Widgets, 'Share' and 'Follow' Buttons in the easiest way.
+Add LinkedIn Share and Follow buttons to WordPress posts, pages and widgets. 5 plugins included – profile, insider, etc.
 
 == Description ==
 
@@ -31,7 +31,7 @@ http://www.youtube.com/watch?v=O_ramABu8Zk
 
 * Add LinkedIn buttons in the easiest way (Share and Follow buttons)
 * Select the button position: before the content, after, before and after, or using only a shortcode.
-* Select button language or use the current site language for LinkedIn button (Using <a href="http://bestwebsoft.com/products/multilanguage/" target="_blank">Multilanguage by BestWebSoft</a>)
+* Select button language or use the current site language for LinkedIn button (Using <a href="http://bestwebsoft.com/products/multilanguage/?k=c1d633da9c4483772615a9462bf59f27" target="_blank">Multilanguage by BestWebSoft</a>)
 * Select vertical or horizontal displaying for Count Mode option of LinkedIn buttons.
 * Many options for "Member Profile" and "Company Profile" widgets: inline or icon displaying mode, show or hide connections, on hover or on click behavior for icon mode widget
 
@@ -49,7 +49,7 @@ There is also a premium version of the plugin <a href="http://bestwebsoft.com/pr
 * Russian (ru_RU)
 * Ukrainian (uk)
 
-If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> to <a href="http://support.bestwebsoft.com" target="_blank">BestWebSoft</a>, and we'll add it to the plugin. You can download the latest version of the program for working with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
+If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> to <a href="http://support.bestwebsoft.com/hc/en-us/requests/new" target="_blank">BestWebSoft</a>, and we'll add it to the plugin. You can download the latest version of the program for working with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
 
 = Technical support =
 
@@ -63,7 +63,7 @@ We can fix some things for free for the users who provide a translation of our p
 
 1. Upload the `bws-linkedin` folder to `/wp-content/plugins/` directory.
 2. Activate the plugin using the "Plugins" menu in your WordPress admin panel.
-3. You can adjust the necessary settings using your WordPress admin panel in "BWS Plugins" > "LinkedIn".
+3. You can adjust the necessary settings using your WordPress admin panel in "BWS Panel" > "LinkedIn".
 
 == Frequently Asked Questions ==
 
@@ -103,6 +103,9 @@ Please make sure that the problem hasn't been discussed on our forum yet (<a hre
 
 == Changelog ==
 
+= V1.0.3 - 10.08.2016 =
+* Update : All functionality for WordPress 4.6 was updated.
+
 = V1.0.2 - 21.06.2016 =
 * Update : Instruction link was added.
 * Update : BWS plugins section is updated.
@@ -115,6 +118,9 @@ Please make sure that the problem hasn't been discussed on our forum yet (<a hre
 * NEW : Css-style was added.
 
 == Upgrade Notice ==
+
+= V1.0.3 =
+* The compatibility with new WordPress version updated.
 
 = 1.0.2 =
 Instruction link was added. BWS plugins section is updated.

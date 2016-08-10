@@ -1,12 +1,12 @@
 <?php
 /*##
 Plugin Name: LinkedIn by BestWebSoft
-Plugin URI: http://bestwebsoft.com/products/
-Description: Add LinkedIn Widgets, 'Share' and 'Follow' Buttons in the easiest way.
+Plugin URI: http://bestwebsoft.com/products/linkedin/
+Description: Add LinkedIn Share and Follow buttons to WordPress posts, pages and widgets. 5 plugins included – profile, insider, etc.
 Author: BestWebSoft
 Text-domain: bws-linkedin
 Domain Path: /languages
-Version: 1.0.2
+Version: 1.0.3
 Author URI: http://bestwebsoft.com
 License: GPLv3 or later
 */
@@ -493,11 +493,12 @@ if ( ! function_exists( 'lnkdn_position' ) ) {
 					$follow = ( 1 == $lnkdn_options['follow'] ) ? lnkdn_return_button( 'follow' ) : '';
 					$button = '<div class="lnkdn_buttons">' . $share . $follow . '</div>';
 				}
-			}
-
-			$button = apply_filters( 'lnkdn_button_in_the_content', $button );
+			}			
 
 			if ( ! empty( $button ) ) {
+				
+				$button = apply_filters( 'lnkdn_button_in_the_content', $button );
+
 				if ( 'before_post' == $lnkdn_options['position'] ) {
 					return $button . $content;
 				} elseif ( 'after_post' == $lnkdn_options['position'] ) {
