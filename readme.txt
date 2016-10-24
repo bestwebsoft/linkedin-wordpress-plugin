@@ -3,7 +3,7 @@ Contributors: bestwebsoft
 Donate link: http://bestwebsoft.com/donate/
 Tags: LinkedIn, linedin, linkedln, likedin, linkedin plugin, share button, follow button, linkedin widget, linkedin widgets, social buttons
 Requires at least: 3.8 
-Tested up to: 4.6
+Tested up to: 4.6.1
 Stable tag: 1.0.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -12,52 +12,100 @@ Add LinkedIn Share and Follow buttons to WordPress posts, pages and widgets. 5 p
 
 == Description ==
 
-With LinkedIn plugin you can add Share & Follow buttons, and five widgets:
-* Member Profile widget displays your or other 'card' of account with connections which can be hidden. Account must be public and has public URL.
-* Company Profile widget displays your or other 'card' of company with connections which can be hidden.
-* Company Insider widget.
-* Jobs You Might Be Interested In widget can display all jobs offered on the 'LinkedIn' or jobs of your company.
-* Alumni Tool widget which shows where graduates of a high school work, live, and what they do.
+LinkedIn plugin is a useful social tool which adds Follow and Share buttons to your Wordpress website posts, pages or widgets. This is a great way to drop the whole LinkedIn functionality in your website and consumer validation for your brand. 
+
+Customize the appearance, configure settings, and enable other advanced options to promote your public profile!
 
 http://www.youtube.com/watch?v=O_ramABu8Zk
 
-<a href="http://wordpress.org/plugins/bws-linkedin/faq/" target="_blank">FAQ</a>
+= Free Features =
 
-<a href="http://support.bestwebsoft.com" target="_blank">Support</a>
+* Add LinkedIn buttons such as:
+	* Share 
+	* Follow 
+* Automatically display buttons on:
+	* Posts
+	* Pages
+	* Homepage
+* Select the button position:
+	* Before content
+	* After content
+	* Before and after content
+	* Custom position (using shortcode)
+* Compatible with [Multilanguage](http://bestwebsoft.com/products/multilanguage/?k=c1d633da9c4483772615a9462bf59f27) (current website language detection)
+* Choose the count mode for Share and Follow buttons:
+	* Vertical
+	* Horizontal
+	* No-count
+* Add LinkedIn widgets:
+	* Member profile
+	* Company profile
+	* Company insider
+	* Jobs You May Be Interested In
+	* Alumni tool
+Customize Member and Company profile widgets:
+	* Title
+	* URL/ID
+	* Display mode
+		* Inline
+		* Icon
+	* Show/hide connections
+* Customize Jobs You May Be Interested In widget:
+	* Title
+	* Display mode
+		* Your jobs
+		* All jobs
+	* Company ID
+* Customize Company insider and Alumni tool widgets:
+	* Title
+	* ID
+* Add custom code via plugin settings page
+* Compatible with latest WordPress version
+* Incredibly simple settings for fast setup without modifying code
+* Detailed step-by-step documentation and videos
 
-<a href="http://bestwebsoft.com/products/linkedin/?k=1c14e9597963e9ac70f82bd688faa03e" target="_blank">Upgrade to LinkedIn Pro by BestWebSoft</a>
+> **Pro Features**
+>
+> All features from Free version included plus:
+>
+> * Display LinkedIn buttons for certain pages and/or post types	 
+> * Configure all subsites on the network
+> * Get answer to your support question within one business day ([Support Policy](http://bestwebsoft.com/support-policy/))
+>
+> [Upgrade to Pro Now](http://bestwebsoft.com/products/wordpress/plugins/linkedin/?k=1c14e9597963e9ac70f82bd688faa03e)
 
-= Features =
+If you have a feature suggestion or idea you'd like to see in the plugin, we'd love to hear about it! [Suggest a Feature](http://support.bestwebsoft.com/hc/en-us/requests/new)
 
-* Add LinkedIn buttons in the easiest way (Share and Follow buttons)
-* Select the button position: before the content, after, before and after, or using only a shortcode.
-* Select button language or use the current site language for LinkedIn button (Using <a href="http://bestwebsoft.com/products/multilanguage/?k=c1d633da9c4483772615a9462bf59f27" target="_blank">Multilanguage by BestWebSoft</a>)
-* Select vertical or horizontal displaying for Count Mode option of LinkedIn buttons.
-* Many options for "Member Profile" and "Company Profile" widgets: inline or icon displaying mode, show or hide connections, on hover or on click behavior for icon mode widget
+= Documentation & Videos =
 
-If you have a feature, suggestion or idea you'd like to see in the plugin, we'd love to hear about it! <a href="http://support.bestwebsoft.com/hc/en-us/requests/new" target="_blank">Suggest a Feature</a>
+* [[Doc] How to Use](https://docs.google.com/document/d/1fc4WbNSuL-eV1gSXWR_BkMEsjy7jyFS5CRG4k7SWEeU/)
+* [[Doc] Installation](https://docs.google.com/document/d/1tLhWGuutUzKxDNOom0eDhwSjxNgDRIeeXpqs0p0Rilc/)
 
-= Recommended Plugins =
+= Help & Support =
 
-The author of the LinkedIn also recommends the following plugins:
-
-* <a href="http://wordpress.org/plugins/updater/">Updater</a> - This plugin updates WordPress core and the plugins to the recent versions. You can also use the auto mode or manual mode for updating and set email notifications.
-There is also a premium version of the plugin <a href="http://bestwebsoft.com/products/updater/">Updater Pro</a> with more useful features available. It can make backup of all your files and database before updating. Also it can forbid some plugins or WordPress Core update.
+Visit our Help Center if you have any questions, our friendly Support Team is happy to help — <http://support.bestwebsoft.com/>
 
 = Translation =
 
 * Russian (ru_RU)
 * Ukrainian (uk)
 
-If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" target="_blank">the text of PO and MO files</a> to <a href="http://support.bestwebsoft.com/hc/en-us/requests/new" target="_blank">BestWebSoft</a>, and we'll add it to the plugin. You can download the latest version of the program for working with PO and MO files  <a href="http://www.poedit.net/download.php" target="_blank">Poedit</a>.
+Some of these translations are not complete. We are constantly adding new features which should be translated. If you would like to create your own language pack or update the existing one, you can send [the text of PO and MO files](http://codex.wordpress.org/Translating_WordPress) to [BestWebSoft](http://support.bestwebsoft.com/hc/en-us/requests/new) and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO [files Poedit](http://www.poedit.net/download.php).
 
-= Technical support =
+= Recommended Plugins =
 
-Dear users, our plugins are available for free download. If you have any questions or recommendations regarding the functionality of our plugins (existing options, new options, current issues), please feel free to contact us. Please note that we accept requests in English only. All messages in other languages won't be accepted.
+* [Updater](http://bestwebsoft.com/products/wordpress/plugins/updater/?k=b0cd02870bd5790030e3424a6180c433) - Automatically check and update WordPress core with all installed plugins to the latest versions. Manual mode, email notifications and backups of all your files and database before updating.
+* [Google +1](http://bestwebsoft.com/products/wordpress/plugins/google-plus-one/?k=e8c27c97786f6de13bf10e8b3b18f0a3) - Add Google +1 Share, Follow, Hangout buttons and profile badge to WordPress posts, pages and widgets.
+* [Facebook Button](http://bestwebsoft.com/products/wordpress/plugins/facebook-like-button/?k=88fbc574b13350527aba6fffd6970fd7) - Add Facebook Like, Share and Profile buttons to WordPress posts, pages and widgets.
+* [Multilanguage](http://bestwebsoft.com/products/multilanguage/?k=c1d633da9c4483772615a9462bf59f27) - Translate WordPress website content to other languages manually. Create multilingual pages, posts, widgets, menus, etc.
+* [Pinterest](http://bestwebsoft.com/products/wordpress/plugins/pinterest/?k=bbe78d1a7a355da6610cb3d05fbf700e) - Add Pinterest Follow, Pin It buttons and profile widgets (Pin, Board, Profile) to WordPress posts, pages and widgets.
+* [Twitter](http://bestwebsoft.com/products/wordpress/plugins/twitter/?k=bdb19dd8cedd4526f94c7b52f049a2c3) - Add Twitter Follow, Tweet, Hashtag, and Mention buttons to WordPress posts, pages and widgets.
 
-If you notice any bugs in the plugin's work, you can notify us about them and we'll investigate and fix the issue then. Your request should contain website URL, issues description and WordPress admin panel credentials.
-Moreover, we can customize the plugin according to your requirements. It's a paid service (as a rule it costs $40, but the price can vary depending on the amount of the necessary changes and their complexity). Please note that we could also include this or that feature (developed for you) in the next release and share with the other users then.
-We can fix some things for free for the users who provide a translation of our plugin into their native language (this should be a new translation of a certain plugin, you can check available translations on the official plugin page).
+= Donate =
+
+Donations play an important role in supporting open-source projects. We greatly appreciate any donation you can make to help us continue further development of free products.
+
+[Donate Now](http://bestwebsoft.com/donate/)
 
 == Installation == 
 
@@ -85,12 +133,12 @@ URL, which you add, should be public. It can be configured via "public profile s
 
 = I have some problems with the plugin's work. What Information should I provide to receive proper support? =
 
-Please make sure that the problem hasn't been discussed on our forum yet (<a href="http://support.bestwebsoft.com" target="_blank">http://support.bestwebsoft.com</a>). If not, please provide the following data along with your problem's description:
+Please make sure that the problem hasn't been discussed yet on our forum (<http://support.bestwebsoft.com>). If no, please provide the following data along with your problem's description:
 
-1. the link to the page, on which the problem occurs
-2. the plugin’s name and version. If you are using a pro version - your order number.
+1. the link to the page where the problem occurs
+2. the name of the plugin and its version. If you are using a pro version - your order number.
 3. the version of your WordPress installation
-4. copy and paste your system status report into the message . Please read more here: <a href="https://docs.google.com/document/d/1Wi2X8RdRGXk9kMszQy1xItJrpN0ncXgioH935MaBKtc/edit" target="_blank">Instuction on System Status</a>
+4. copy and paste into the message your system status report. Please read more here: [Instruction on System Status](https://docs.google.com/document/d/1Wi2X8RdRGXk9kMszQy1xItJrpN0ncXgioH935MaBKtc/edit)
 
 == Screenshots ==
 
