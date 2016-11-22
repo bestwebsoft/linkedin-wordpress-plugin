@@ -4,7 +4,7 @@ Donate link: http://bestwebsoft.com/donate/
 Tags: LinkedIn, linedin, linkedln, likedin, linkedin plugin, share button, follow button, linkedin widget, linkedin widgets, social buttons
 Requires at least: 3.8 
 Tested up to: 4.6.1
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -32,7 +32,7 @@ http://www.youtube.com/watch?v=O_ramABu8Zk
 	* After content
 	* Before and after content
 	* Custom position (using shortcode)
-* Compatible with [Multilanguage](http://bestwebsoft.com/products/multilanguage/?k=c1d633da9c4483772615a9462bf59f27) (current website language detection)
+* Compatible with [Multilanguage](http://bestwebsoft.com/products/wordpress/plugins/multilanguage/?k=c1d633da9c4483772615a9462bf59f27) (current website language detection)
 * Choose the count mode for Share and Follow buttons:
 	* Vertical
 	* Horizontal
@@ -97,7 +97,7 @@ Some of these translations are not complete. We are constantly adding new featur
 * [Updater](http://bestwebsoft.com/products/wordpress/plugins/updater/?k=b0cd02870bd5790030e3424a6180c433) - Automatically check and update WordPress core with all installed plugins to the latest versions. Manual mode, email notifications and backups of all your files and database before updating.
 * [Google +1](http://bestwebsoft.com/products/wordpress/plugins/google-plus-one/?k=e8c27c97786f6de13bf10e8b3b18f0a3) - Add Google +1 Share, Follow, Hangout buttons and profile badge to WordPress posts, pages and widgets.
 * [Facebook Button](http://bestwebsoft.com/products/wordpress/plugins/facebook-like-button/?k=88fbc574b13350527aba6fffd6970fd7) - Add Facebook Like, Share and Profile buttons to WordPress posts, pages and widgets.
-* [Multilanguage](http://bestwebsoft.com/products/multilanguage/?k=c1d633da9c4483772615a9462bf59f27) - Translate WordPress website content to other languages manually. Create multilingual pages, posts, widgets, menus, etc.
+* [Multilanguage](http://bestwebsoft.com/products/wordpress/plugins/multilanguage/?k=c1d633da9c4483772615a9462bf59f27) - Translate WordPress website content to other languages manually. Create multilingual pages, posts, widgets, menus, etc.
 * [Pinterest](http://bestwebsoft.com/products/wordpress/plugins/pinterest/?k=bbe78d1a7a355da6610cb3d05fbf700e) - Add Pinterest Follow, Pin It buttons and profile widgets (Pin, Board, Profile) to WordPress posts, pages and widgets.
 * [Twitter](http://bestwebsoft.com/products/wordpress/plugins/twitter/?k=bdb19dd8cedd4526f94c7b52f049a2c3) - Add Twitter Follow, Tweet, Hashtag, and Mention buttons to WordPress posts, pages and widgets.
 
@@ -151,6 +151,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<http:
 
 == Changelog ==
 
+= V1.0.4 - 21.11.2016 =
+* Update : Compatibility with Pagination plugin was added.
+* Pro : Tree of site pages was updated.
+
 = V1.0.3 - 10.08.2016 =
 * Update : All functionality for WordPress 4.6 was updated.
 
@@ -166,6 +170,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<http:
 * NEW : Css-style was added.
 
 == Upgrade Notice ==
+
+= V1.0.4 =
+* Functionality improved.
 
 = V1.0.3 =
 * The compatibility with new WordPress version updated.
