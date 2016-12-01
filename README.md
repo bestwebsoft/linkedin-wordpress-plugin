@@ -1,9 +1,7 @@
-<a href="http://bestwebsoft.com/products/linkedin/" target=_blank>LinkedIn WordPress Plugin</a>
+<a href="http://bestwebsoft.com/products/wordpress/plugins/linkedin/" target=_blank>LinkedIn WordPress Plugin</a>
 ========================
 
 Add LinkedIn Share and Follow buttons to WordPress posts, pages and widgets. 5 plugins included &#8211; profile, insider, etc.
-
-<img src="http://bestwebsoft.com/wp-content/uploads/2016/05/linkedin-banner-website.jpg" />
 
 <p>LinkedIn plugin is a useful social tool which adds Follow and Share buttons to your Wordpress website posts, pages or widgets. This is a great way to drop the whole LinkedIn functionality in your website and consumer validation for your brand.</p>
 
