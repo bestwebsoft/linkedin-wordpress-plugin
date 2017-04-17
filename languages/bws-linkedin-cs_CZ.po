@@ -1,0 +1,399 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: bws-linkedin\n"
+"POT-Creation-Date: 2017-04-17 13:14+0300\n"
+"PO-Revision-Date: 2017-04-17 13:14+0300\n"
+"Last-Translator: \n"
+"Language-Team: Mik013\n"
+"Language: cs_CZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../bws-linkedin.php:34 ../bws-linkedin.php:188
+msgid "LinkedIn Settings"
+msgstr "Nastavení LinkedIn"
+
+#: ../bws-linkedin.php:162
+msgid ""
+"Enter the Company/Showcase Page ID for \"Follow\" button. Settings are not "
+"saved."
+msgstr ""
+"Vložte ID společnosti / Showcase Page pro tlačítko \"Sledovat\". Nastavení "
+"nejsou uložena."
+
+#: ../bws-linkedin.php:167
+msgid "Settings saved"
+msgstr "Nastavení uloženo"
+
+#: ../bws-linkedin.php:175
+msgid "All plugin settings were restored"
+msgstr "Výchozí nastavení pluginu bylo obnoveno"
+
+#: ../bws-linkedin.php:190
+msgid "How to Use Step-by-step Instruction"
+msgstr ""
+
+#: ../bws-linkedin.php:193 ../bws-linkedin.php:834 ../bws-linkedin.php:847
+msgid "Settings"
+msgstr "Nastavení"
+
+#: ../bws-linkedin.php:195
+msgid "Extra settings"
+msgstr "Další nastavení"
+
+#: ../bws-linkedin.php:197
+msgid "Custom code"
+msgstr "Vlastní kód"
+
+#: ../bws-linkedin.php:199
+msgid "Go PRO"
+msgstr "Přejít na PRO"
+
+#: ../bws-linkedin.php:203 ../bws-linkedin.php:695
+msgid "Please, enable JavaScript in Your browser."
+msgstr "Prosím, povolte JavaScript ve vašem prohlížeči."
+
+#: ../bws-linkedin.php:216
+#, php-format
+msgid ""
+"If you'd like to add LinkedIn Buttons to your page or post, please use %s "
+"button"
+msgstr ""
+"Pokud chcete přidat  LinkedIn tlačítka na vaši stránku nebo příspěvek, "
+"použijte tlačítko %s"
+
+#: ../bws-linkedin.php:222
+#, php-format
+msgid ""
+"You can add LinkedIn Buttons to your page or post by clicking on %s button "
+"in the content edit block using the Visual mode. If the button isn't "
+"displayed, please use the shortcode %s to show LinkedIn Buttons, or use "
+"parameter 'display' to show one of them or both, e.g. %s"
+msgstr ""
+"LinkedIn tlačítka můžete na vaši stránku nebo příspěvek přidat kliknutím na "
+"tlačítko %s v bloku úprav obsahu ve vizuálním módu. Pokud tlačítko není "
+"zobrazeno, použijte pro zobrazení LinkedIn tlačítek zkrácený kód %s, nebo "
+"použijte parametr 'display' pro zobrazení některého z nich, anebo obou, "
+"např. %s"
+
+#: ../bws-linkedin.php:235
+msgid "Display LinkedIn Buttons"
+msgstr "Zobrazit LinkedIn tlačítka"
+
+#: ../bws-linkedin.php:240
+msgid "Share"
+msgstr "Sdílet"
+
+#: ../bws-linkedin.php:245
+msgid "Follow"
+msgstr "Sledovat"
+
+#: ../bws-linkedin.php:252
+msgid "Language"
+msgstr "Jazyk"
+
+#: ../bws-linkedin.php:264
+msgid "Select the language to display information on the button"
+msgstr "Zvolte jazyk informačních popisků na tlačítku"
+
+#: ../bws-linkedin.php:270 ../bws-linkedin.php:273 ../bws-linkedin.php:280
+msgid "Use the current site language"
+msgstr "Použít aktuální jazyk webu"
+
+#: ../bws-linkedin.php:270 ../bws-linkedin.php:274 ../bws-linkedin.php:281
+msgid "Using"
+msgstr "S použitím"
+
+#: ../bws-linkedin.php:275
+msgid "Activate"
+msgstr "Aktivovat"
+
+#: ../bws-linkedin.php:282
+msgid "Download"
+msgstr "Stáhnout"
+
+#: ../bws-linkedin.php:290
+msgid "Buttons Position"
+msgstr "Umístění tlačítek"
+
+#: ../bws-linkedin.php:293
+msgid "Before"
+msgstr "Před"
+
+#: ../bws-linkedin.php:294
+msgid "After"
+msgstr "Po"
+
+#: ../bws-linkedin.php:295
+msgid "Before And After"
+msgstr "Před a Po"
+
+#: ../bws-linkedin.php:296
+msgid "Only Shortcode"
+msgstr "Pouze zkrácený kód"
+
+#: ../bws-linkedin.php:298
+msgid "Please select location for the buttons on the page"
+msgstr "Vyberte prosím umístění tlačítek na stránce"
+
+#: ../bws-linkedin.php:302
+msgid "Show buttons"
+msgstr "Zobrazit tlačítka"
+
+#: ../bws-linkedin.php:307
+msgid "Show in posts"
+msgstr "Zobrazit v příspěvcích"
+
+#: ../bws-linkedin.php:313
+msgid "Show in pages"
+msgstr "Zobrazit na stánkách"
+
+#: ../bws-linkedin.php:319
+msgid "Show on the homepage"
+msgstr "Zobrazit na domovské stránce"
+
+#: ../bws-linkedin.php:323
+msgid "Please select the page on which you want to see the buttons"
+msgstr "Vyberte prosím stranu, na které se mají tlačítka zobrazovat"
+
+#: ../bws-linkedin.php:334
+msgid "Settings for Share Button"
+msgstr "Nastavení tlačítka \"Sdílet\""
+
+#: ../bws-linkedin.php:337 ../bws-linkedin.php:354
+msgid "Count Mode"
+msgstr "S počítadlem"
+
+#: ../bws-linkedin.php:340 ../bws-linkedin.php:357
+msgid "Vertical"
+msgstr "Vertikálně"
+
+#: ../bws-linkedin.php:341 ../bws-linkedin.php:358
+msgid "Horizontal"
+msgstr "Horizontálně"
+
+#: ../bws-linkedin.php:342 ../bws-linkedin.php:359
+msgid "No-count"
+msgstr "Bez počítadla"
+
+#: ../bws-linkedin.php:345
+msgid "Display the number of users who have shared the page"
+msgstr "Zobrazovat počet uživatelů, kteří stránku sdíleli"
+
+#: ../bws-linkedin.php:351
+msgid "Settings for Follow Button"
+msgstr "Nastavení tlačítka \"Sledovat\""
+
+#: ../bws-linkedin.php:362
+msgid "Display the number of users who are following this page or person"
+msgstr "Zobrazovat počet uživatelů, kteří sledují tuto stránku anebo osobu"
+
+#: ../bws-linkedin.php:367
+msgid "Company/Showcase Page ID"
+msgstr "ID společnosti / Showcase Page"
+
+#: ../bws-linkedin.php:369
+msgid "Enter the Company/Showcase Page ID"
+msgstr "Vložte ID společnosti/Showcase Page"
+
+#: ../bws-linkedin.php:373
+#, php-format
+msgid ""
+"You can find the Company/Showcase Page ID like this: go to %s. If you have "
+"not yet signed in - click on the button 'Sign in with LinkedIn'. Enter your "
+"Company/Showcase Page Name in the appropriate field and further click the "
+"button 'Get Code'. When field appears, find %s. Number in quotes is your %s "
+"to be copied"
+msgstr ""
+"ID společnosti/Showcase Page můžete najít takto: přejděte na %s. Pokud jste "
+"se ještě nepřihlásili - klikněte na tlačítko 'Sign in with LinkedIn'. Do "
+"odpovídajícího pole vyplňte jméno vaší společnosti/Showcase Page a dále "
+"klikněte na tlačítko 'Get Code'. Objeví se další pole %s, číslo v "
+"uvozovkách- je vaše %s ke zkopírování"
+
+#: ../bws-linkedin.php:385
+msgid "Save Changes"
+msgstr "Uložit změny"
+
+#: ../bws-linkedin.php:404
+msgid ""
+"Please choose the necessary post types (or single pages) where LinkedIn "
+"buttons will be displayed:"
+msgstr ""
+"Vyberte požadované typy příspěvků (nebo konkrétní stránky), kde se budou "
+"tlačítka LinkedIn zobrazovat:"
+
+#: ../bws-linkedin.php:411
+msgid "Show URL for pages"
+msgstr "Zobrazovat URL pro stránky"
+
+#: ../bws-linkedin.php:417
+msgid "Example of the site's pages tree"
+msgstr "Příklad stromu stránek"
+
+#: ../bws-linkedin.php:417
+msgid "Example of site pages' tree"
+msgstr "Příklad stromu stránek webu \""
+
+#: ../bws-linkedin.php:422
+msgid "If you upgrade to Pro version all your settings will be saved."
+msgstr "Pokud upgradujete na verzi Pro všechna vaše nastavení budou zachována."
+
+#: ../bws-linkedin.php:429
+msgid "Unlock premium options by upgrading to Pro version"
+msgstr "Odemkněte prémiové možnosti upgradem na Pro verzi"
+
+#: ../bws-linkedin.php:431
+msgid "Learn More"
+msgstr "Dozvědět se více"
+
+#: ../bws-linkedin.php:579
+msgid "LinkedIn Share Button"
+msgstr "Tlačítko LinkedIn \"Sdílet'\""
+
+#: ../bws-linkedin.php:584
+msgid "LinkedIn Follow Button"
+msgstr "Tlačítko LinkedIn \"Sledovat\""
+
+#: ../bws-linkedin.php:618 ../bws-linkedin.php:697
+msgid "LinkedIn Widgets"
+msgstr "LinkedIn Widgety"
+
+#: ../bws-linkedin.php:618
+msgid "Choose one of 5 LinkedIn widgets"
+msgstr "Vyberte jeden z 5. LinkedIn Widgetů"
+
+#: ../bws-linkedin.php:699
+msgid "Member Profile Widget"
+msgstr "Widget osobního profilu"
+
+#: ../bws-linkedin.php:700
+msgid "Company Profile Widget"
+msgstr "Widget firemního profilu"
+
+#: ../bws-linkedin.php:701
+msgid "Company Insider Widget"
+msgstr "Widget firemního Insideru"
+
+#: ../bws-linkedin.php:702
+msgid "Jobs Your May Be Interested In Widget"
+msgstr "Widget \"Volná místa, která by Vás mohla zajímat\""
+
+#: ../bws-linkedin.php:703
+msgid "Alumni Tool Widget"
+msgstr "Widget \"nástroj absolventi\""
+
+#: ../bws-linkedin.php:707
+msgid "Title"
+msgstr "Název"
+
+#: ../bws-linkedin.php:711
+msgid "Public Profile URL"
+msgstr "URL veřejného profilu"
+
+#: ../bws-linkedin.php:712
+msgid "Enter the Public Profile URL"
+msgstr "Vložte URL adresu veřejného profilu"
+
+#: ../bws-linkedin.php:715 ../bws-linkedin.php:752
+msgid "Display Mode"
+msgstr "Režim zobrazení"
+
+#: ../bws-linkedin.php:717
+msgid "Your Jobs"
+msgstr "Vaše pozice"
+
+#: ../bws-linkedin.php:718
+msgid "All Jobs"
+msgstr "Všechny pozice"
+
+#: ../bws-linkedin.php:722
+msgid "Company ID"
+msgstr "ID společnosti"
+
+#: ../bws-linkedin.php:726 ../bws-linkedin.php:734 ../bws-linkedin.php:742
+#, php-format
+msgid ""
+"You can find the Company ID like this: go to %s . If you have not yet signed "
+"in - click on the button 'Sign in with LinkedIn'. Enter your Company Name in "
+"the appropriate field and further click the button 'Get Code'. When field "
+"appears, find %s. Number in quotes is your %s to be copied"
+msgstr ""
+"ID společnosti můžete najít takto: přejděte na %s. Pokud jste se ještě "
+"nepřihlásili - klikněte na tlačítko 'Sign in with LinkedIn'. Do "
+"odpovídajícího pole vyplňte jméno vaší společnosti a dále klikněte na "
+"tlačítko 'Get Code'. Objeví se další pole %s, číslo v uvozovkách- je vaše %s "
+"ke zkopírování"
+
+#: ../bws-linkedin.php:749
+msgid "Enter the Company ID"
+msgstr "Vložte ID společnosti"
+
+#: ../bws-linkedin.php:754
+msgid "Inline"
+msgstr "V řádku"
+
+#: ../bws-linkedin.php:755
+msgid "Icon"
+msgstr "Ikona"
+
+#: ../bws-linkedin.php:759
+msgid "Show Connections"
+msgstr "Zobrazit spojení"
+
+#: ../bws-linkedin.php:761
+msgid "Show"
+msgstr "Zobrazit"
+
+#: ../bws-linkedin.php:762
+msgid "Hide"
+msgstr "Skrýt"
+
+#: ../bws-linkedin.php:766
+msgid "Behavior"
+msgstr "Režim zobrazení"
+
+#: ../bws-linkedin.php:768
+msgid "On Hover"
+msgstr "Při přejetí myší"
+
+#: ../bws-linkedin.php:769
+msgid "On Click"
+msgstr "Při kliknutí"
+
+#: ../bws-linkedin.php:773
+msgid "School ID"
+msgstr "ID školy"
+
+#: ../bws-linkedin.php:777
+#, php-format
+msgid ""
+"You can find the School ID like this: go to %s . If you have not yet signed "
+"in - click on the button 'Sign in with LinkedIn'. Enter your School Name in "
+"the appropriate field and further click the button 'Get Code'. When field "
+"appears, find %s. Number in quotes is your %s to be copied"
+msgstr ""
+"ID školy můžete najít takto: přejděte na %s. Pokud jste se ještě "
+"nepřihlásili - klikněte na tlačítko 'Sign in with LinkedIn'. Do "
+"odpovídajícího pole vyplňte jméno vaší školy a dále klikněte na tlačítko "
+"'Get Code'. Objeví se další pole %s, kde najdete číslo v uvozovkách- to je "
+"váš kód %s ke zkopírování"
+
+#: ../bws-linkedin.php:784
+msgid "Enter the School ID"
+msgstr "Vložte ID školy"
+
+#: ../bws-linkedin.php:848
+msgid "FAQ"
+msgstr "Často kladené otázky (FAQ)"
+
+#: ../bws-linkedin.php:849
+msgid "Support"
+msgstr "Podpora"

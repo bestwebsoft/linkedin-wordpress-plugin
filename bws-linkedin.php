@@ -1,17 +1,17 @@
 <?php
 /*##
 Plugin Name: LinkedIn by BestWebSoft
-Plugin URI: http://bestwebsoft.com/products/wordpress/plugins/linkedin/
+Plugin URI: https://bestwebsoft.com/products/wordpress/plugins/linkedin/
 Description: Add LinkedIn Share and Follow buttons to WordPress posts, pages and widgets. 5 plugins included – profile, insider, etc.
 Author: BestWebSoft
-Text-domain: bws-linkedin
+Text Domain: bws-linkedin
 Domain Path: /languages
-Version: 1.0.4
-Author URI: http://bestwebsoft.com
+Version: 1.0.5
+Author URI: https://bestwebsoft.com
 License: GPLv3 or later
 */
 
-/*	@ Copyright 2016  BestWebSoft  ( http://support.bestwebsoft.com )
+/*	@ Copyright 2017  BestWebSoft  ( https://support.bestwebsoft.com )
 
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License, version 2, as
@@ -211,16 +211,15 @@ if ( ! function_exists( 'lnkdn_settings_page' ) ) {
 				} else { /* check action ##*/ ?>
 					<div class="lnkdn_settings_block">
 						<br />
-						<div><?php $icon_shortcode = ( 'social-buttons.php' == $_GET['page'] ) ? plugins_url( 'social-buttons-pack/bws_menu/images/shortcode-icon.png' ) : plugins_url( 'bws_menu/images/shortcode-icon.png', __FILE__ );
-							printf( 
+						<div><?php printf( 
 								__( "If you'd like to add LinkedIn Buttons to your page or post, please use %s button", 'bws-linkedin' ), 
-								'<span class="bws_code"><img style="vertical-align: bottom;" src="' . $icon_shortcode . '" alt=""/></span>' 
+								'<span class="bws_code"><span class="bwsicons bwsicons-shortcode"></span></span>' 
 							); ?>
 							<div class="bws_help_box bws_help_box_right dashicons dashicons-editor-help">
 								<div class="bws_hidden_help_text" style="min-width:200px;">
 									<?php printf(
 										__( "You can add LinkedIn Buttons to your page or post by clicking on %s button in the content edit block using the Visual mode. If the button isn't displayed, please use the shortcode %s to show LinkedIn Buttons, or use parameter 'display' to show one of them or both, e.g. %s", 'bws-linkedin' ), 
-										'<code><img style="vertical-align: bottom;" src="' . $icon_shortcode . '" alt="" /></code>',
+										'<span class="bws_code"><span class="bwsicons bwsicons-shortcode"></span></span>',
 										'<code>[bws_linkedin]</code>',
 										'<br><code>[bws_linkedin display="share,follow"]</code>'
 									); ?>
@@ -279,7 +278,7 @@ if ( ! function_exists( 'lnkdn_settings_page' ) ) {
 															<input disabled="disabled" type="checkbox" name="lnkdn_use_multilanguage_locale" value="1" />
 															<?php _e( 'Use the current site language', 'bws-linkedin' ); ?> 
 															<span class="bws_info">(<?php _e( 'Using', 'bws-linkedin' ); ?> Multilanguage by BestWebSoft) 
-																<a href="http://bestwebsoft.com/products/wordpress/plugins/multilanguage/?k=293cebedcff853dd94d5b373161d4694&pn=588&v=<?php echo $lnkdn_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>"><?php _e( 'Download', 'bws-linkedin' ); ?> Multilanguage</a>
+																<a href="https://bestwebsoft.com/products/wordpress/plugins/multilanguage/?k=293cebedcff853dd94d5b373161d4694&pn=588&v=<?php echo $lnkdn_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>"><?php _e( 'Download', 'bws-linkedin' ); ?> Multilanguage</a>
 															</span>
 														<?php } ?>
 													</label>
@@ -425,10 +424,7 @@ if ( ! function_exists( 'lnkdn_settings_page' ) ) {
 						</table>	
 					</div>
 					<div class="bws_pro_version_tooltip">
-						<div class="bws_info">
-							<?php _e( 'Unlock premium options by upgrading to Pro version', 'bws-linkedin' ); ?>
-						</div>
-						<a class="bws_button" href="http://bestwebsoft.com/products/wordpress/plugins/linkedin/?k=c64e9f9106c1e15bd3f4ece9473fb80d&amp;pn=588&amp;v=<?php echo $lnkdn_plugin_info["Version"]; ?>&amp;wp_v=<?php echo $wp_version; ?>" target="_blank" title="LinkedIn Pro"><?php _e( 'Learn More', 'bws-linkedin' ); ?></a>
+						<a class="bws_button" href="https://bestwebsoft.com/products/wordpress/plugins/linkedin/?k=c64e9f9106c1e15bd3f4ece9473fb80d&amp;pn=588&amp;v=<?php echo $lnkdn_plugin_info["Version"]; ?>&amp;wp_v=<?php echo $wp_version; ?>" target="_blank" title="LinkedIn Pro"><?php _e( 'Learn More', 'bws-linkedin' ); ?></a>
 						<div class="clear"></div>					
 					</div>
 				</div>
@@ -845,8 +841,8 @@ if ( ! function_exists( 'lnkdn_register_plugin_links' ) ) {
 		if ( $file == $base ) {
 			if ( ! is_network_admin() )
 				$links[] = '<a href="admin.php?page=linkedin.php">' . __( 'Settings', 'bws-linkedin' ) . '</a>';
-			$links[] = '<a href="http://support.bestwebsoft.com/hc/en-us/sections/201989376" target="_blank">' . __( 'FAQ', 'bws-linkedin' ) . '</a>';
-			$links[] = '<a href="http://support.bestwebsoft.com">' . __( 'Support', 'bws-linkedin' ) . '</a>';
+			$links[] = '<a href="https://support.bestwebsoft.com/hc/en-us/sections/201989376" target="_blank">' . __( 'FAQ', 'bws-linkedin' ) . '</a>';
+			$links[] = '<a href="https://support.bestwebsoft.com">' . __( 'Support', 'bws-linkedin' ) . '</a>';
 		}
 		return $links;
 	}

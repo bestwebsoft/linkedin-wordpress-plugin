@@ -1,4 +1,4 @@
-<a href="http://bestwebsoft.com/products/wordpress/plugins/linkedin/" target=_blank>LinkedIn WordPress Plugin</a>
+<a href="https://bestwebsoft.com/products/wordpress/plugins/linkedin/" target=_blank>LinkedIn WordPress Plugin</a>
 ========================
 
 Add LinkedIn Share and Follow buttons to WordPress posts, pages and widgets. 5 plugins included &#8211; profile, insider, etc.
@@ -35,7 +35,7 @@ Add LinkedIn Share and Follow buttons to WordPress posts, pages and widgets. 5 p
 <li>Before and after content</li>
 <li>Custom position (using shortcode)</li>
 </ul></li>
-<li>Compatible with <a href="http://bestwebsoft.com/products/multilanguage/?k=c1d633da9c4483772615a9462bf59f27">Multilanguage</a> (current website language detection)</li>
+<li>Compatible with <a href="https://bestwebsoft.com/products/wordpress/plugins/multilanguage/?k=c1d633da9c4483772615a9462bf59f27">Multilanguage</a> (current website language detection)</li>
 <li>Choose the count mode for Share and Follow buttons:
 
 <ul>
@@ -94,47 +94,43 @@ Customize Member and Company profile widgets:</li>
   <ul>
   <li>Display LinkedIn buttons for certain pages and/or post types     </li>
   <li>Configure all subsites on the network</li>
-  <li>Get answer to your support question within one business day (<a href="http://bestwebsoft.com/support-policy/">Support Policy</a>)</li>
+  <li>Get answer to your support question within one business day (<a href="https://bestwebsoft.com/support-policy/">Support Policy</a>)</li>
   </ul>
   
-  <p><a href="http://bestwebsoft.com/products/wordpress/plugins/linkedin/?k=1c14e9597963e9ac70f82bd688faa03e">Upgrade to Pro Now</a></p>
+  <p><a href="https://bestwebsoft.com/products/wordpress/plugins/linkedin/?k=1c14e9597963e9ac70f82bd688faa03e">Upgrade to Pro Now</a></p>
 </blockquote>
 
-<p>If you have a feature suggestion or idea you'd like to see in the plugin, we'd love to hear about it! <a href="http://support.bestwebsoft.com/hc/en-us/requests/new">Suggest a Feature</a></p>
+<p>If you have a feature suggestion or idea you'd like to see in the plugin, we'd love to hear about it! <a href="https://support.bestwebsoft.com/hc/en-us/requests/new">Suggest a Feature</a></p>
 
 <h4>Documentation &#38; Videos</h4>
 
 <ul>
 <li><a href="https://docs.google.com/document/d/1fc4WbNSuL-eV1gSXWR_BkMEsjy7jyFS5CRG4k7SWEeU/">[Doc] How to Use</a></li>
-<li><a href="https://docs.google.com/document/d/1tLhWGuutUzKxDNOom0eDhwSjxNgDRIeeXpqs0p0Rilc/">[Doc] Installation</a></li>
+<li><a href="https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/">[Doc] Installation</a></li>
+<li><a href="https://docs.google.com/document/d/1EUdBVvnm7IHZ6y0DNyldZypUQKpB8UVPToSc_LdOYQI/">[Doc] Purchase</a></li>
 </ul>
 
 <h4>Help &#38; Support</h4>
 
-<p>Visit our Help Center if you have any questions, our friendly Support Team is happy to help &#8212; <a href="http://support.bestwebsoft.com/">http://support.bestwebsoft.com/</a></p>
+<p>Visit our Help Center if you have any questions, our friendly Support Team is happy to help &#8212; <a href="https://support.bestwebsoft.com/">https://support.bestwebsoft.com/</a></p>
 
 <h4>Translation</h4>
 
 <ul>
+<li>Czech (cs_CZ) (thanks to <a href="mailto:kucerami@gmail.com">Michal Kučera</a> <a href="http://www.n0lim.it" rel="nofollow">http://www.n0lim.it</a>)</li>
 <li>Russian (ru_RU)</li>
 <li>Ukrainian (uk)</li>
 </ul>
 
-<p>Some of these translations are not complete. We are constantly adding new features which should be translated. If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress">the text of PO and MO files</a> to <a href="http://support.bestwebsoft.com/hc/en-us/requests/new">BestWebSoft</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO <a href="http://www.poedit.net/download.php">files Poedit</a>.</p>
+<p>Some of these translations are not complete. We are constantly adding new features which should be translated. If you would like to create your own language pack or update the existing one, you can send <a href="https://codex.wordpress.org/Translating_WordPress">the text of PO and MO files</a> to <a href="https://support.bestwebsoft.com/hc/en-us/requests/new">BestWebSoft</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO <a href="https://www.poedit.net/download.php">files Poedit</a>.</p>
 
 <h4>Recommended Plugins</h4>
 
 <ul>
-<li><a href="http://bestwebsoft.com/products/wordpress/plugins/updater/?k=b0cd02870bd5790030e3424a6180c433">Updater</a> - Automatically check and update WordPress core with all installed plugins to the latest versions. Manual mode, email notifications and backups of all your files and database before updating.</li>
-<li><a href="http://bestwebsoft.com/products/wordpress/plugins/google-plus-one/?k=e8c27c97786f6de13bf10e8b3b18f0a3">Google +1</a> - Add Google +1 Share, Follow, Hangout buttons and profile badge to WordPress posts, pages and widgets.</li>
-<li><a href="http://bestwebsoft.com/products/wordpress/plugins/facebook-like-button/?k=88fbc574b13350527aba6fffd6970fd7">Facebook Button</a> - Add Facebook Like, Share and Profile buttons to WordPress posts, pages and widgets.</li>
-<li><a href="http://bestwebsoft.com/products/multilanguage/?k=c1d633da9c4483772615a9462bf59f27">Multilanguage</a> - Translate WordPress website content to other languages manually. Create multilingual pages, posts, widgets, menus, etc.</li>
-<li><a href="http://bestwebsoft.com/products/wordpress/plugins/pinterest/?k=bbe78d1a7a355da6610cb3d05fbf700e">Pinterest</a> - Add Pinterest Follow, Pin It buttons and profile widgets (Pin, Board, Profile) to WordPress posts, pages and widgets.</li>
-<li><a href="http://bestwebsoft.com/products/wordpress/plugins/twitter/?k=bdb19dd8cedd4526f94c7b52f049a2c3">Twitter</a> - Add Twitter Follow, Tweet, Hashtag, and Mention buttons to WordPress posts, pages and widgets.</li>
+<li><a href="https://bestwebsoft.com/products/wordpress/plugins/updater/?k=b0cd02870bd5790030e3424a6180c433">Updater</a> - Automatically check and update WordPress core with all installed plugins to the latest versions. Manual mode, email notifications and backups of all your files and database before updating.</li>
+<li><a href="https://bestwebsoft.com/products/wordpress/plugins/google-plus-one/?k=e8c27c97786f6de13bf10e8b3b18f0a3">Google +1</a> - Add Google +1 Share, Follow, Hangout buttons and profile badge to WordPress posts, pages and widgets.</li>
+<li><a href="https://bestwebsoft.com/products/wordpress/plugins/facebook-like-button/?k=88fbc574b13350527aba6fffd6970fd7">Facebook Button</a> - Add Facebook Like, Share and Profile buttons to WordPress posts, pages and widgets.</li>
+<li><a href="https://bestwebsoft.com/products/wordpress/plugins/multilanguage/?k=c1d633da9c4483772615a9462bf59f27">Multilanguage</a> - Translate WordPress website content to other languages manually. Create multilingual pages, posts, widgets, menus, etc.</li>
+<li><a href="https://bestwebsoft.com/products/wordpress/plugins/pinterest/?k=bbe78d1a7a355da6610cb3d05fbf700e">Pinterest</a> - Add Pinterest Follow, Pin It buttons and profile widgets (Pin, Board, Profile) to WordPress posts, pages and widgets.</li>
+<li><a href="https://bestwebsoft.com/products/wordpress/plugins/twitter/?k=bdb19dd8cedd4526f94c7b52f049a2c3">Twitter</a> - Add Twitter Follow, Tweet, Hashtag, and Mention buttons to WordPress posts, pages and widgets.</li>
 </ul>
-
-<h4>Donate</h4>
-
-<p>Donations play an important role in supporting open-source projects. We greatly appreciate any donation you can make to help us continue further development of free products.</p>
-
-<p><a href="http://bestwebsoft.com/donate/">Donate Now</a></p>

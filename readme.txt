@@ -1,10 +1,10 @@
 === LinkedIn by BestWebSoft ===
 Contributors: bestwebsoft
-Donate link: http://bestwebsoft.com/donate/
+Donate link: https://bestwebsoft.com/donate/
 Tags: LinkedIn, linedin, linkedln, likedin, linkedin plugin, share button, follow button, linkedin widget, linkedin widgets, social buttons
 Requires at least: 3.8 
-Tested up to: 4.6.1
-Stable tag: 1.0.4
+Tested up to: 4.7.3
+Stable tag: 1.0.5
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -16,7 +16,7 @@ LinkedIn plugin is a useful social tool which adds Follow and Share buttons to y
 
 Customize the appearance, configure settings, and enable other advanced options to promote your public profile!
 
-http://www.youtube.com/watch?v=O_ramABu8Zk
+https://www.youtube.com/watch?v=O_ramABu8Zk
 
 = Free Features =
 
@@ -32,7 +32,7 @@ http://www.youtube.com/watch?v=O_ramABu8Zk
 	* After content
 	* Before and after content
 	* Custom position (using shortcode)
-* Compatible with [Multilanguage](http://bestwebsoft.com/products/wordpress/plugins/multilanguage/?k=c1d633da9c4483772615a9462bf59f27) (current website language detection)
+* Compatible with [Multilanguage](https://bestwebsoft.com/products/wordpress/plugins/multilanguage/?k=c1d633da9c4483772615a9462bf59f27) (current website language detection)
 * Choose the count mode for Share and Follow buttons:
 	* Vertical
 	* Horizontal
@@ -70,42 +70,38 @@ Customize Member and Company profile widgets:
 >
 > * Display LinkedIn buttons for certain pages and/or post types	 
 > * Configure all subsites on the network
-> * Get answer to your support question within one business day ([Support Policy](http://bestwebsoft.com/support-policy/))
+> * Get answer to your support question within one business day ([Support Policy](https://bestwebsoft.com/support-policy/))
 >
-> [Upgrade to Pro Now](http://bestwebsoft.com/products/wordpress/plugins/linkedin/?k=1c14e9597963e9ac70f82bd688faa03e)
+> [Upgrade to Pro Now](https://bestwebsoft.com/products/wordpress/plugins/linkedin/?k=1c14e9597963e9ac70f82bd688faa03e)
 
-If you have a feature suggestion or idea you'd like to see in the plugin, we'd love to hear about it! [Suggest a Feature](http://support.bestwebsoft.com/hc/en-us/requests/new)
+If you have a feature suggestion or idea you'd like to see in the plugin, we'd love to hear about it! [Suggest a Feature](https://support.bestwebsoft.com/hc/en-us/requests/new)
 
 = Documentation & Videos =
 
 * [[Doc] How to Use](https://docs.google.com/document/d/1fc4WbNSuL-eV1gSXWR_BkMEsjy7jyFS5CRG4k7SWEeU/)
-* [[Doc] Installation](https://docs.google.com/document/d/1tLhWGuutUzKxDNOom0eDhwSjxNgDRIeeXpqs0p0Rilc/)
+* [[Doc] Installation](https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/)
+* [[Doc] Purchase](https://docs.google.com/document/d/1EUdBVvnm7IHZ6y0DNyldZypUQKpB8UVPToSc_LdOYQI/)
 
 = Help & Support =
 
-Visit our Help Center if you have any questions, our friendly Support Team is happy to help — <http://support.bestwebsoft.com/>
+Visit our Help Center if you have any questions, our friendly Support Team is happy to help — <https://support.bestwebsoft.com/>
 
 = Translation =
 
+* Czech (cs_CZ) (thanks to [Michal Kučera](mailto:kucerami@gmail.com) www.n0lim.it)
 * Russian (ru_RU)
 * Ukrainian (uk)
 
-Some of these translations are not complete. We are constantly adding new features which should be translated. If you would like to create your own language pack or update the existing one, you can send [the text of PO and MO files](http://codex.wordpress.org/Translating_WordPress) to [BestWebSoft](http://support.bestwebsoft.com/hc/en-us/requests/new) and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO [files Poedit](http://www.poedit.net/download.php).
+Some of these translations are not complete. We are constantly adding new features which should be translated. If you would like to create your own language pack or update the existing one, you can send [the text of PO and MO files](https://codex.wordpress.org/Translating_WordPress) to [BestWebSoft](https://support.bestwebsoft.com/hc/en-us/requests/new) and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO [files Poedit](https://www.poedit.net/download.php).
 
 = Recommended Plugins =
 
-* [Updater](http://bestwebsoft.com/products/wordpress/plugins/updater/?k=b0cd02870bd5790030e3424a6180c433) - Automatically check and update WordPress core with all installed plugins to the latest versions. Manual mode, email notifications and backups of all your files and database before updating.
-* [Google +1](http://bestwebsoft.com/products/wordpress/plugins/google-plus-one/?k=e8c27c97786f6de13bf10e8b3b18f0a3) - Add Google +1 Share, Follow, Hangout buttons and profile badge to WordPress posts, pages and widgets.
-* [Facebook Button](http://bestwebsoft.com/products/wordpress/plugins/facebook-like-button/?k=88fbc574b13350527aba6fffd6970fd7) - Add Facebook Like, Share and Profile buttons to WordPress posts, pages and widgets.
-* [Multilanguage](http://bestwebsoft.com/products/wordpress/plugins/multilanguage/?k=c1d633da9c4483772615a9462bf59f27) - Translate WordPress website content to other languages manually. Create multilingual pages, posts, widgets, menus, etc.
-* [Pinterest](http://bestwebsoft.com/products/wordpress/plugins/pinterest/?k=bbe78d1a7a355da6610cb3d05fbf700e) - Add Pinterest Follow, Pin It buttons and profile widgets (Pin, Board, Profile) to WordPress posts, pages and widgets.
-* [Twitter](http://bestwebsoft.com/products/wordpress/plugins/twitter/?k=bdb19dd8cedd4526f94c7b52f049a2c3) - Add Twitter Follow, Tweet, Hashtag, and Mention buttons to WordPress posts, pages and widgets.
-
-= Donate =
-
-Donations play an important role in supporting open-source projects. We greatly appreciate any donation you can make to help us continue further development of free products.
-
-[Donate Now](http://bestwebsoft.com/donate/)
+* [Updater](https://bestwebsoft.com/products/wordpress/plugins/updater/?k=b0cd02870bd5790030e3424a6180c433) - Automatically check and update WordPress core with all installed plugins to the latest versions. Manual mode, email notifications and backups of all your files and database before updating.
+* [Google +1](https://bestwebsoft.com/products/wordpress/plugins/google-plus-one/?k=e8c27c97786f6de13bf10e8b3b18f0a3) - Add Google +1 Share, Follow, Hangout buttons and profile badge to WordPress posts, pages and widgets.
+* [Facebook Button](https://bestwebsoft.com/products/wordpress/plugins/facebook-like-button/?k=88fbc574b13350527aba6fffd6970fd7) - Add Facebook Like, Share and Profile buttons to WordPress posts, pages and widgets.
+* [Multilanguage](https://bestwebsoft.com/products/wordpress/plugins/multilanguage/?k=c1d633da9c4483772615a9462bf59f27) - Translate WordPress website content to other languages manually. Create multilingual pages, posts, widgets, menus, etc.
+* [Pinterest](https://bestwebsoft.com/products/wordpress/plugins/pinterest/?k=bbe78d1a7a355da6610cb3d05fbf700e) - Add Pinterest Follow, Pin It buttons and profile widgets (Pin, Board, Profile) to WordPress posts, pages and widgets.
+* [Twitter](https://bestwebsoft.com/products/wordpress/plugins/twitter/?k=bdb19dd8cedd4526f94c7b52f049a2c3) - Add Twitter Follow, Tweet, Hashtag, and Mention buttons to WordPress posts, pages and widgets.
 
 == Installation == 
 
@@ -133,12 +129,12 @@ URL, which you add, should be public. It can be configured via "public profile s
 
 = I have some problems with the plugin's work. What Information should I provide to receive proper support? =
 
-Please make sure that the problem hasn't been discussed yet on our forum (<http://support.bestwebsoft.com>). If no, please provide the following data along with your problem's description:
+Please make sure that the problem hasn't been discussed yet on our forum (<https://support.bestwebsoft.com>). If no, please provide the following data along with your problem's description:
 
-1. the link to the page where the problem occurs
-2. the name of the plugin and its version. If you are using a pro version - your order number.
-3. the version of your WordPress installation
-4. copy and paste into the message your system status report. Please read more here: [Instruction on System Status](https://docs.google.com/document/d/1Wi2X8RdRGXk9kMszQy1xItJrpN0ncXgioH935MaBKtc/edit)
+- The link to the page where the problem occurs
+- The name of the plugin and its version. If you are using a pro version - your order number.
+- The version of your WordPress installation
+- Copy and paste into the message your system status report. Please read more here: [Instruction on System Status](https://docs.google.com/document/d/1Wi2X8RdRGXk9kMszQy1xItJrpN0ncXgioH935MaBKtc/)ase read more here: [Instruction on System Status](https://docs.google.com/document/d/1Wi2X8RdRGXk9kMszQy1xItJrpN0ncXgioH935MaBKtc/edit)
 
 == Screenshots ==
 
@@ -150,6 +146,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<http:
 6. Adding LinkedIn Widget in the sidebar.
 
 == Changelog ==
+
+= V1.0.5 - 17.04.2017 =
+* Bugfix : Multiple Cross-Site Scripting (XSS) vulnerability was fixed.
+* NEW : Czech language file is added.
 
 = V1.0.4 - 21.11.2016 =
 * Update : Compatibility with Pagination plugin was added.
@@ -170,6 +170,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<http:
 * NEW : Css-style was added.
 
 == Upgrade Notice ==
+
+= V1.0.5 =
+* Bugs fixed.
 
 = V1.0.4 =
 * Functionality improved.
