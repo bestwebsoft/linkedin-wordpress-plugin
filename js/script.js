@@ -1,21 +1,32 @@
 (function( $ ) {
 	$( document ).ready(function() {
 		/* Show/Hide options in plugin settings*/
-		$( 'input[name="lnkdn_share"]' ).change(function() {
-			if ( $( this ).is( ":checked" ) ) {
-				$( '.lnkdn-share-options' ).show();
-			} else {
-				$( '.lnkdn-share-options' ).hide();
-			}
-		});
 
-		$( 'input[name="lnkdn_follow"]' ).change(function() {
-			if ( $( this ).is( ":checked" ) ) {
-				$( '.lnkdn-follow-options' ).show();
+		function lnkdn_share() {
+			if ( $( 'input[name="lnkdn_share"]' ).is( ':checked' ) ) {
+				$( '.lnkdn_share_enabled' ).show();
 			} else {
-				$( '.lnkdn-follow-options' ).hide();
+				$( '.lnkdn_share_enabled' ).hide();
 			}
-		});
+		}
+
+		function lnkdn_follow() {
+			if ( $( 'input[name="lnkdn_follow"]' ).is( ':checked' ) ) {
+				$( '.lnkdn_follow_enabled' ).show();
+			} else {
+				$( '.lnkdn_follow_enabled' ).hide();
+			}
+		}
+
+		lnkdn_share();
+		$( 'input[name="lnkdn_share"]' ).change( function() {
+			lnkdn_share();
+		} );
+
+		lnkdn_follow();
+		$( 'input[name="lnkdn_follow"]' ).change( function() {
+			lnkdn_follow();
+		} );
 
 		/* Show/Hide options in admin-page for widgets */
 		$( 'div[id*="lnkdn_main"] p' ).each(function(){

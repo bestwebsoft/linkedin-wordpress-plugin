@@ -1,25 +1,175 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bws-linkedin\n"
-"POT-Creation-Date: 2016-11-21 16:55+0300\n"
-"PO-Revision-Date: 2016-11-21 16:56+0300\n"
+"POT-Creation-Date: 2017-05-26 16:39+0300\n"
+"PO-Revision-Date: 2017-05-26 17:13+0300\n"
 "Last-Translator: \n"
 "Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.7.1\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../bws-linkedin.php:34 ../bws-linkedin.php:188
+#: ../bws-linkedin.php:35 ../bws-linkedin.php:36
+#: ../includes/class-lnkdn-settings.php:111
 msgid "LinkedIn Settings"
 msgstr "Настройки LinkedIn"
 
-#: ../bws-linkedin.php:162
+#: ../bws-linkedin.php:36 ../bws-linkedin.php:179 ../bws-linkedin.php:551
+#: ../bws-linkedin.php:564 ../includes/class-lnkdn-settings.php:23
+msgid "Settings"
+msgstr "Настройки"
+
+#: ../bws-linkedin.php:42
+msgid "Upgrade to Pro"
+msgstr "Обновиться до Pro"
+
+#: ../bws-linkedin.php:330
+msgid "LinkedIn Share Button"
+msgstr "Кнопка LinkedIn \"Поделиться\""
+
+#: ../bws-linkedin.php:335
+msgid "LinkedIn Follow Button"
+msgstr "Кнопка LinkedIn \"Отслеживать\""
+
+#: ../bws-linkedin.php:369 ../bws-linkedin.php:447
+msgid "LinkedIn Widgets"
+msgstr "Виджеты LinkedIn"
+
+#: ../bws-linkedin.php:369
+msgid "Choose one of 5 LinkedIn widgets"
+msgstr "Выберите один из 5 виджетов LinkedIn"
+
+#: ../bws-linkedin.php:449
+msgid "Member Profile Widget"
+msgstr "Виджет Персонального Профиля"
+
+#: ../bws-linkedin.php:450
+msgid "Company Profile Widget"
+msgstr "Виджет Профиля Компании"
+
+#: ../bws-linkedin.php:451
+msgid "Company Insider Widget"
+msgstr "Виджет Инсайдера Компании"
+
+#: ../bws-linkedin.php:452
+msgid "Jobs Your May Be Interested In Widget"
+msgstr "Виджет \"Вакансии, которые могут Вас заинтересовать\""
+
+#: ../bws-linkedin.php:453
+msgid "Alumni Tool Widget"
+msgstr "Виджет \"Инструмент Выпускника\""
+
+#: ../bws-linkedin.php:457
+msgid "Title"
+msgstr "Заголовок"
+
+#: ../bws-linkedin.php:461
+msgid "Public Profile URL"
+msgstr "URL общедоступного профиля"
+
+#: ../bws-linkedin.php:462
+msgid "Enter the Public Profile URL"
+msgstr "Введите URL общедоступного профиля"
+
+#: ../bws-linkedin.php:465 ../bws-linkedin.php:476
+msgid "Display Mode"
+msgstr "Режим отображения"
+
+#: ../bws-linkedin.php:467
+msgid "Your Jobs"
+msgstr "Ваши вакансии"
+
+#: ../bws-linkedin.php:468
+msgid "All Jobs"
+msgstr "Все вакансии"
+
+#: ../bws-linkedin.php:472
+msgid "Company ID"
+msgstr "ID Компании"
+
+#: ../bws-linkedin.php:473
+msgid "Enter the Company ID"
+msgstr "Введите ID Компании"
+
+#: ../bws-linkedin.php:478
+msgid "Inline"
+msgstr "Полностью"
+
+#: ../bws-linkedin.php:479
+msgid "Icon"
+msgstr "Иконка"
+
+#: ../bws-linkedin.php:483
+msgid "Show Connections"
+msgstr "Отображение связей"
+
+#: ../bws-linkedin.php:485
+msgid "Show"
+msgstr "Показывать"
+
+#: ../bws-linkedin.php:486
+msgid "Hide"
+msgstr "Скрыть"
+
+#: ../bws-linkedin.php:490
+msgid "Behavior"
+msgstr "Режим"
+
+#: ../bws-linkedin.php:492
+msgid "On Hover"
+msgstr "При наведении"
+
+#: ../bws-linkedin.php:493
+msgid "On Click"
+msgstr "При клике"
+
+#: ../bws-linkedin.php:497
+msgid "School ID"
+msgstr "ID учебного заведения"
+
+#: ../bws-linkedin.php:498
+msgid "Enter the School ID"
+msgstr "Введите ID учебного заведения"
+
+#: ../bws-linkedin.php:501
+msgid "Can't find your ID?"
+msgstr "Не можете найти ID?"
+
+#: ../bws-linkedin.php:501 ../includes/class-lnkdn-settings.php:256
+msgid "Read the instruction"
+msgstr "Пожалуйста, ознакомьтесь с инструкцией"
+
+#: ../bws-linkedin.php:565
+msgid "FAQ"
+msgstr "FAQ"
+
+#: ../bws-linkedin.php:566
+msgid "Support"
+msgstr "Поддержка"
+
+#: ../includes/class-lnkdn-settings.php:25
+msgid "Display"
+msgstr "Отображать"
+
+#: ../includes/class-lnkdn-settings.php:27
+msgid "Misc"
+msgstr "Разное"
+
+#: ../includes/class-lnkdn-settings.php:28
+msgid "Custom Code"
+msgstr "Пользовательский код"
+
+#: ../includes/class-lnkdn-settings.php:30
+msgid "License Key"
+msgstr "Лицензионный ключ"
+
+#: ../includes/class-lnkdn-settings.php:90
 msgid ""
 "Enter the Company/Showcase Page ID for \"Follow\" button. Settings are not "
 "saved."
@@ -27,201 +177,156 @@ msgstr ""
 "Введите ID Компании/Демонстрационной страницы для кнопки  \"Отслеживать\". "
 "Настройки не сохранены."
 
-#: ../bws-linkedin.php:167
+#: ../includes/class-lnkdn-settings.php:95
 msgid "Settings saved"
 msgstr "Настройки сохранены"
 
-#: ../bws-linkedin.php:175
-msgid "All plugin settings were restored"
-msgstr "Все настройки плагина восстановлены"
+#: ../includes/class-lnkdn-settings.php:114
+msgid "General"
+msgstr "Общее"
 
-#: ../bws-linkedin.php:190
-msgid "How to Use Step-by-step Instruction"
-msgstr "Инструкция по использованию"
+#: ../includes/class-lnkdn-settings.php:117
+msgid "Buttons"
+msgstr "Кнопки"
 
-#: ../bws-linkedin.php:193 ../bws-linkedin.php:834 ../bws-linkedin.php:847
-msgid "Settings"
-msgstr "Настройки"
-
-#: ../bws-linkedin.php:195
-msgid "Extra settings"
-msgstr "Дополнительные настройки"
-
-#: ../bws-linkedin.php:197
-msgid "Custom code"
-msgstr "Пользовательский код"
-
-#: ../bws-linkedin.php:199
-msgid "Go PRO"
-msgstr "Перейти на PRO версию"
-
-#: ../bws-linkedin.php:203 ../bws-linkedin.php:695
-msgid "Please, enable JavaScript in Your browser."
-msgstr "Пожалуйста, включите поддержку JavaScript в вашем браузере."
-
-#: ../bws-linkedin.php:216
-#, php-format
-msgid ""
-"If you'd like to add LinkedIn Buttons to your page or post, please use %s "
-"button"
-msgstr ""
-"Если вы хотите добавить кнопки LinkedIn на вашу страницу или запись, то "
-"используйте кнопку %s"
-
-#: ../bws-linkedin.php:222
-#, php-format
-msgid ""
-"You can add LinkedIn Buttons to your page or post by clicking on %s button "
-"in the content edit block using the Visual mode. If the button isn't "
-"displayed, please use the shortcode %s to show LinkedIn Buttons, or use "
-"parameter 'display' to show one of them or both, e.g. %s"
-msgstr ""
-"Вы можете добавить кнопки LinkedIn на вашу страницу или запись, нажав на "
-"кнопку %s в блоке редактирования контента в режиме \"Визуально\". Если "
-"кнопка не отображается, пожалуйста, используйте шорткод  %s для отображения "
-"кнопок LinkedIn или используйте параметр 'display' для отображения одной из "
-"них или обоих, например %s"
-
-#: ../bws-linkedin.php:235
-msgid "Display LinkedIn Buttons"
-msgstr "Показывать кнопки LinkedIn"
-
-#: ../bws-linkedin.php:240
+#: ../includes/class-lnkdn-settings.php:121
 msgid "Share"
 msgstr "Поделиться"
 
-#: ../bws-linkedin.php:245
+#: ../includes/class-lnkdn-settings.php:125
 msgid "Follow"
 msgstr "Отслеживать"
 
-#: ../bws-linkedin.php:252
-msgid "Language"
-msgstr "Язык"
+#: ../includes/class-lnkdn-settings.php:131
+msgid "Display on"
+msgstr "Отображать на"
 
-#: ../bws-linkedin.php:264
-msgid "Select the language to display information on the button"
-msgstr "Выберите язык отображения информации на кнопке"
+#: ../includes/class-lnkdn-settings.php:136
+msgid "Home page"
+msgstr "Домашняя страница"
 
-#: ../bws-linkedin.php:270 ../bws-linkedin.php:273 ../bws-linkedin.php:280
-msgid "Use the current site language"
-msgstr "Использовать текущий язык сайта"
+#: ../includes/class-lnkdn-settings.php:141
+msgid "Posts"
+msgstr "Записи"
 
-#: ../bws-linkedin.php:270 ../bws-linkedin.php:274 ../bws-linkedin.php:281
-msgid "Using"
-msgstr "Используя"
+#: ../includes/class-lnkdn-settings.php:146
+msgid "Pages"
+msgstr "Страницы"
 
-#: ../bws-linkedin.php:275
-msgid "Activate"
-msgstr "Активировать"
-
-#: ../bws-linkedin.php:282
-msgid "Download"
-msgstr "Загрузить"
-
-#: ../bws-linkedin.php:290
+#: ../includes/class-lnkdn-settings.php:153
 msgid "Buttons Position"
 msgstr "Положение кнопок"
 
-#: ../bws-linkedin.php:293
-msgid "Before"
-msgstr "Перед"
+#: ../includes/class-lnkdn-settings.php:158
+msgid "Before content"
+msgstr "Перед содержимым"
 
-#: ../bws-linkedin.php:294
-msgid "After"
-msgstr "После"
+#: ../includes/class-lnkdn-settings.php:163
+msgid "After content"
+msgstr "После содержимого"
 
-#: ../bws-linkedin.php:295
-msgid "Before And After"
-msgstr "Перед и после"
+#: ../includes/class-lnkdn-settings.php:166
+msgid "Unselect all to use a shortcode only."
+msgstr "Отключите всё чтобы использовать только шорткод."
 
-#: ../bws-linkedin.php:296
-msgid "Only Shortcode"
-msgstr "Только Шорткод"
+#: ../includes/class-lnkdn-settings.php:170
+msgid "Language"
+msgstr "Язык"
 
-#: ../bws-linkedin.php:298
-msgid "Please select location for the buttons on the page"
-msgstr "Пожалуйста выберите расположение кнопок на странице"
+#: ../includes/class-lnkdn-settings.php:181
+msgid "Select the default language for LinkedIn button(-s)."
+msgstr "Выберите язык отображения по умолчанию для кнопок LinkedIn."
 
-#: ../bws-linkedin.php:302
-msgid "Show buttons"
-msgstr "Показывать кнопки"
+#: ../includes/class-lnkdn-settings.php:191
+#: ../includes/class-lnkdn-settings.php:195
+#: ../includes/class-lnkdn-settings.php:199
+msgid ""
+"Enable to switch language automatically on multilingual website using "
+"Multilanguage plugin."
+msgstr ""
+"Включить, чтобы переключить язык автоматически на многоязычном сайте, "
+"используя Multilanguage плагин."
 
-#: ../bws-linkedin.php:307
-msgid "Show in posts"
-msgstr "В записях"
+#: ../includes/class-lnkdn-settings.php:195
+#, php-format
+msgid "Activate %s"
+msgstr "Активировать %s"
 
-#: ../bws-linkedin.php:313
-msgid "Show in pages"
-msgstr "На страницах"
+#: ../includes/class-lnkdn-settings.php:199
+msgid "Learn More"
+msgstr "Подробнее"
 
-#: ../bws-linkedin.php:319
-msgid "Show on the homepage"
-msgstr "На домашней странице"
+#: ../includes/class-lnkdn-settings.php:204
+msgid "Share Button"
+msgstr "Кнопка \"Поделиться\""
 
-#: ../bws-linkedin.php:323
-msgid "Please select the page on which you want to see the buttons"
-msgstr "Пожалуйста, выберите страницу, на которой Вы хотите показывать кнопки"
-
-#: ../bws-linkedin.php:334
-msgid "Settings for Share Button"
-msgstr "Настройки для кнопки \"Поделиться\""
-
-#: ../bws-linkedin.php:337 ../bws-linkedin.php:354
+#: ../includes/class-lnkdn-settings.php:207
+#: ../includes/class-lnkdn-settings.php:235
 msgid "Count Mode"
 msgstr "Отображение счетчика"
 
-#: ../bws-linkedin.php:340 ../bws-linkedin.php:357
+#: ../includes/class-lnkdn-settings.php:211
+#: ../includes/class-lnkdn-settings.php:239
 msgid "Vertical"
 msgstr "Вертикально"
 
-#: ../bws-linkedin.php:341 ../bws-linkedin.php:358
+#: ../includes/class-lnkdn-settings.php:215
+#: ../includes/class-lnkdn-settings.php:243
 msgid "Horizontal"
 msgstr "Горизонтально"
 
-#: ../bws-linkedin.php:342 ../bws-linkedin.php:359
-msgid "No-count"
-msgstr "Без счетчика"
+#: ../includes/class-lnkdn-settings.php:219
+#: ../includes/class-lnkdn-settings.php:247
+msgid "No count"
+msgstr "Нет"
 
-#: ../bws-linkedin.php:345
-msgid "Display the number of users who have shared the page"
-msgstr "Показывать количество человек поделившихся страницей"
+#: ../includes/class-lnkdn-settings.php:225
+msgid "URL"
+msgstr "URL"
 
-#: ../bws-linkedin.php:351
-msgid "Settings for Follow Button"
-msgstr "Настройки для кнопки \"Отслеживать\""
-
-#: ../bws-linkedin.php:362
-msgid "Display the number of users who are following this page or person"
-msgstr "Показывать количество человек, подписавшихся на страницу или профиль"
-
-#: ../bws-linkedin.php:367
-msgid "Company/Showcase Page ID"
-msgstr "ID Компании/Демонстрационной страницы"
-
-#: ../bws-linkedin.php:369
-msgid "Enter the Company/Showcase Page ID"
-msgstr "Введите ID Компании/Демонстрационной страницы"
-
-#: ../bws-linkedin.php:373
-#, php-format
-msgid ""
-"You can find the Company/Showcase Page ID like this: go to %s. If you have "
-"not yet signed in - click on the button 'Sign in with LinkedIn'. Enter your "
-"Company/Showcase Page Name in the appropriate field and further click the "
-"button 'Get Code'. When field appears, find %s. Number in quotes is your %s "
-"to be copied"
+#: ../includes/class-lnkdn-settings.php:228
+msgid "URL to be shared. Leave blank to use a current page URL."
 msgstr ""
-"Вы можете найти ID Компании/Демонстрационной страницы таким образом: зайдите "
-"на %s. Если Вы ещё не вошли в LinkedIn - нажмите кнопку 'Sign in with "
-"LinkedIn'. Введите название Вашей Компании/Демонстрационной страницы в "
-"соответствующее поле и далее нажмите кнопку 'Get Code'. В появившемся поле "
-"найдите %s, номер в кавычках - это и есть ваш %s для копирования"
+"Укажите нужную ссылку или оставьте это поле пустым, чтобы использовать "
+"ссылку на текущую страницу."
 
-#: ../bws-linkedin.php:385
-msgid "Save Changes"
-msgstr "Настройки сохранены"
+#: ../includes/class-lnkdn-settings.php:232
+msgid "Follow Button"
+msgstr "Кнопка \"Отслеживать\""
 
-#: ../bws-linkedin.php:404
+#: ../includes/class-lnkdn-settings.php:253
+msgid "Company or Showcase Page ID"
+msgstr "ID компании или страницы бренда"
+
+#: ../includes/class-lnkdn-settings.php:256
+msgid "Can't find your page ID?"
+msgstr "Не можете найти ID компании?"
+
+#: ../includes/class-lnkdn-settings.php:279
+msgid "LinkedIn Buttons Shortcode"
+msgstr "Шорткод LinkedIn кнопок"
+
+#: ../includes/class-lnkdn-settings.php:282
+msgid ""
+"Add LinkedIn button(-s) to your posts, pages, custom post types or widgets "
+"by using the following shortcode:"
+msgstr ""
+"Добавить кнопки  LinkedIn на ваши записи, страницы, пользовательские типы "
+"записей или виджеты с помощью данного шорткода: "
+
+#: ../includes/class-lnkdn-settings.php:300
+msgid "Close"
+msgstr "Закрыть"
+
+#: ../includes/class-lnkdn-settings.php:301
+msgid "LinkedIn Buttons Preview"
+msgstr "Предварительный просмотр кнопок LinkedIn"
+
+#: ../includes/class-lnkdn-settings.php:315
+msgid "Display Settings"
+msgstr "Настройка отображения"
+
+#: ../includes/class-lnkdn-settings.php:324
 msgid ""
 "Please choose the necessary post types (or single pages) where LinkedIn "
 "buttons will be displayed:"
@@ -229,173 +334,184 @@ msgstr ""
 "Пожалуйста, выберите те типы постов (или отдельные страницы), где будут "
 "отображаться LinkedIn кнопки:"
 
-#: ../bws-linkedin.php:411
+#: ../includes/class-lnkdn-settings.php:331
 msgid "Show URL for pages"
 msgstr "Отображать URL для страниц"
 
-#: ../bws-linkedin.php:417
+#: ../includes/class-lnkdn-settings.php:337
 msgid "Example of the site's pages tree"
 msgstr "Пример дерева страниц сайта"
 
-#: ../bws-linkedin.php:417
+#: ../includes/class-lnkdn-settings.php:337
 msgid "Example of site pages' tree"
 msgstr "Пример дерева страниц сайта"
 
-#: ../bws-linkedin.php:422
-msgid "If you upgrade to Pro version all your settings will be saved."
-msgstr "При установке Pro версии плагина, все ваши настройки сохраняются."
+#~ msgid "Please, enable JavaScript in Your browser."
+#~ msgstr "Пожалуйста, включите поддержку JavaScript в вашем браузере."
 
-#: ../bws-linkedin.php:429
-msgid "Unlock premium options by upgrading to Pro version"
-msgstr "Активируйте премиум опции обновившись до Pro версии"
+#~ msgid ""
+#~ "You can find the Company ID like this: go to %s . If you have not yet "
+#~ "signed in - click on the button 'Sign in with LinkedIn'. Enter your "
+#~ "Company Name in the appropriate field and further click the button 'Get "
+#~ "Code'. When field appears, find %s. Number in quotes is your %s to be "
+#~ "copied"
+#~ msgstr ""
+#~ "Вы можете найти ID Компании таким образом: зайдите на %s. Если Вы ещё не "
+#~ "вошли - нажмите кнопку 'Sign in with LinkedIn'. Введите название Вашей "
+#~ "Компании в соответствующее поле и далее нажмите кнопку 'Get Code'. В "
+#~ "появившемся поле найдите %s, номер в кавычках - это и есть ваш %s для "
+#~ "копирования"
 
-#: ../bws-linkedin.php:431
-msgid "Learn More"
-msgstr "Подробнее"
+#~ msgid ""
+#~ "You can find the School ID like this: go to %s . If you have not yet "
+#~ "signed in - click on the button 'Sign in with LinkedIn'. Enter your "
+#~ "School Name in the appropriate field and further click the button 'Get "
+#~ "Code'. When field appears, find %s. Number in quotes is your %s to be "
+#~ "copied"
+#~ msgstr ""
+#~ "Вы можете найти ID учебного заведения таким образом: зайдите на %s. Если "
+#~ "Вы ещё не вошли в LinkedIn - нажмите кнопку 'Sign in with LinkedIn'. "
+#~ "Введите название Вашего учебного заведения в соответствующее поле и далее "
+#~ "нажмите кнопку 'Get Code'. В этом поле найдите %s, номер в кавычках - это "
+#~ "и есть ваш %s для копирования"
 
-#: ../bws-linkedin.php:579
-msgid "LinkedIn Share Button"
-msgstr "Кнопка LinkedIn \"Поделиться\""
+#~ msgid "Show on the homepage"
+#~ msgstr "На домашней странице"
 
-#: ../bws-linkedin.php:584
-msgid "LinkedIn Follow Button"
-msgstr "Кнопка LinkedIn \"Отслеживать\""
+#~ msgid "Show in pages"
+#~ msgstr "На страницах"
 
-#: ../bws-linkedin.php:618 ../bws-linkedin.php:697
-msgid "LinkedIn Widgets"
-msgstr "Виджеты LinkedIn"
+#~ msgid "Show in posts"
+#~ msgstr "В записях"
 
-#: ../bws-linkedin.php:618
-msgid "Choose one of 5 LinkedIn widgets"
-msgstr "Выберите один из 5 виджетов LinkedIn"
+#~ msgid "URL to be shared. Leave blank to use a current page url."
+#~ msgstr ""
+#~ "Укажите нужную ссылку или оставьте это поле пустым, чтобы использовать "
+#~ "ссылку на текущую страницу."
 
-#: ../bws-linkedin.php:699
-msgid "Member Profile Widget"
-msgstr "Виджет Персонального Профиля"
+#~ msgid "If you upgrade to Pro version all your settings will be saved."
+#~ msgstr "При установке Pro версии плагина, все ваши настройки сохраняются."
 
-#: ../bws-linkedin.php:700
-msgid "Company Profile Widget"
-msgstr "Виджет Профиля Компании"
+#~ msgid "Read the insctruction"
+#~ msgstr "Пожалуйста, ознакомьтесь с инструкцией"
 
-#: ../bws-linkedin.php:701
-msgid "Company Insider Widget"
-msgstr "Виджет Инсайдера Компании"
+#~ msgid ""
+#~ "You can find the Company/Showcase Page ID like this: go to %s. If you "
+#~ "have not yet signed in - click on the button 'Sign in with LinkedIn'. "
+#~ "Enter your Company/Showcase Page Name in the appropriate field and "
+#~ "further click the button 'Get Code'. When field appears, find %s. Number "
+#~ "in quotes is your %s to be copied"
+#~ msgstr ""
+#~ "Вы можете найти ID Компании/Демонстрационной страницы таким образом: "
+#~ "зайдите на %s. Если Вы ещё не вошли в LinkedIn - нажмите кнопку 'Sign in "
+#~ "with LinkedIn'. Введите название Вашей Компании/Демонстрационной страницы "
+#~ "в соответствующее поле и далее нажмите кнопку 'Get Code'. В появившемся "
+#~ "поле найдите %s, номер в кавычках - это и есть ваш %s для копирования"
 
-#: ../bws-linkedin.php:702
-msgid "Jobs Your May Be Interested In Widget"
-msgstr "Виджет \"Вакансии, которые могут Вас заинтересовать\""
+#~ msgid "Cant find your page ID? Read the insctruction"
+#~ msgstr "Не можете найти ID компании? Пожалуйста, ознакомьтесь с инструкцией"
 
-#: ../bws-linkedin.php:703
-msgid "Alumni Tool Widget"
-msgstr "Виджет \"Инструмент Выпускника\""
+#~ msgid "All plugin settings were restored"
+#~ msgstr "Все настройки плагина восстановлены"
 
-#: ../bws-linkedin.php:707
-msgid "Title"
-msgstr "Заголовок"
+#~ msgid "How to Use Step-by-step Instruction"
+#~ msgstr "Инструкция по использованию"
 
-#: ../bws-linkedin.php:711
-msgid "Public Profile URL"
-msgstr "URL общедоступного профиля"
+#~ msgid "Extra settings"
+#~ msgstr "Дополнительные настройки"
 
-#: ../bws-linkedin.php:712
-msgid "Enter the Public Profile URL"
-msgstr "Введите URL общедоступного профиля"
+#~ msgid "Custom code"
+#~ msgstr "Пользовательский код"
 
-#: ../bws-linkedin.php:715 ../bws-linkedin.php:752
-msgid "Display Mode"
-msgstr "Режим отображения"
+#~ msgid "Go PRO"
+#~ msgstr "Перейти на PRO версию"
 
-#: ../bws-linkedin.php:717
-msgid "Your Jobs"
-msgstr "Ваши вакансии"
+#~ msgid ""
+#~ "If you'd like to add LinkedIn Buttons to your page or post, please use %s "
+#~ "button"
+#~ msgstr ""
+#~ "Если вы хотите добавить кнопки LinkedIn на вашу страницу или запись, то "
+#~ "используйте кнопку %s"
 
-#: ../bws-linkedin.php:718
-msgid "All Jobs"
-msgstr "Все вакансии"
+#~ msgid ""
+#~ "You can add LinkedIn Buttons to your page or post by clicking on %s "
+#~ "button in the content edit block using the Visual mode. If the button "
+#~ "isn't displayed, please use the shortcode %s to show LinkedIn Buttons, or "
+#~ "use parameter 'display' to show one of them or both, e.g. %s"
+#~ msgstr ""
+#~ "Вы можете добавить кнопки LinkedIn на вашу страницу или запись, нажав на "
+#~ "кнопку %s в блоке редактирования контента в режиме \"Визуально\". Если "
+#~ "кнопка не отображается, пожалуйста, используйте шорткод  %s для "
+#~ "отображения кнопок LinkedIn или используйте параметр 'display' для "
+#~ "отображения одной из них или обоих, например %s"
 
-#: ../bws-linkedin.php:722
-msgid "Company ID"
-msgstr "ID Компании"
+#~ msgid "Display LinkedIn Buttons"
+#~ msgstr "Показывать кнопки LinkedIn"
 
-#: ../bws-linkedin.php:726 ../bws-linkedin.php:734 ../bws-linkedin.php:742
-#, php-format
-msgid ""
-"You can find the Company ID like this: go to %s . If you have not yet signed "
-"in - click on the button 'Sign in with LinkedIn'. Enter your Company Name in "
-"the appropriate field and further click the button 'Get Code'. When field "
-"appears, find %s. Number in quotes is your %s to be copied"
-msgstr ""
-"Вы можете найти ID Компании таким образом: зайдите на %s. Если Вы ещё не "
-"вошли - нажмите кнопку 'Sign in with LinkedIn'. Введите название Вашей "
-"Компании в соответствующее поле и далее нажмите кнопку 'Get Code'. В "
-"появившемся поле найдите %s, номер в кавычках - это и есть ваш %s для "
-"копирования"
+#~ msgid "Select the language to display information on the button"
+#~ msgstr "Выберите язык отображения информации на кнопке"
 
-#: ../bws-linkedin.php:749
-msgid "Enter the Company ID"
-msgstr "Введите ID Компании"
+#~ msgid "Use the current site language"
+#~ msgstr "Использовать текущий язык сайта"
 
-#: ../bws-linkedin.php:754
-msgid "Inline"
-msgstr "Полностью"
+#~ msgid "Using"
+#~ msgstr "Используя"
 
-#: ../bws-linkedin.php:755
-msgid "Icon"
-msgstr "Иконка"
+#~ msgid "Activate"
+#~ msgstr "Активировать"
 
-#: ../bws-linkedin.php:759
-msgid "Show Connections"
-msgstr "Отображение связей"
+#~ msgid "Download"
+#~ msgstr "Загрузить"
 
-#: ../bws-linkedin.php:761
-msgid "Show"
-msgstr "Показывать"
+#~ msgid "Before"
+#~ msgstr "Перед"
 
-#: ../bws-linkedin.php:762
-msgid "Hide"
-msgstr "Скрыть"
+#~ msgid "After"
+#~ msgstr "После"
 
-#: ../bws-linkedin.php:766
-msgid "Behavior"
-msgstr "Режим"
+#~ msgid "Before And After"
+#~ msgstr "Перед и после"
 
-#: ../bws-linkedin.php:768
-msgid "On Hover"
-msgstr "При наведении"
+#~ msgid "Only Shortcode"
+#~ msgstr "Только Шорткод"
 
-#: ../bws-linkedin.php:769
-msgid "On Click"
-msgstr "При клике"
+#~ msgid "Please select location for the buttons on the page"
+#~ msgstr "Пожалуйста выберите расположение кнопок на странице"
 
-#: ../bws-linkedin.php:773
-msgid "School ID"
-msgstr "ID учебного заведения"
+#~ msgid "Show buttons"
+#~ msgstr "Показывать кнопки"
 
-#: ../bws-linkedin.php:777
-#, php-format
-msgid ""
-"You can find the School ID like this: go to %s . If you have not yet signed "
-"in - click on the button 'Sign in with LinkedIn'. Enter your School Name in "
-"the appropriate field and further click the button 'Get Code'. When field "
-"appears, find %s. Number in quotes is your %s to be copied"
-msgstr ""
-"Вы можете найти ID учебного заведения таким образом: зайдите на %s. Если Вы "
-"ещё не вошли в LinkedIn - нажмите кнопку 'Sign in with LinkedIn'. Введите "
-"название Вашего учебного заведения в соответствующее поле и далее нажмите "
-"кнопку 'Get Code'. В этом поле найдите %s, номер в кавычках - это и есть ваш "
-"%s для копирования"
+#~ msgid "Please select the page on which you want to see the buttons"
+#~ msgstr ""
+#~ "Пожалуйста, выберите страницу, на которой Вы хотите показывать кнопки"
 
-#: ../bws-linkedin.php:784
-msgid "Enter the School ID"
-msgstr "Введите ID учебного заведения"
+#~ msgid "Settings for Share Button"
+#~ msgstr "Настройки для кнопки \"Поделиться\""
 
-#: ../bws-linkedin.php:848
-msgid "FAQ"
-msgstr "FAQ"
+#~ msgid "No-count"
+#~ msgstr "Без счетчика"
 
-#: ../bws-linkedin.php:849
-msgid "Support"
-msgstr "Поддержка"
+#~ msgid "Display the number of users who have shared the page"
+#~ msgstr "Показывать количество человек поделившихся страницей"
+
+#~ msgid "Settings for Follow Button"
+#~ msgstr "Настройки для кнопки \"Отслеживать\""
+
+#~ msgid "Display the number of users who are following this page or person"
+#~ msgstr ""
+#~ "Показывать количество человек, подписавшихся на страницу или профиль"
+
+#~ msgid "Company/Showcase Page ID"
+#~ msgstr "ID Компании/Демонстрационной страницы"
+
+#~ msgid "Enter the Company/Showcase Page ID"
+#~ msgstr "Введите ID Компании/Демонстрационной страницы"
+
+#~ msgid "Save Changes"
+#~ msgstr "Настройки сохранены"
+
+#~ msgid "Unlock premium options by upgrading to Pro version"
+#~ msgstr "Активируйте премиум опции обновившись до Pro версии"
 
 #~ msgid "Not set"
 #~ msgstr "Не"

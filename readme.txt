@@ -2,9 +2,9 @@
 Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: LinkedIn, linedin, linkedln, likedin, linkedin plugin, share button, follow button, linkedin widget, linkedin widgets, social buttons
-Requires at least: 3.8 
-Tested up to: 4.7.3
-Stable tag: 1.0.5
+Requires at least: 3.9
+Tested up to: 4.8
+Stable tag: 1.0.6
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -12,7 +12,7 @@ Add LinkedIn Share and Follow buttons to WordPress posts, pages and widgets. 5 p
 
 == Description ==
 
-LinkedIn plugin is a useful social tool which adds Follow and Share buttons to your Wordpress website posts, pages or widgets. This is a great way to drop the whole LinkedIn functionality in your website and consumer validation for your brand. 
+LinkedIn plugin is a useful social tool which adds Follow and Share buttons to your Wordpress website posts, pages or widgets. This is a great way to drop the whole LinkedIn functionality in your website and consumer validation for your brand.
 
 Customize the appearance, configure settings, and enable other advanced options to promote your public profile!
 
@@ -21,8 +21,8 @@ https://www.youtube.com/watch?v=O_ramABu8Zk
 = Free Features =
 
 * Add LinkedIn buttons such as:
-	* Share 
-	* Follow 
+	* Share
+	* Follow
 * Automatically display buttons on:
 	* Posts
 	* Pages
@@ -43,7 +43,7 @@ https://www.youtube.com/watch?v=O_ramABu8Zk
 	* Company insider
 	* Jobs You May Be Interested In
 	* Alumni tool
-Customize Member and Company profile widgets:
+* Customize Member and Company profile widgets:
 	* Title
 	* URL/ID
 	* Display mode
@@ -68,7 +68,7 @@ Customize Member and Company profile widgets:
 >
 > All features from Free version included plus:
 >
-> * Display LinkedIn buttons for certain pages and/or post types	 
+> * Display LinkedIn buttons for certain pages and/or post types
 > * Configure all subsites on the network
 > * Get answer to your support question within one business day ([Support Policy](https://bestwebsoft.com/support-policy/))
 >
@@ -103,11 +103,11 @@ Some of these translations are not complete. We are constantly adding new featur
 * [Pinterest](https://bestwebsoft.com/products/wordpress/plugins/pinterest/?k=bbe78d1a7a355da6610cb3d05fbf700e) - Add Pinterest Follow, Pin It buttons and profile widgets (Pin, Board, Profile) to WordPress posts, pages and widgets.
 * [Twitter](https://bestwebsoft.com/products/wordpress/plugins/twitter/?k=bdb19dd8cedd4526f94c7b52f049a2c3) - Add Twitter Follow, Tweet, Hashtag, and Mention buttons to WordPress posts, pages and widgets.
 
-== Installation == 
+== Installation ==
 
 1. Upload the `bws-linkedin` folder to `/wp-content/plugins/` directory.
 2. Activate the plugin using the "Plugins" menu in your WordPress admin panel.
-3. You can adjust the necessary settings using your WordPress admin panel in "BWS Panel" > "LinkedIn".
+3. You can adjust the necessary settings using your WordPress admin panel in "LinkedIn".
 
 == Frequently Asked Questions ==
 
@@ -134,7 +134,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 - The link to the page where the problem occurs
 - The name of the plugin and its version. If you are using a pro version - your order number.
 - The version of your WordPress installation
-- Copy and paste into the message your system status report. Please read more here: [Instruction on System Status](https://docs.google.com/document/d/1Wi2X8RdRGXk9kMszQy1xItJrpN0ncXgioH935MaBKtc/)ase read more here: [Instruction on System Status](https://docs.google.com/document/d/1Wi2X8RdRGXk9kMszQy1xItJrpN0ncXgioH935MaBKtc/edit)
+- Copy and paste into the message your system status report. Please read more here: [Instruction on System Status](https://docs.google.com/document/d/1Wi2X8RdRGXk9kMszQy1xItJrpN0ncXgioH935MaBKtc/)
 
 == Screenshots ==
 
@@ -146,6 +146,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 6. Adding LinkedIn Widget in the sidebar.
 
 == Changelog ==
+
+= V1.0.6 - 12.07.2017 =
+* Update : The plugin settings page has been updated.
+* NEW : Ability to set custom URL for Share button was added.
 
 = V1.0.5 - 17.04.2017 =
 * Bugfix : Multiple Cross-Site Scripting (XSS) vulnerability was fixed.
@@ -165,11 +169,14 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 = V1.0.1 - 26.05.2016 =
 * Update : The filter for widget title has been added.
 
-= V1.0.0 - 10.05.2016 = 
+= V1.0.0 - 10.05.2016 =
 * Bugfix : The code refactoring was performed.
 * NEW : Css-style was added.
 
 == Upgrade Notice ==
+
+= V1.0.6 =
+* Usability improved.
 
 = V1.0.5 =
 * Bugs fixed.

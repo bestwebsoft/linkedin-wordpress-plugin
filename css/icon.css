@@ -1,0 +1,5 @@
+/*LinkedIn*/
+#adminmenu #toplevel_page_linkedin .wp-menu-image:before {
+	content: "\e91b";
+	font-family: 'bwsicons' !important;
+}

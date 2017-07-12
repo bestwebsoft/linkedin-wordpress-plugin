@@ -20,6 +20,13 @@ tr.lnkdn-follow-options input[name="lnkdn_follow_page_name"] {
 .lnkdn_buttons {
 	display: inline-block;
 	margin: 3px 0;
+	vertical-align: bottom;
+}
+.lnkdn-button-certain-theme .lnkdn-follow-button iframe {
+	margin-bottom: 2.5em;
+}
+.lnkdn-follow-button iframe {
+	margin-bottom: 0;
 }
 .lnkdn-share-button,
 .lnkdn-follow-button {
@@ -34,8 +41,8 @@ tr.lnkdn-follow-options input[name="lnkdn_follow_page_name"] {
 	display: inline-flex;
 	vertical-align: middle;
 }
-.lnkdn-button-twenty-twelve-theme .lnkdn-share-button {
-	vertical-align: top;
+.lnkdn-button-twenty-twelve-theme .entry-content .lnkdn-follow-button iframe {
+	margin-bottom: 0;
 }
 div[id*="lnkdn_main"] .lnkdn-hide-option {
 	display: none;
