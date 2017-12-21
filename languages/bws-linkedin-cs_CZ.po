@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bws-linkedin\n"
-"POT-Creation-Date: 2017-06-01 09:31+0300\n"
-"PO-Revision-Date: 2017-06-01 09:31+0300\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2017-10-26 14:54+0300\n"
+"PO-Revision-Date: 2017-10-26 14:54+0300\n"
+"Last-Translator: Mik013\n"
 "Language-Team: Mik013\n"
 "Language: cs_CZ\n"
 "MIME-Version: 1.0\n"
@@ -17,160 +17,160 @@ msgstr ""
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../bws-linkedin.php:35 ../bws-linkedin.php:36
-#: ../includes/class-lnkdn-settings.php:111
+#: ../includes/class-lnkdn-settings.php:112
 msgid "LinkedIn Settings"
 msgstr "Nastavení LinkedIn"
 
-#: ../bws-linkedin.php:36 ../bws-linkedin.php:179 ../bws-linkedin.php:551
-#: ../bws-linkedin.php:564 ../includes/class-lnkdn-settings.php:23
+#: ../bws-linkedin.php:36 ../bws-linkedin.php:195 ../bws-linkedin.php:568
+#: ../bws-linkedin.php:581 ../includes/class-lnkdn-settings.php:24
 msgid "Settings"
 msgstr "Nastavení"
 
 #: ../bws-linkedin.php:42
 msgid "Upgrade to Pro"
-msgstr ""
+msgstr "Aktualizovat na Pro"
 
-#: ../bws-linkedin.php:330
+#: ../bws-linkedin.php:348
 msgid "LinkedIn Share Button"
 msgstr "Tlačítko LinkedIn \"Sdílet'\""
 
-#: ../bws-linkedin.php:335
+#: ../bws-linkedin.php:353
 msgid "LinkedIn Follow Button"
 msgstr "Tlačítko LinkedIn \"Sledovat\""
 
-#: ../bws-linkedin.php:369 ../bws-linkedin.php:447
+#: ../bws-linkedin.php:386 ../bws-linkedin.php:464
 msgid "LinkedIn Widgets"
 msgstr "LinkedIn Widgety"
 
-#: ../bws-linkedin.php:369
+#: ../bws-linkedin.php:386
 msgid "Choose one of 5 LinkedIn widgets"
 msgstr "Vyberte jeden z 5. LinkedIn Widgetů"
 
-#: ../bws-linkedin.php:449
+#: ../bws-linkedin.php:466
 msgid "Member Profile Widget"
 msgstr "Widget osobního profilu"
 
-#: ../bws-linkedin.php:450
+#: ../bws-linkedin.php:467
 msgid "Company Profile Widget"
 msgstr "Widget firemního profilu"
 
-#: ../bws-linkedin.php:451
+#: ../bws-linkedin.php:468
 msgid "Company Insider Widget"
 msgstr "Widget firemního Insideru"
 
-#: ../bws-linkedin.php:452
+#: ../bws-linkedin.php:469
 msgid "Jobs Your May Be Interested In Widget"
 msgstr "Widget \"Volná místa, která by Vás mohla zajímat\""
 
-#: ../bws-linkedin.php:453
+#: ../bws-linkedin.php:470
 msgid "Alumni Tool Widget"
 msgstr "Widget \"nástroj absolventi\""
 
-#: ../bws-linkedin.php:457
+#: ../bws-linkedin.php:474
 msgid "Title"
 msgstr "Název"
 
-#: ../bws-linkedin.php:461
+#: ../bws-linkedin.php:478
 msgid "Public Profile URL"
 msgstr "URL veřejného profilu"
 
-#: ../bws-linkedin.php:462
+#: ../bws-linkedin.php:479
 msgid "Enter the Public Profile URL"
 msgstr "Vložte URL adresu veřejného profilu"
 
-#: ../bws-linkedin.php:465 ../bws-linkedin.php:476
+#: ../bws-linkedin.php:482 ../bws-linkedin.php:493
 msgid "Display Mode"
 msgstr "Režim zobrazení"
 
-#: ../bws-linkedin.php:467
+#: ../bws-linkedin.php:484
 msgid "Your Jobs"
 msgstr "Vaše pozice"
 
-#: ../bws-linkedin.php:468
+#: ../bws-linkedin.php:485
 msgid "All Jobs"
 msgstr "Všechny pozice"
 
-#: ../bws-linkedin.php:472
+#: ../bws-linkedin.php:489
 msgid "Company ID"
 msgstr "ID společnosti"
 
-#: ../bws-linkedin.php:473
+#: ../bws-linkedin.php:490
 msgid "Enter the Company ID"
 msgstr "Vložte ID společnosti"
 
-#: ../bws-linkedin.php:478
+#: ../bws-linkedin.php:495
 msgid "Inline"
 msgstr "V řádku"
 
-#: ../bws-linkedin.php:479
+#: ../bws-linkedin.php:496
 msgid "Icon"
 msgstr "Ikona"
 
-#: ../bws-linkedin.php:483
+#: ../bws-linkedin.php:500
 msgid "Show Connections"
 msgstr "Zobrazit spojení"
 
-#: ../bws-linkedin.php:485
+#: ../bws-linkedin.php:502
 msgid "Show"
 msgstr "Zobrazit"
 
-#: ../bws-linkedin.php:486
+#: ../bws-linkedin.php:503
 msgid "Hide"
 msgstr "Skrýt"
 
-#: ../bws-linkedin.php:490
+#: ../bws-linkedin.php:507
 msgid "Behavior"
 msgstr "Režim zobrazení"
 
-#: ../bws-linkedin.php:492
+#: ../bws-linkedin.php:509
 msgid "On Hover"
 msgstr "Při přejetí myší"
 
-#: ../bws-linkedin.php:493
+#: ../bws-linkedin.php:510
 msgid "On Click"
 msgstr "Při kliknutí"
 
-#: ../bws-linkedin.php:497
+#: ../bws-linkedin.php:514
 msgid "School ID"
 msgstr "ID školy"
 
-#: ../bws-linkedin.php:498
+#: ../bws-linkedin.php:515
 msgid "Enter the School ID"
 msgstr "Vložte ID školy"
 
-#: ../bws-linkedin.php:501
+#: ../bws-linkedin.php:518
 msgid "Can't find your ID?"
-msgstr ""
+msgstr "Nemůžete najít své ID?"
 
-#: ../bws-linkedin.php:501 ../includes/class-lnkdn-settings.php:256
+#: ../bws-linkedin.php:518 ../includes/class-lnkdn-settings.php:257
 msgid "Read the instruction"
-msgstr ""
+msgstr "Přečíst si instrukce"
 
-#: ../bws-linkedin.php:565
+#: ../bws-linkedin.php:582
 msgid "FAQ"
 msgstr "Často kladené otázky (FAQ)"
 
-#: ../bws-linkedin.php:566
+#: ../bws-linkedin.php:583
 msgid "Support"
 msgstr "Podpora"
 
-#: ../includes/class-lnkdn-settings.php:25
+#: ../includes/class-lnkdn-settings.php:26
 msgid "Display"
-msgstr ""
-
-#: ../includes/class-lnkdn-settings.php:27
-msgid "Misc"
-msgstr ""
+msgstr "Zobrazení"
 
 #: ../includes/class-lnkdn-settings.php:28
+msgid "Misc"
+msgstr "Různé"
+
+#: ../includes/class-lnkdn-settings.php:29
 msgid "Custom Code"
-msgstr ""
+msgstr "Vlastní kód"
 
-#: ../includes/class-lnkdn-settings.php:30
+#: ../includes/class-lnkdn-settings.php:31
 msgid "License Key"
-msgstr ""
+msgstr "Licenční klíč"
 
-#: ../includes/class-lnkdn-settings.php:90
+#: ../includes/class-lnkdn-settings.php:91
 msgid ""
 "Enter the Company/Showcase Page ID for \"Follow\" button. Settings are not "
 "saved."
@@ -178,150 +178,164 @@ msgstr ""
 "Vložte ID společnosti / Showcase Page pro tlačítko \"Sledovat\". Nastavení "
 "nejsou uložena."
 
-#: ../includes/class-lnkdn-settings.php:95
+#: ../includes/class-lnkdn-settings.php:96
 msgid "Settings saved"
 msgstr "Nastavení uloženo"
 
-#: ../includes/class-lnkdn-settings.php:114
+#: ../includes/class-lnkdn-settings.php:115
 msgid "General"
-msgstr ""
+msgstr "Obecné"
 
-#: ../includes/class-lnkdn-settings.php:117
+#: ../includes/class-lnkdn-settings.php:118
 msgid "Buttons"
-msgstr ""
+msgstr "Tlačítka"
 
-#: ../includes/class-lnkdn-settings.php:121
+#: ../includes/class-lnkdn-settings.php:122
 msgid "Share"
 msgstr "Sdílet"
 
-#: ../includes/class-lnkdn-settings.php:125
+#: ../includes/class-lnkdn-settings.php:126
 msgid "Follow"
 msgstr "Sledovat"
 
-#: ../includes/class-lnkdn-settings.php:131
+#: ../includes/class-lnkdn-settings.php:132
 msgid "Display on"
-msgstr ""
+msgstr "Zobrazit"
 
-#: ../includes/class-lnkdn-settings.php:136
+#: ../includes/class-lnkdn-settings.php:137
 msgid "Home page"
-msgstr ""
+msgstr "Domovská stránka"
 
-#: ../includes/class-lnkdn-settings.php:141
+#: ../includes/class-lnkdn-settings.php:142
 msgid "Posts"
-msgstr ""
+msgstr "Příspěvky"
 
-#: ../includes/class-lnkdn-settings.php:146
+#: ../includes/class-lnkdn-settings.php:147
 msgid "Pages"
-msgstr ""
+msgstr "Stránky"
 
-#: ../includes/class-lnkdn-settings.php:153
+#: ../includes/class-lnkdn-settings.php:154
 msgid "Buttons Position"
 msgstr "Umístění tlačítek"
 
-#: ../includes/class-lnkdn-settings.php:158
+#: ../includes/class-lnkdn-settings.php:159
 msgid "Before content"
-msgstr ""
+msgstr "Před obsahem"
 
-#: ../includes/class-lnkdn-settings.php:163
+#: ../includes/class-lnkdn-settings.php:164
 msgid "After content"
-msgstr ""
+msgstr "Za obsahem"
 
-#: ../includes/class-lnkdn-settings.php:166
+#: ../includes/class-lnkdn-settings.php:167
 msgid "Unselect all to use a shortcode only."
-msgstr ""
+msgstr "Zrušit výběr použít pouze zkrácený kód."
 
-#: ../includes/class-lnkdn-settings.php:170
+#: ../includes/class-lnkdn-settings.php:171
 msgid "Language"
 msgstr "Jazyk"
 
-#: ../includes/class-lnkdn-settings.php:181
+#: ../includes/class-lnkdn-settings.php:182
 msgid "Select the default language for LinkedIn button(-s)."
-msgstr ""
+msgstr "Vyberte výchozí jazyk pro LinkedIn tlačítko/a."
 
-#: ../includes/class-lnkdn-settings.php:191
-#: ../includes/class-lnkdn-settings.php:195
-#: ../includes/class-lnkdn-settings.php:199
+#: ../includes/class-lnkdn-settings.php:192
+#: ../includes/class-lnkdn-settings.php:196
+#: ../includes/class-lnkdn-settings.php:200
 msgid ""
 "Enable to switch language automatically on multilingual website using "
 "Multilanguage plugin."
 msgstr ""
+"Povolit automatické přepnutí jazyka na vícejazyčných webech s pluginem "
+"Multilanguage."
 
-#: ../includes/class-lnkdn-settings.php:195
+#: ../includes/class-lnkdn-settings.php:196
 #, php-format
 msgid "Activate %s"
-msgstr ""
+msgstr "Aktivovat %s"
 
-#: ../includes/class-lnkdn-settings.php:199
+#: ../includes/class-lnkdn-settings.php:200
 msgid "Learn More"
 msgstr "Dozvědět se více"
 
-#: ../includes/class-lnkdn-settings.php:204
+#: ../includes/class-lnkdn-settings.php:205
 msgid "Share Button"
-msgstr ""
+msgstr "Tlačítko Sdílet"
 
-#: ../includes/class-lnkdn-settings.php:207
-#: ../includes/class-lnkdn-settings.php:235
+#: ../includes/class-lnkdn-settings.php:208
+#: ../includes/class-lnkdn-settings.php:236
 msgid "Count Mode"
 msgstr "S počítadlem"
 
-#: ../includes/class-lnkdn-settings.php:211
-#: ../includes/class-lnkdn-settings.php:239
+#: ../includes/class-lnkdn-settings.php:212
+#: ../includes/class-lnkdn-settings.php:240
 msgid "Vertical"
 msgstr "Vertikálně"
 
-#: ../includes/class-lnkdn-settings.php:215
-#: ../includes/class-lnkdn-settings.php:243
+#: ../includes/class-lnkdn-settings.php:216
+#: ../includes/class-lnkdn-settings.php:244
 msgid "Horizontal"
 msgstr "Horizontálně"
 
-#: ../includes/class-lnkdn-settings.php:219
-#: ../includes/class-lnkdn-settings.php:247
+#: ../includes/class-lnkdn-settings.php:220
+#: ../includes/class-lnkdn-settings.php:248
 msgid "No count"
-msgstr ""
+msgstr "Bez počítadla"
 
-#: ../includes/class-lnkdn-settings.php:225
+#: ../includes/class-lnkdn-settings.php:226
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
-#: ../includes/class-lnkdn-settings.php:228
+#: ../includes/class-lnkdn-settings.php:229
 msgid "URL to be shared. Leave blank to use a current page URL."
 msgstr ""
+"URL adresa pro sdílení. Ponechte nevyplněné pro použití URL adresy aktuální "
+"stránky."
 
-#: ../includes/class-lnkdn-settings.php:232
+#: ../includes/class-lnkdn-settings.php:233
 msgid "Follow Button"
-msgstr ""
+msgstr "Tlačítko Sledovat"
 
-#: ../includes/class-lnkdn-settings.php:253
+#: ../includes/class-lnkdn-settings.php:254
 msgid "Company or Showcase Page ID"
-msgstr ""
+msgstr "ID společnosti / Showcase Page"
 
-#: ../includes/class-lnkdn-settings.php:256
+#: ../includes/class-lnkdn-settings.php:257
 msgid "Can't find your page ID?"
-msgstr ""
+msgstr "Nemůžete najít ID své stránky?"
 
-#: ../includes/class-lnkdn-settings.php:279
+#: ../includes/class-lnkdn-settings.php:280
 msgid "LinkedIn Buttons Shortcode"
+msgstr "Zkrácený kód LinkedIn tlačítek"
+
+#: ../includes/class-lnkdn-settings.php:283
+msgid "Add LinkedIn to a widget."
 msgstr ""
 
-#: ../includes/class-lnkdn-settings.php:282
+#: ../includes/class-lnkdn-settings.php:283
+msgid "Navigate to Widgets"
+msgstr ""
+
+#: ../includes/class-lnkdn-settings.php:284
 msgid ""
 "Add LinkedIn button(-s) to your posts, pages, custom post types or widgets "
 "by using the following shortcode:"
 msgstr ""
+"Přidat LinkedIn tlačítko/a do příspěvků, stránek, vlastních typů příspěvků "
+"nebo widgetů pomocí následujícího zkráceného kódu:"
 
-#: ../includes/class-lnkdn-settings.php:300
+#: ../includes/class-lnkdn-settings.php:302
 msgid "Close"
-msgstr ""
+msgstr "Zavřít"
 
-#: ../includes/class-lnkdn-settings.php:301
+#: ../includes/class-lnkdn-settings.php:303
 msgid "LinkedIn Buttons Preview"
-msgstr ""
+msgstr "Náhled LinkedIn tlačítek"
 
-#: ../includes/class-lnkdn-settings.php:315
+#: ../includes/class-lnkdn-settings.php:317
 msgid "Display Settings"
-msgstr ""
+msgstr "Nastavení zobrazení"
 
-#: ../includes/class-lnkdn-settings.php:324
+#: ../includes/class-lnkdn-settings.php:326
 msgid ""
 "Please choose the necessary post types (or single pages) where LinkedIn "
 "buttons will be displayed:"
@@ -329,17 +343,16 @@ msgstr ""
 "Vyberte požadované typy příspěvků (nebo konkrétní stránky), kde se budou "
 "tlačítka LinkedIn zobrazovat:"
 
-#: ../includes/class-lnkdn-settings.php:331
+#: ../includes/class-lnkdn-settings.php:333
 msgid "Show URL for pages"
 msgstr "Zobrazovat URL pro stránky"
 
-#: ../includes/class-lnkdn-settings.php:337
+#: ../includes/class-lnkdn-settings.php:339
 msgid "Example of the site's pages tree"
 msgstr "Příklad stromu stránek"
 
-#: ../includes/class-lnkdn-settings.php:337
-msgid "Example of site pages' tree"
-msgstr "Příklad stromu stránek webu \""
+#~ msgid "Example of site pages' tree"
+#~ msgstr "Příklad stromu stránek webu"
 
 #~ msgid "Please, enable JavaScript in Your browser."
 #~ msgstr "Prosím, povolte JavaScript ve vašem prohlížeči."

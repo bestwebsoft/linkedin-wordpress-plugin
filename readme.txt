@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: LinkedIn, linedin, linkedln, likedin, linkedin plugin, share button, follow button, linkedin widget, linkedin widgets, social buttons
 Requires at least: 3.9
-Tested up to: 4.8
-Stable tag: 1.0.6
+Tested up to: 4.9.1
+Stable tag: 1.0.7
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -147,6 +147,11 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Changelog ==
 
+= V1.0.7 - 21.12.2017 =
+* Bugfix : Options removal from the database when working on a multisite network has been fixed.
+* Bugfix : Compatibility with Multilanguage plugin by BestWebSoft has been fixed.
+* Update : Czech language file has been updated.
+
 = V1.0.6 - 12.07.2017 =
 * Update : The plugin settings page has been updated.
 * NEW : Ability to set custom URL for Share button was added.
@@ -174,6 +179,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Css-style was added.
 
 == Upgrade Notice ==
+
+= V1.0.7 =
+* Bugs fixed.
+* Languages updated.
 
 = V1.0.6 =
 * Usability improved.

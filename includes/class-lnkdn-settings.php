@@ -3,7 +3,8 @@
  * Displays the content on the plugin settings page
  */
 
-require_once( dirname( dirname( __FILE__ ) ) . '/bws_menu/class-bws-settings.php' );
+if ( ! class_exists( 'Bws_Settings_Tabs' ) )
+	require_once( dirname( dirname( __FILE__ ) ) . '/bws_menu/class-bws-settings.php' );
 
 if ( ! class_exists( 'Lnkdn_Settings_Tabs' ) ) {
 	class Lnkdn_Settings_Tabs extends Bws_Settings_Tabs {
@@ -46,14 +47,14 @@ if ( ! class_exists( 'Lnkdn_Settings_Tabs' ) ) {
 				'bws_license_plugin' => 'bws-linkedin-pro/bws-linkedin-pro.php',
 				'link_key' 			 => 'c64e9f9106c1e15bd3f4ece9473fb80d',
 				'link_pn' 			 => '588'
-				/* pls*/		
+				/* pls*/
 			) );
 
 			add_action( get_parent_class( $this ) . '_additional_misc_options', array( $this, 'additional_misc_options' ) );
 			add_action( get_parent_class( $this ) . '_display_metabox', array( $this, 'display_metabox' ) );
-			/*pls */
+			/*pls *//*## display preview */
 			add_action( get_parent_class( $this ) . '_display_second_postbox', array( $this, 'display_second_postbox' ) );
-			/* pls*/
+			/* pls*//* ##*/
 		}
 
 		/**
@@ -81,7 +82,7 @@ if ( ! class_exists( 'Lnkdn_Settings_Tabs' ) ) {
 			if ( filter_var( $this->options['share_url'], FILTER_VALIDATE_URL ) === false ) {
 				$this->options['share_url'] = '';
 			}
-				
+
 			if ( array_key_exists( $this->options['lang'], $lnkdn_lang_codes ) ) {
 				$this->options['lang'] = $_REQUEST['lnkdn_lang'];
 			}
@@ -102,7 +103,7 @@ if ( ! class_exists( 'Lnkdn_Settings_Tabs' ) ) {
 		/**
 		 *
 		 */
-		public function tab_settings() { 
+		public function tab_settings() {
 			global $lnkdn_lang_codes, $wp_version;
 
 			if ( ! function_exists( 'get_plugins' ) )
@@ -110,7 +111,7 @@ if ( ! class_exists( 'Lnkdn_Settings_Tabs' ) ) {
 			$all_plugins = get_plugins(); ?>
 			<h3 class="bws_tab_label"><?php _e( 'LinkedIn Settings', 'bws-linkedin' ); ?></h3>
 			<?php $this->help_phrase(); ?>
-			<hr>			
+			<hr>
 			<div class="bws_tab_sub_label"><?php _e( 'General', 'bws-linkedin' ); ?></div>
 			<table class="form-table lnkdn_settings_form">
 				<tr>
@@ -140,7 +141,7 @@ if ( ! class_exists( 'Lnkdn_Settings_Tabs' ) ) {
 								<input type="checkbox" value="1" name="lnkdn_posts" class="lnkdn-no-ajax"<?php checked( 1, $this->options['posts'] ); ?> />
 								<?php _e( 'Posts', 'bws-linkedin' ); ?>
 							</label>
-							<br />														
+							<br />
 							<label>
 								<input type="checkbox" value="1" name="lnkdn_pages" class="lnkdn-no-ajax"<?php checked( 1, $this->options['pages'] ); ?> />
 								<?php _e( 'Pages', 'bws-linkedin' ); ?>
@@ -154,12 +155,12 @@ if ( ! class_exists( 'Lnkdn_Settings_Tabs' ) ) {
 					<td>
 						<fieldset>
 							<label>
-								<input type="checkbox" name="lnkdn_position[]" value="before_post" class="lnkdn-no-ajax" <?php if ( in_array( 'before_post', $this->options['position'] ) ) echo 'checked="checked"'; ?> /> 
+								<input type="checkbox" name="lnkdn_position[]" value="before_post" class="lnkdn-no-ajax" <?php if ( in_array( 'before_post', $this->options['position'] ) ) echo 'checked="checked"'; ?> />
 								<?php _e( 'Before content', 'bws-linkedin' ); ?></option>
 							</label>
 							<br />
 							<label>
-								<input type="checkbox" name="lnkdn_position[]" value="after_post" class="lnkdn-no-ajax" <?php if ( in_array( 'after_post', $this->options['position'] ) ) echo 'checked="checked"'; ?> /> 
+								<input type="checkbox" name="lnkdn_position[]" value="after_post" class="lnkdn-no-ajax" <?php if ( in_array( 'after_post', $this->options['position'] ) ) echo 'checked="checked"'; ?> />
 								<?php _e( 'After content', 'bws-linkedin' ); ?></option>
 							</label>
 						</fieldset>
@@ -199,7 +200,7 @@ if ( ! class_exists( 'Lnkdn_Settings_Tabs' ) ) {
 							<span class="bws_info"><?php _e( 'Enable to switch language automatically on multilingual website using Multilanguage plugin.', 'bws-linkedin' ); ?> <a href="https://bestwebsoft.com/products/wordpress/plugins/multilanguage/?k=293cebedcff853dd94d5b373161d4694&pn=588&v=<?php echo $this->plugins_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>"><?php _e( 'Learn More', 'bws-linkedin' ); ?></a></span>
 						<?php } ?>
 					</td>
-				</tr>				
+				</tr>
 			</table>
 			<div class="bws_tab_sub_label lnkdn_share_enabled"><?php _e( 'Share Button', 'bws-linkedin' ); ?></div>
 			<table class="form-table lnkdn_settings_form lnkdn_share_enabled">
@@ -279,8 +280,11 @@ if ( ! class_exists( 'Lnkdn_Settings_Tabs' ) ) {
 					<?php _e( 'LinkedIn Buttons Shortcode', 'bws-linkedin' ); ?>
 				</h3>
 				<div class="inside">
-					<?php _e( "Add LinkedIn button(-s) to your posts, pages, custom post types or widgets by using the following shortcode:", 'bws-linkedin' ); ?>
-					<?php bws_shortcode_output( '[bws_linkedin display=&#34;share,follow&#34;]' ); ?>
+					<?php if( ! $this->is_network_options ) { ?>
+						<p><?php _e( 'Add LinkedIn to a widget.', 'bws-linkedin' ); ?> <a href="widgets.php"><?php _e( 'Navigate to Widgets', 'bws-linkedin' ); ?></a></p>
+					<?php }
+					_e( "Add LinkedIn button(-s) to your posts, pages, custom post types or widgets by using the following shortcode:", 'bws-linkedin' );
+					bws_shortcode_output( '[bws_linkedin display=&#34;share,follow&#34;]' ); ?>
 				</div>
 			</div>
 		<?php }
@@ -292,7 +296,7 @@ if ( ! class_exists( 'Lnkdn_Settings_Tabs' ) ) {
 		 * @return array    The action results
 		 */
 		/*pls */
-		public function display_second_postbox() { 
+		public function display_second_postbox() {
 			if ( ! $this->hide_pro_tabs ) { ?>
 				<div class="postbox bws_pro_version_bloc">
 					<div class="bws_table_bg"></div>
@@ -300,7 +304,7 @@ if ( ! class_exists( 'Lnkdn_Settings_Tabs' ) ) {
 						<button type="submit" name="bws_hide_premium_options" class="notice-dismiss bws_hide_premium_options" title="<?php _e( 'Close', 'bws-linkedin' ); ?>"></button>
 						<?php _e( 'LinkedIn Buttons Preview', 'bws-linkedin' ); ?>
 					</h3>
-					<div class="inside">								
+					<div class="inside">
 						<img src='<?php echo plugins_url( 'images/preview_screenshot.png', dirname( __FILE__ ) ); ?>' />
 					</div>
 					<?php $this->bws_pro_block_links(); ?>
@@ -334,13 +338,13 @@ if ( ! class_exists( 'Lnkdn_Settings_Tabs' ) ) {
 						</tr>
 						<tr>
 							<td colspan="2">
-								<img src="<?php echo plugins_url( 'images/pro_screen_1.png', dirname( __FILE__ ) ); ?>" alt="<?php _e( "Example of the site's pages tree", 'bws-linkedin' ); ?>" title="<?php _e( "Example of site pages' tree", 'bws-linkedin' ); ?>" />
+								<img src="<?php echo plugins_url( 'images/pro_screen_1.png', dirname( __FILE__ ) ); ?>" alt="<?php _e( "Example of the site's pages tree", 'bws-linkedin' ); ?>" title="<?php _e( "Example of the site's pages tree", 'bws-linkedin' ); ?>" />
 							</td>
 						</tr>
 					</table>
 				</div>
 				<?php $this->bws_pro_block_links(); ?>
-			</div>			
+			</div>
 		<?php }
 		/* pls*/
 	}
