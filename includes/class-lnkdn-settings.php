@@ -253,7 +253,7 @@ if ( ! class_exists( 'Lnkdn_Settings_Tabs' ) ) {
 				<tr>
 					<th><?php _e( 'Company or Showcase Page ID', 'bws-linkedin' ); ?></th>
 					<td>
-						<input type="text" name="lnkdn_follow_page_name" value="<?php if ( preg_match( "/^[0-9]{4,8}$/", preg_replace( "/[^0-9]*/" , "", $this->options['follow_page_name'] ) ) ) { echo preg_replace( "/[^0-9]*/" , "", $this->options['follow_page_name'] ); } ?>" />
+						<input type="text" name="lnkdn_follow_page_name" <?php if ( 1 == $this->options['follow'] ) echo 'required="required"'; ?> value="<?php if ( preg_match( "/^[0-9]{4,8}$/", preg_replace( "/[^0-9]*/" , "", $this->options['follow_page_name'] ) ) ) { echo preg_replace( "/[^0-9]*/" , "", $this->options['follow_page_name'] ); } ?>" />
 						<div class="bws_info"><?php _e( "Can't find your page ID?", 'bws-linkedin' ); ?>&nbsp;<a href='https://support.bestwebsoft.com/hc/en-us/articles/115002405226'><?php _e( 'Read the instruction', 'bws-linkedin' ); ?></a></div>
 					</td>
 				</tr>

@@ -1,12 +1,12 @@
 <?php
-/*##
+/*
 Plugin Name: LinkedIn by BestWebSoft
 Plugin URI: https://bestwebsoft.com/products/wordpress/plugins/linkedin/
 Description: Add LinkedIn Share and Follow buttons to WordPress posts, pages and widgets. 5 plugins included – profile, insider, etc.
 Author: BestWebSoft
 Text Domain: bws-linkedin
 Domain Path: /languages
-Version: 1.0.7
+Version: 1.0.8
 Author URI: https://bestwebsoft.com
 License: GPLv3 or later
 */
@@ -46,7 +46,7 @@ if ( ! function_exists( 'lnkdn_admin_menu' ) ) {
 		add_action( 'load-' . $settings, 'lnkdn_add_tabs' );
 	}
 }
-/* end lnkdn_admin_menu ##*/
+/* end lnkdn_admin_menu */
 
 if ( ! function_exists( 'lnkdn_plugins_loaded' ) ) {
 	function lnkdn_plugins_loaded() {
@@ -67,11 +67,11 @@ if ( ! function_exists( 'lnkdn_init' ) ) {
 			$lnkdn_plugin_info = get_plugin_data( __FILE__ );
 		}
 
-		/*## add general functions */
+		/* add general functions */
 		require_once( dirname( __FILE__ ) . '/bws_menu/bws_include.php' );
 		bws_include_init( plugin_basename( __FILE__ ) );
 
-		bws_wp_min_version_check( plugin_basename( __FILE__ ), $lnkdn_plugin_info, '3.9' );/* check compatible with current WP version ##*/
+		bws_wp_min_version_check( plugin_basename( __FILE__ ), $lnkdn_plugin_info, '3.9' );/* check compatible with current WP version */
 
 		/* Get options from the database */
 		if ( ! is_admin() || ( isset( $_GET['page'] ) && ( "linkedin.php" == $_GET['page'] || "social-buttons.php" == $_GET['page'] ) ) ) {
@@ -90,13 +90,13 @@ if ( ! function_exists( 'lnkdn_admin_init' ) ) {
 		/* Add variable for bws_menu */
 		global $bws_plugin_info, $lnkdn_plugin_info, $bws_shortcode_list;
 
-		/*## Function for bws menu */
+		/* Function for bws menu */
 		if ( empty( $bws_plugin_info ) )	{
 			$bws_plugin_info = array( 'id' => '588', 'version' => $lnkdn_plugin_info["Version"] );
 		}
 
-		/* Add LinkedIn to global $bws_shortcode_list ##*/
-		$bws_shortcode_list['lnkdn'] = array( 'name' => 'LinkedIn Button', 'js_function' => 'lnkdn_shortcode_init'  );
+		/* Add LinkedIn to global $bws_shortcode_list */
+		$bws_shortcode_list['lnkdn'] = array( 'name' => 'LinkedIn Button', 'js_function' => 'lnkdn_shortcode_init' );
 	}
 }
 
@@ -165,28 +165,28 @@ if ( ! function_exists( 'lnkdn_get_options_default' ) ) {
 		global $lnkdn_plugin_info;
 
 		$options_default = array(
-			'plugin_option_version'     => $lnkdn_plugin_info['Version'],
-			'display_settings_notice'   => 1,
-			'suggest_feature_banner'    => 1,
-			'follow'                    => 0,
-			'follow_count_mode'         => 'top',
-			'follow_page_name'          => '',
-			'homepage'                  => 1,
-			'pages'                     => 1,
-			'posts'                     => 1,
-			'lang'                      => 'en_US',
-			'position'                  => array( 'before_post' ),
-			'share'                     => 1,
-			'share_count_mode'          => 'top',
-			'use_multilanguage_locale'  => 0,
-			'share_url'                 => ''
+			'plugin_option_version'		=> $lnkdn_plugin_info['Version'],
+			'display_settings_notice'	=> 1,
+			'suggest_feature_banner'	=> 1,
+			'follow'					=> 0,
+			'follow_count_mode'			=> 'top',
+			'follow_page_name'			=> '',
+			'homepage'					=> 1,
+			'pages'						=> 1,
+			'posts'						=> 1,
+			'lang'						=> 'en_US',
+			'position'					=> array( 'before_post' ),
+			'share'						=> 1,
+			'share_count_mode'			=> 'top',
+			'use_multilanguage_locale'	=> 0,
+			'share_url'					=> ''
 		);
 
 		return $options_default;
 	}
 }
 
-/*## Add settings page in admin area */
+/* Add settings page in admin area */
 if ( ! function_exists( 'lnkdn_settings_page' ) ) {
 	function lnkdn_settings_page() {
 		require_once( dirname( __FILE__ ) . '/includes/class-lnkdn-settings.php' );
@@ -198,11 +198,10 @@ if ( ! function_exists( 'lnkdn_settings_page' ) ) {
 	<?php }
 }
 
-/* Function for forming buttons tags ##*/
+/* Function for forming buttons tags */
 if ( ! function_exists( 'lnkdn_return_button' ) ) {
 	function lnkdn_return_button( $request ) {
 		global $lnkdn_options;
-
 
 		if ( empty( $lnkdn_options['share_url'] ) ) {
 			$share_url = get_permalink();
@@ -211,17 +210,16 @@ if ( ! function_exists( 'lnkdn_return_button' ) ) {
 		}
 
 		if ( 'share' == $request ) {
-
-			$share = '<div class="lnkdn-share-button"><script type="IN/Share"
-				data-url="' . $share_url . '"
-				data-counter="' . $lnkdn_options['share_count_mode'] . '"></script></div>';
+			$share = '<div class="lnkdn-share-button">
+						<script type="IN/Share" data-url="' . $share_url . '" data-counter="' . $lnkdn_options['share_count_mode'] . '"></script>
+					</div>';
 			return $share;
 		}
 
 		if ( 'follow' == $request && '' != $lnkdn_options['follow_page_name'] ) {
-			$follow = '<div class="lnkdn-follow-button"><script type="IN/FollowCompany"
-				data-id="' . $lnkdn_options['follow_page_name'] . '"
-				data-counter="' . $lnkdn_options['follow_count_mode'] . '"></script></div>';
+			$follow = '<div class="lnkdn-follow-button">
+						<script type="IN/FollowCompany" data-id="' . $lnkdn_options['follow_page_name'] . '" data-counter="' . $lnkdn_options['follow_count_mode'] . '"></script>
+					</div>';
 			return $follow;
 		}
 	}
@@ -247,7 +245,7 @@ if ( ! function_exists( 'lnkdn_position' ) ) {
 			$display_button = apply_filters( 'lnkdn_button_in_the_content', $display_button );
 
 			if ( $display_button ) {
-				$share  = ( 1 == $lnkdn_options['share'] ) ? lnkdn_return_button( 'share' ) : '';
+				$share = ( 1 == $lnkdn_options['share'] ) ? lnkdn_return_button( 'share' ) : '';
 				$follow = ( 1 == $lnkdn_options['follow'] ) ? lnkdn_return_button( 'follow' ) : '';
 				$button = '<div class="lnkdn_buttons">' . $share . $follow . '</div>';
 
@@ -337,7 +335,7 @@ if ( ! function_exists( 'lnkdn_shortcode' ) ) {
 	}
 }
 
-/* add shortcode content  */
+/* add shortcode content */
 if ( ! function_exists( 'lnkdn_shortcode_button_content' ) ) {
 	function lnkdn_shortcode_button_content( $content ) {
 		global $wp_version; ?>
@@ -358,22 +356,22 @@ if ( ! function_exists( 'lnkdn_shortcode_button_content' ) ) {
 		</div>
 		<script type="text/javascript">
 			function lnkdn_shortcode_init() {
-				(function( $ ) {
-					$( '.mce-reset input[name^="lnkdn_selected"]' ).change(function() {
+				( function( $ ) {
+					$( '.mce-reset input[name^="lnkdn_selected"]' ).change( function() {
 						var result = '';
-						$( '.mce-reset input[name^="lnkdn_selected"]' ).each(function() {
+						$( '.mce-reset input[name^="lnkdn_selected"]' ).each( function() {
 							if ( $( this ).is( ':checked' ) ) {
 								result += $( this ).val() + ',';
 							}
-						});
+						} );
 						if ( '' == result ) {
 							$( '.mce-reset #bws_shortcode_display' ).text( '' );
 						} else {
 							result = result.slice( 0, - 1 );
 							$( '.mce-reset #bws_shortcode_display' ).text( '[bws_linkedin display="' + result + '"]' );
 						}
-					});
-				}) ( jQuery );
+					} );
+				} ) ( jQuery );
 			}
 		</script>
 	<?php }
@@ -387,15 +385,15 @@ if ( ! class_exists( 'Lnkdn_Main_Widget' ) ) {
 		}
 
 		function widget( $args, $instance ) {
-			$title              = ( ! empty( $instance['lnkdn_title'] ) ) ? apply_filters( 'widget_title', $instance['lnkdn_title'], $instance, $this->id_base ) : '';
-			$select_widget      = ( ! empty( $instance['lnkdn_select_widget'] ) ) ? $instance['lnkdn_select_widget'] : '';
-			$public_profile_url = ( ! empty( $instance['lnkdn_public_profile_url'] ) ) ? $instance['lnkdn_public_profile_url'] : '';
-			$company_id         = ( ! empty( $instance['lnkdn_company_id'] ) && 'all_jobs' != $instance['lnkdn_display_jobs_mode'] ) ? $instance['lnkdn_company_id'] : '';
-			$show_connections   = ( ! empty( $instance['lnkdn_show_connections'] ) && 'show' == $instance['lnkdn_show_connections'] ) ? '' : 'false';
-			$display_mode       = ( ! empty( $instance['lnkdn_display_mode'] ) ) ? $instance['lnkdn_display_mode'] : '';
-			$display_jobs_mode  = ( ! empty( $instance['lnkdn_display_jobs_mode'] ) && 'all_jobs' != $instance['lnkdn_display_jobs_mode'] ) ? $instance['lnkdn_display_jobs_mode'] : '';
-			$behavior           = ( ! empty( $instance['lnkdn_behavior'] ) ) ? $instance['lnkdn_behavior'] : '';
-			$school_id          = ( ! empty( $instance['lnkdn_school_id'] ) ) ? $instance['lnkdn_school_id'] : '';
+			$title				= ( ! empty( $instance['lnkdn_title'] ) ) ? apply_filters( 'widget_title', $instance['lnkdn_title'], $instance, $this->id_base ) : '';
+			$select_widget		= ( ! empty( $instance['lnkdn_select_widget'] ) ) ? $instance['lnkdn_select_widget'] : '';
+			$public_profile_url	= ( ! empty( $instance['lnkdn_public_profile_url'] ) ) ? $instance['lnkdn_public_profile_url'] : '';
+			$company_id			= ( ! empty( $instance['lnkdn_company_id'] ) && 'all_jobs' != $instance['lnkdn_display_jobs_mode'] ) ? $instance['lnkdn_company_id'] : '';
+			$show_connections	= ( ! empty( $instance['lnkdn_show_connections'] ) && 'show' == $instance['lnkdn_show_connections'] ) ? '' : 'false';
+			$display_mode		= ( ! empty( $instance['lnkdn_display_mode'] ) ) ? $instance['lnkdn_display_mode'] : '';
+			$display_jobs_mode	= ( ! empty( $instance['lnkdn_display_jobs_mode'] ) && 'all_jobs' != $instance['lnkdn_display_jobs_mode'] ) ? $instance['lnkdn_display_jobs_mode'] : '';
+			$behavior			= ( ! empty( $instance['lnkdn_behavior'] ) ) ? $instance['lnkdn_behavior'] : '';
+			$school_id			= ( ! empty( $instance['lnkdn_school_id'] ) ) ? $instance['lnkdn_school_id'] : '';
 
 			if ( 'icon' == $display_mode ) {
 				$display_mode = 'hover';
@@ -433,15 +431,15 @@ if ( ! class_exists( 'Lnkdn_Main_Widget' ) ) {
 		}
 
 		function form( $instance ) {
-			$select_widget      = isset( $instance['lnkdn_select_widget'] ) ? $instance['lnkdn_select_widget'] : 'member_profile';
-			$title              = isset( $instance['lnkdn_title'] ) ? esc_attr( $instance['lnkdn_title'] ) : '';
-			$public_profile_url = isset( $instance['lnkdn_public_profile_url'] ) ? $instance['lnkdn_public_profile_url'] : '';
-			$company_id         = isset( $instance['lnkdn_company_id'] ) ? $instance['lnkdn_company_id'] : '';
-			$show_connections   = isset( $instance['lnkdn_show_connections'] ) ? $instance['lnkdn_show_connections'] : 'show';
-			$display_mode       = isset( $instance['lnkdn_display_mode'] ) ? $instance['lnkdn_display_mode'] : 'inline';
-			$display_jobs_mode  = isset( $instance['lnkdn_display_jobs_mode'] ) ? $instance['lnkdn_display_jobs_mode'] : 'your_jobs';
-			$behavior           = isset( $instance['lnkdn_behavior'] ) ? $instance['lnkdn_behavior'] : 'on_hover';
-			$school_id          = isset( $instance['lnkdn_school_id'] ) ? $instance['lnkdn_school_id'] : ''; ?>
+			$select_widget		= isset( $instance['lnkdn_select_widget'] ) ? $instance['lnkdn_select_widget'] : 'member_profile';
+			$title				= isset( $instance['lnkdn_title'] ) ? esc_attr( $instance['lnkdn_title'] ) : '';
+			$public_profile_url	= isset( $instance['lnkdn_public_profile_url'] ) ? $instance['lnkdn_public_profile_url'] : '';
+			$company_id			= isset( $instance['lnkdn_company_id'] ) ? $instance['lnkdn_company_id'] : '';
+			$show_connections	= isset( $instance['lnkdn_show_connections'] ) ? $instance['lnkdn_show_connections'] : 'show';
+			$display_mode		= isset( $instance['lnkdn_display_mode'] ) ? $instance['lnkdn_display_mode'] : 'inline';
+			$display_jobs_mode	= isset( $instance['lnkdn_display_jobs_mode'] ) ? $instance['lnkdn_display_jobs_mode'] : 'your_jobs';
+			$behavior			= isset( $instance['lnkdn_behavior'] ) ? $instance['lnkdn_behavior'] : 'on_hover';
+			$school_id			= isset( $instance['lnkdn_school_id'] ) ? $instance['lnkdn_school_id'] : ''; ?>
 
 			<p class="lnkdn_all">
 				<label for="<?php echo $this->get_field_id( 'lnkdn_select_widget' ); ?>"><?php _e( 'LinkedIn Widgets', 'bws-linkedin' ); ?>:</label>
@@ -449,7 +447,7 @@ if ( ! class_exists( 'Lnkdn_Main_Widget' ) ) {
 					<option value="member_profile" <?php if ( 'member_profile' == $select_widget ) echo 'selected="selected"'; ?>><?php _e( 'Member Profile Widget', 'bws-linkedin' ); ?></option>
 					<option value="company_profile" <?php if ( 'company_profile' == $select_widget ) echo 'selected="selected"'; ?>><?php _e( 'Company Profile Widget', 'bws-linkedin' ); ?></option>
 					<option value="company_insider" <?php if ( 'company_insider' == $select_widget ) echo 'selected="selected"'; ?>><?php _e( 'Company Insider Widget', 'bws-linkedin' ); ?></option>
-					<option value="jymbii" <?php if ( 'jymbii' == $select_widget ) echo 'selected="selected"'; ?>><?php _e( 'Jobs Your May Be Interested In Widget', 'bws-linkedin' ); ?></option>
+					<option value="jymbii" <?php if ( 'jymbii' == $select_widget ) echo 'selected="selected"'; ?>><?php _e( 'Jobs You May Be Interested In Widget', 'bws-linkedin' ); ?></option>
 					<option value="alumni_tool" <?php if ( 'alumni_tool' == $select_widget ) echo 'selected="selected"'; ?>><?php _e( 'Alumni Tool Widget', 'bws-linkedin' ); ?></option>
 				</select>
 			</p>
@@ -504,15 +502,15 @@ if ( ! class_exists( 'Lnkdn_Main_Widget' ) ) {
 
 		function update( $new_instance, $old_instance ) {
 			$instance = $old_instance;
-			$instance['lnkdn_select_widget']      = in_array( $instance['lnkdn_select_widget'], array( 'member_profile', 'company_profile', 'company_insider', 'jymbii', 'alumni_tool' ) ) ? $new_instance['lnkdn_select_widget'] : 'member_profile';
-			$instance['lnkdn_title']              = strip_tags( $new_instance['lnkdn_title'] );
-			$instance['lnkdn_public_profile_url'] = esc_url_raw( $new_instance['lnkdn_public_profile_url'] );
-			$instance['lnkdn_display_jobs_mode']  = in_array( $instance['lnkdn_display_jobs_mode'], array( 'your_jobs', 'all_jobs' ) ) ? $new_instance['lnkdn_display_jobs_mode'] : 'your_jobs';
-			$instance['lnkdn_company_id']         = preg_replace( "/[^0-9]*/" , "", $new_instance['lnkdn_company_id'] );
-			$instance['lnkdn_display_mode']       = in_array( $instance['lnkdn_display_mode'], array( 'inline', 'icon' ) ) ? $new_instance['lnkdn_display_mode'] : 'inline';
-			$instance['lnkdn_show_connections']   = in_array( $instance['lnkdn_show_connections'], array( 'show', 'hide' ) ) ? $new_instance['lnkdn_show_connections'] : 'show';
-			$instance['lnkdn_behavior']           = in_array( $instance['lnkdn_behavior'], array( 'on_hover', 'on_click' ) ) ? $new_instance['lnkdn_behavior'] : 'on_hover';
-			$instance['lnkdn_school_id']          = preg_replace( "/[^0-9]*/" , "", $new_instance['lnkdn_school_id'] );
+			$instance['lnkdn_select_widget']		= in_array( $instance['lnkdn_select_widget'], array( 'member_profile', 'company_profile', 'company_insider', 'jymbii', 'alumni_tool' ) ) ? $new_instance['lnkdn_select_widget'] : 'member_profile';
+			$instance['lnkdn_title']				= strip_tags( $new_instance['lnkdn_title'] );
+			$instance['lnkdn_public_profile_url']	= esc_url_raw( $new_instance['lnkdn_public_profile_url'] );
+			$instance['lnkdn_display_jobs_mode']	= in_array( $instance['lnkdn_display_jobs_mode'], array( 'your_jobs', 'all_jobs' ) ) ? $new_instance['lnkdn_display_jobs_mode'] : 'your_jobs';
+			$instance['lnkdn_company_id']			= preg_replace( "/[^0-9]*/" , "", $new_instance['lnkdn_company_id'] );
+			$instance['lnkdn_display_mode']			= in_array( $instance['lnkdn_display_mode'], array( 'inline', 'icon' ) ) ? $new_instance['lnkdn_display_mode'] : 'inline';
+			$instance['lnkdn_show_connections']		= in_array( $instance['lnkdn_show_connections'], array( 'show', 'hide' ) ) ? $new_instance['lnkdn_show_connections'] : 'show';
+			$instance['lnkdn_behavior']				= in_array( $instance['lnkdn_behavior'], array( 'on_hover', 'on_click' ) ) ? $new_instance['lnkdn_behavior'] : 'on_hover';
+			$instance['lnkdn_school_id']			= preg_replace( "/[^0-9]*/" , "", $new_instance['lnkdn_school_id'] );
 			return $instance;
 		}
 	}
@@ -528,17 +526,17 @@ if ( ! function_exists( 'lnkdn_register_main_widget' ) ) {
 if ( ! function_exists( 'lnkdn_add_body_class' ) ) {
 	function lnkdn_add_body_class( $classes ) {
 		$current_theme = wp_get_theme();
-		if ( $current_theme->get( 'Name' ) == 'Twenty Fifteen' || $current_theme->get( 'Name' ) == 'Twenty Sixteen' ) {
+		if ( 'Twenty Fifteen' == $current_theme->get( 'Name' ) || 'Twenty Sixteen' == $current_theme->get( 'Name' ) ) {
 			$classes[] = 'lnkdn-button-certain-theme';
 		}
-		if ( $current_theme->get( 'Name' ) == 'Twenty Twelve' ) {
+		if ( 'Twenty Twelve' == $current_theme->get( 'Name' ) ) {
 			$classes[] = 'lnkdn-button-twenty-twelve-theme';
 		}
 		return $classes;
 	}
 }
 
-/*## Functions creates other links on plugins page. */
+/* Functions creates other links on plugins page. */
 if ( ! function_exists( 'lnkdn_action_links' ) ) {
 	function lnkdn_action_links( $links, $file ) {
 		if ( ! is_network_admin() ) {
@@ -595,8 +593,8 @@ if ( ! function_exists( 'lnkdn_add_tabs' ) ) {
 	function lnkdn_add_tabs() {
 		$screen = get_current_screen();
 		$args = array(
-			'id' 	  => 'lnkdn',
-			'section' => '201989376'
+			'id'		=> 'lnkdn',
+			'section'	=> '201989376'
 		);
 		bws_help_tab( $screen, $args );
 	}
@@ -643,7 +641,7 @@ register_activation_hook( __FILE__, 'lnkdn_plugin_activate' );
 add_action( 'admin_menu', 'lnkdn_admin_menu' );
 add_action( 'init', 'lnkdn_init' );
 add_action( 'admin_init', 'lnkdn_admin_init' );
-/* Initialization ##*/
+/* Initialization */
 add_action( 'plugins_loaded', 'lnkdn_plugins_loaded' );
 /* Adding stylesheets */
 add_action( 'wp_footer', 'lnkdn_js' );
@@ -659,10 +657,10 @@ add_filter( 'bws_shortcode_button_content', 'lnkdn_shortcode_button_content' );
 add_action( 'widgets_init', 'lnkdn_register_main_widget' );
 /* Adding class in 'body' Twenty Fifteen/Sixteen Theme for LinkedIn Buttons */
 add_filter( 'body_class', 'lnkdn_add_body_class' );
-/*## Additional links on the plugin page */
+/* Additional links on the plugin page */
 add_filter( 'plugin_action_links', 'lnkdn_action_links', 10, 2 );
 add_filter( 'plugin_row_meta', 'lnkdn_register_plugin_links', 10, 2 );
 /* Adding banner */
 add_action( 'admin_notices', 'lnkdn_admin_notices' );
 add_filter( 'widget_text', 'do_shortcode' );
-/* end ##*/
+/* end */
