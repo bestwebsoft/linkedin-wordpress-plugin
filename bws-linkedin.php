@@ -6,12 +6,12 @@ Description: Add LinkedIn Share and Follow buttons to WordPress posts, pages and
 Author: BestWebSoft
 Text Domain: bws-linkedin
 Domain Path: /languages
-Version: 1.0.8
+Version: 1.0.9
 Author URI: https://bestwebsoft.com
 License: GPLv3 or later
 */
 
-/*	@ Copyright 2017  BestWebSoft  ( https://support.bestwebsoft.com )
+/*	@ Copyright 2018  BestWebSoft  ( https://support.bestwebsoft.com )
 
 	This program is free software; you can redistribute it and/or modify
 	it under the terms of the GNU General Public License, version 2, as
@@ -28,8 +28,8 @@ License: GPLv3 or later
 */
 
 /* Add BWS menu */
-if ( ! function_exists( 'lnkdn_admin_menu' ) ) {
-	function lnkdn_admin_menu() {
+if ( ! function_exists( 'lnkdn_add_admin_menu' ) ) {
+	function lnkdn_add_admin_menu() {
 		global $submenu, $lnkdn_plugin_info, $wp_version;
 
 		$settings = add_menu_page( __( 'LinkedIn Settings', 'bws-linkedin' ), 'LinkedIn', 'manage_options', 'linkedin.php', 'lnkdn_settings_page', 'none' );
@@ -46,7 +46,7 @@ if ( ! function_exists( 'lnkdn_admin_menu' ) ) {
 		add_action( 'load-' . $settings, 'lnkdn_add_tabs' );
 	}
 }
-/* end lnkdn_admin_menu */
+/* end lnkdn_add_admin_menu */
 
 if ( ! function_exists( 'lnkdn_plugins_loaded' ) ) {
 	function lnkdn_plugins_loaded() {
@@ -129,27 +129,7 @@ if ( ! function_exists ( 'lnkdn_settings' ) ) {
 		$lnkdn_options = get_option( 'lnkdn_options' );
 
 		if ( ! isset( $lnkdn_options['plugin_option_version'] ) || $lnkdn_options['plugin_option_version'] != $lnkdn_plugin_info['Version'] ) {
-			/**
-			* @since 1.0.6
-			* @todo remove after 11.02.2018
-			*/
-			if ( ! is_array( $lnkdn_options['position'] ) ) {
-				switch ( $lnkdn_options['position'] ) {
-					case 'only_shortcode':
-						$lnkdn_options['position'] = array();
-						break;
-					case 'after_and_before':
-						$lnkdn_options['position'] = array( 'after_post', 'before_post' );
-						break;
-					case 'before_post':
-						$lnkdn_options['position'] = array( 'before_post' );
-						break;
-					case 'after_post':
-						$lnkdn_options['position'] = array( 'after_post' );
-						break;
-				}
-			}
-			/* end @todo */
+
 			lnkdn_plugin_activate();
 			$options_defaults = lnkdn_get_options_default();
 			$lnkdn_options = array_merge( $options_defaults, $lnkdn_options );
@@ -176,10 +156,9 @@ if ( ! function_exists( 'lnkdn_get_options_default' ) ) {
 			'posts'						=> 1,
 			'lang'						=> 'en_US',
 			'position'					=> array( 'before_post' ),
-			'share'						=> 1,
-			'share_count_mode'			=> 'top',
 			'use_multilanguage_locale'	=> 0,
-			'share_url'					=> ''
+			'share'                     => 0,
+            'share_url'					=> ''
 		);
 
 		return $options_default;
@@ -193,7 +172,14 @@ if ( ! function_exists( 'lnkdn_settings_page' ) ) {
 		$page = new Lnkdn_Settings_Tabs( plugin_basename( __FILE__ ) ); ?>
 		<div id="lnkdn_settings_form" class="wrap">
 			<h1>LinkedIn <?php _e( 'Settings', 'bws-linkedin' ); ?></h1>
-			<?php $page->display_content(); ?>
+            <noscript>
+                <div class="error below-h2">
+                    <p><strong><?php _e( 'WARNING', 'bws-linkedin' ); ?>
+                            :</strong> <?php _e( 'The plugin works correctly only if JavaScript is enabled.', 'bws-linkedin' ); ?>
+                    </p>
+                </div>
+            </noscript>
+            <?php $page->display_content(); ?>
 		</div>
 	<?php }
 }
@@ -211,7 +197,7 @@ if ( ! function_exists( 'lnkdn_return_button' ) ) {
 
 		if ( 'share' == $request ) {
 			$share = '<div class="lnkdn-share-button">
-						<script type="IN/Share" data-url="' . $share_url . '" data-counter="' . $lnkdn_options['share_count_mode'] . '"></script>
+						<script type="IN/Share" data-url="' . $share_url . '" data-counter="' . '"></script>
 					</div>';
 			return $share;
 		}
@@ -502,20 +488,19 @@ if ( ! class_exists( 'Lnkdn_Main_Widget' ) ) {
 
 		function update( $new_instance, $old_instance ) {
 			$instance = $old_instance;
-			$instance['lnkdn_select_widget']		= in_array( $instance['lnkdn_select_widget'], array( 'member_profile', 'company_profile', 'company_insider', 'jymbii', 'alumni_tool' ) ) ? $new_instance['lnkdn_select_widget'] : 'member_profile';
+			$instance['lnkdn_select_widget']		= ( ! empty( $instance['lnkdn_select_widget'] ) ) && in_array( $instance['lnkdn_select_widget'], array( 'member_profile', 'company_profile', 'company_insider', 'jymbii', 'alumni_tool' ) ) ? $new_instance['lnkdn_select_widget'] : 'member_profile';
 			$instance['lnkdn_title']				= strip_tags( $new_instance['lnkdn_title'] );
 			$instance['lnkdn_public_profile_url']	= esc_url_raw( $new_instance['lnkdn_public_profile_url'] );
-			$instance['lnkdn_display_jobs_mode']	= in_array( $instance['lnkdn_display_jobs_mode'], array( 'your_jobs', 'all_jobs' ) ) ? $new_instance['lnkdn_display_jobs_mode'] : 'your_jobs';
+			$instance['lnkdn_display_jobs_mode']	= ( ! empty( $instance['lnkdn_display_jobs_mode'] ) ) && in_array( $instance['lnkdn_display_jobs_mode'], array( 'your_jobs', 'all_jobs' ) ) ? $new_instance['lnkdn_display_jobs_mode'] : 'your_jobs';
 			$instance['lnkdn_company_id']			= preg_replace( "/[^0-9]*/" , "", $new_instance['lnkdn_company_id'] );
-			$instance['lnkdn_display_mode']			= in_array( $instance['lnkdn_display_mode'], array( 'inline', 'icon' ) ) ? $new_instance['lnkdn_display_mode'] : 'inline';
-			$instance['lnkdn_show_connections']		= in_array( $instance['lnkdn_show_connections'], array( 'show', 'hide' ) ) ? $new_instance['lnkdn_show_connections'] : 'show';
-			$instance['lnkdn_behavior']				= in_array( $instance['lnkdn_behavior'], array( 'on_hover', 'on_click' ) ) ? $new_instance['lnkdn_behavior'] : 'on_hover';
+			$instance['lnkdn_display_mode']			= ( ! empty( $instance['lnkdn_display_mode'] ) ) && in_array( $instance['lnkdn_display_mode'], array( 'inline', 'icon' ) ) ? $new_instance['lnkdn_display_mode'] : 'inline';
+			$instance['lnkdn_show_connections']		= ( ! empty( $instance['lnkdn_show_connections'] ) ) && in_array( $instance['lnkdn_show_connections'], array( 'show', 'hide' ) ) ? $new_instance['lnkdn_show_connections'] : 'show';
+			$instance['lnkdn_behavior']				= ( ! empty( $instance['lnkdn_behavior'] ) ) && in_array( $instance['lnkdn_behavior'], array( 'on_hover', 'on_click' ) ) ? $new_instance['lnkdn_behavior'] : 'on_hover';
 			$instance['lnkdn_school_id']			= preg_replace( "/[^0-9]*/" , "", $new_instance['lnkdn_school_id'] );
 			return $instance;
 		}
 	}
 }
-
 if ( ! function_exists( 'lnkdn_register_main_widget' ) ) {
 	function lnkdn_register_main_widget() {
 		register_widget( 'Lnkdn_Main_Widget' );
@@ -638,10 +623,10 @@ if ( ! function_exists( 'lnkdn_uninstall' ) ) {
 /* Plugin uninstall function */
 register_activation_hook( __FILE__, 'lnkdn_plugin_activate' );
 /* Calling a function add administrative menu. */
-add_action( 'admin_menu', 'lnkdn_admin_menu' );
+add_action( 'admin_menu', 'lnkdn_add_admin_menu' );
+/* Initialization */
 add_action( 'init', 'lnkdn_init' );
 add_action( 'admin_init', 'lnkdn_admin_init' );
-/* Initialization */
 add_action( 'plugins_loaded', 'lnkdn_plugins_loaded' );
 /* Adding stylesheets */
 add_action( 'wp_footer', 'lnkdn_js' );

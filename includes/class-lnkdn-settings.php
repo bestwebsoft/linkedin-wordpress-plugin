@@ -75,7 +75,6 @@ if ( ! class_exists( 'Lnkdn_Settings_Tabs' ) ) {
 			$this->options['use_multilanguage_locale']		= isset( $_REQUEST['lnkdn_use_multilanguage_locale'] ) ? 1 : 0;
 			$this->options['position']						= isset( $_REQUEST['lnkdn_position'] ) ? $_REQUEST['lnkdn_position'] : array();
 			$this->options['lang']							= esc_html( $_REQUEST['lnkdn_lang'] );
-			$this->options['share_count_mode'] 				= isset( $_REQUEST['lnkdn_share_count_mode'] ) ? strval( $_REQUEST['lnkdn_share_count_mode'] ) : '';
 			$this->options['share_url'] 					= isset( $_REQUEST['lnkdn_share_url'] ) ? esc_url( trim( $_REQUEST['lnkdn_share_url'] ) ) : '' ;
 			$this->options['follow_count_mode']				= isset( $_REQUEST['lnkdn_follow_count_mode'] ) ? strval( $_REQUEST['lnkdn_follow_count_mode'] ) : '';
 
@@ -204,24 +203,6 @@ if ( ! class_exists( 'Lnkdn_Settings_Tabs' ) ) {
 			</table>
 			<div class="bws_tab_sub_label lnkdn_share_enabled"><?php _e( 'Share Button', 'bws-linkedin' ); ?></div>
 			<table class="form-table lnkdn_settings_form lnkdn_share_enabled">
-				<tr>
-					<th><?php _e( 'Count Mode', 'bws-linkedin' ); ?></th>
-					<td>
-						<fieldset>
-							<label>
-								<input type="radio" name="lnkdn_share_count_mode" value="top" <?php checked( 'top', $this->options['share_count_mode'] ); ?> /> <?php _e( 'Vertical', 'bws-linkedin' ); ?>
-							</label>
-							<br />
-							<label>
-								<input type="radio" name="lnkdn_share_count_mode" value="right" <?php checked( 'right', $this->options['share_count_mode'] ); ?> /> <?php _e( 'Horizontal', 'bws-linkedin' ); ?>
-							</label>
-							<br />
-							<label>
-								<input type="radio" name="lnkdn_share_count_mode" value="" <?php checked( '', $this->options['share_count_mode'] ); ?> /> <?php _e( 'No count', 'bws-linkedin' ); ?>
-							</label>
-						</fieldset>
-					</td>
-				</tr>
 				<tr>
 					<th><?php _e( 'URL', 'bws-linkedin' ); ?></th>
 					<td>
