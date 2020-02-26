@@ -1,184 +1,78 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bws-linkedin\n"
-"POT-Creation-Date: 2018-12-14 15:57+0200\n"
-"PO-Revision-Date: 2018-12-14 15:57+0200\n"
+"POT-Creation-Date: 2020-02-21 13:00+0200\n"
+"PO-Revision-Date: 2020-02-21 13:00+0200\n"
 "Last-Translator: \n"
 "Language-Team: BestWebSoft <plugin@bestwebsoft.com>\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.3\n"
 "X-Poedit-KeywordsList: __;_e\n"
-"X-Poedit-Basepath: .\n"
+"X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: bws_menu\n"
+"X-Poedit-SearchPathExcluded-0: bws_menu\n"
 
-#: ../bws-linkedin.php:35 ../bws-linkedin.php:36
-#: ../includes/class-lnkdn-settings.php:111
+#: bws-linkedin.php:35 bws-linkedin.php:36 bws-linkedin.php:183
+#: includes/class-lnkdn-settings.php:113
 msgid "LinkedIn Settings"
 msgstr "Настройки LinkedIn"
 
-#: ../bws-linkedin.php:36 ../bws-linkedin.php:193 ../bws-linkedin.php:553
-#: ../bws-linkedin.php:566 ../includes/class-lnkdn-settings.php:24
+#: bws-linkedin.php:36 bws-linkedin.php:420 bws-linkedin.php:433
+#: includes/class-lnkdn-settings.php:21
 msgid "Settings"
 msgstr "Настройки"
 
-#: ../bws-linkedin.php:42
+#: bws-linkedin.php:42
 msgid "Upgrade to Pro"
 msgstr "Обновиться до Pro"
 
-#: ../bws-linkedin.php:196
+#: bws-linkedin.php:186
 msgid "WARNING"
 msgstr "ВНИМАНИЕ!"
 
-#: ../bws-linkedin.php:197
+#: bws-linkedin.php:187
 msgid "The plugin works correctly only if JavaScript is enabled."
 msgstr ""
 "Плагин работает корректно только в том случае, если включен JavaScript."
 
-#: ../bws-linkedin.php:351
+#: bws-linkedin.php:361
 msgid "LinkedIn Share Button"
 msgstr "Кнопка \"Поделиться\""
 
-#: ../bws-linkedin.php:356
+#: bws-linkedin.php:366
 msgid "LinkedIn Follow Button"
-msgstr "Кнопка \"Отслеживать\""
+msgstr "Кнопка \"Подписаться\""
 
-#: ../bws-linkedin.php:389 ../bws-linkedin.php:450
-msgid "LinkedIn Widgets"
-msgstr "Виджеты LinkedIn"
-
-#: ../bws-linkedin.php:389
-msgid "Choose one of 5 LinkedIn widgets"
-msgstr "Выберите один из 5 виджетов LinkedIn"
-
-#: ../bws-linkedin.php:452
-msgid "Member Profile Widget"
-msgstr "Виджет Персонального Профиля"
-
-#: ../bws-linkedin.php:453
-msgid "Company Profile Widget"
-msgstr "Виджет Профиля Компании"
-
-#: ../bws-linkedin.php:454
-msgid "Company Insider Widget"
-msgstr "Виджет Инсайдера Компании"
-
-#: ../bws-linkedin.php:455
-msgid "Jobs You May Be Interested In Widget"
-msgstr "Виджет \"Вакансии, которые могут Вас заинтересовать\""
-
-#: ../bws-linkedin.php:456
-msgid "Alumni Tool Widget"
-msgstr "Виджет \"Инструмент Выпускника\""
-
-#: ../bws-linkedin.php:460
-msgid "Title"
-msgstr "Заголовок"
-
-#: ../bws-linkedin.php:464
-msgid "Public Profile URL"
-msgstr "URL общедоступного профиля"
-
-#: ../bws-linkedin.php:465
-msgid "Enter the Public Profile URL"
-msgstr "Введите URL общедоступного профиля"
-
-#: ../bws-linkedin.php:468 ../bws-linkedin.php:479
-msgid "Display Mode"
-msgstr "Режим отображения"
-
-#: ../bws-linkedin.php:470
-msgid "Your Jobs"
-msgstr "Ваши вакансии"
-
-#: ../bws-linkedin.php:471
-msgid "All Jobs"
-msgstr "Все вакансии"
-
-#: ../bws-linkedin.php:475
-msgid "Company ID"
-msgstr "ID Компании"
-
-#: ../bws-linkedin.php:476
-msgid "Enter the Company ID"
-msgstr "Введите ID Компании"
-
-#: ../bws-linkedin.php:481
-msgid "Inline"
-msgstr "Полностью"
-
-#: ../bws-linkedin.php:482
-msgid "Icon"
-msgstr "Иконка"
-
-#: ../bws-linkedin.php:486
-msgid "Show Connections"
-msgstr "Отображение связей"
-
-#: ../bws-linkedin.php:488
-msgid "Show"
-msgstr "Показывать"
-
-#: ../bws-linkedin.php:489
-msgid "Hide"
-msgstr "Скрыть"
-
-#: ../bws-linkedin.php:493
-msgid "Behavior"
-msgstr "Режим"
-
-#: ../bws-linkedin.php:495
-msgid "On Hover"
-msgstr "При наведении"
-
-#: ../bws-linkedin.php:496
-msgid "On Click"
-msgstr "При клике"
-
-#: ../bws-linkedin.php:500
-msgid "School ID"
-msgstr "ID учебного заведения"
-
-#: ../bws-linkedin.php:501
-msgid "Enter the School ID"
-msgstr "Введите ID учебного заведения"
-
-#: ../bws-linkedin.php:504
-msgid "Can't find your ID?"
-msgstr "Не можете найти ID?"
-
-#: ../bws-linkedin.php:504 ../includes/class-lnkdn-settings.php:238
-msgid "Read the instruction"
-msgstr "Пожалуйста, ознакомьтесь с инструкцией"
-
-#: ../bws-linkedin.php:567
+#: bws-linkedin.php:434
 msgid "FAQ"
 msgstr "FAQ"
 
-#: ../bws-linkedin.php:568
+#: bws-linkedin.php:435
 msgid "Support"
 msgstr "Поддержка"
 
-#: ../includes/class-lnkdn-settings.php:26
+#: includes/class-lnkdn-settings.php:23
 msgid "Display"
 msgstr "Отображение"
 
-#: ../includes/class-lnkdn-settings.php:28
+#: includes/class-lnkdn-settings.php:25
 msgid "Misc"
 msgstr "Разное"
 
-#: ../includes/class-lnkdn-settings.php:29
+#: includes/class-lnkdn-settings.php:26
 msgid "Custom Code"
 msgstr "Пользовательский код"
 
-#: ../includes/class-lnkdn-settings.php:31
+#: includes/class-lnkdn-settings.php:28
 msgid "License Key"
 msgstr "Лицензионный ключ"
 
-#: ../includes/class-lnkdn-settings.php:90
+#: includes/class-lnkdn-settings.php:92
 msgid ""
 "Enter the Company/Showcase Page ID for \"Follow\" button. Settings are not "
 "saved."
@@ -186,69 +80,68 @@ msgstr ""
 "Введите ID Компании/Демонстрационной страницы для кнопки  \"Отслеживать\". "
 "Настройки не сохранены."
 
-#: ../includes/class-lnkdn-settings.php:95
+#: includes/class-lnkdn-settings.php:97
 msgid "Settings saved"
 msgstr "Настройки сохранены"
 
-#: ../includes/class-lnkdn-settings.php:114
+#: includes/class-lnkdn-settings.php:116
 msgid "General"
 msgstr "Общее"
 
-#: ../includes/class-lnkdn-settings.php:117
+#: includes/class-lnkdn-settings.php:119
 msgid "Buttons"
 msgstr "Кнопки"
 
-#: ../includes/class-lnkdn-settings.php:121
+#: includes/class-lnkdn-settings.php:123
 msgid "Share"
 msgstr "Поделиться"
 
-#: ../includes/class-lnkdn-settings.php:125
+#: includes/class-lnkdn-settings.php:127
 msgid "Follow"
 msgstr "Отслеживать"
 
-#: ../includes/class-lnkdn-settings.php:131
+#: includes/class-lnkdn-settings.php:133
 msgid "Display on"
 msgstr "Отображать на"
 
-#: ../includes/class-lnkdn-settings.php:136
+#: includes/class-lnkdn-settings.php:138
 msgid "Home page"
 msgstr "Домашняя страница"
 
-#: ../includes/class-lnkdn-settings.php:141
+#: includes/class-lnkdn-settings.php:143
 msgid "Posts"
 msgstr "Записи"
 
-#: ../includes/class-lnkdn-settings.php:146
+#: includes/class-lnkdn-settings.php:148
 msgid "Pages"
 msgstr "Страницы"
 
-#: ../includes/class-lnkdn-settings.php:153
+#: includes/class-lnkdn-settings.php:155
 msgid "Buttons Position"
 msgstr "Положение кнопок"
 
-#: ../includes/class-lnkdn-settings.php:158
+#: includes/class-lnkdn-settings.php:160
 msgid "Before content"
 msgstr "Перед содержимым"
 
-#: ../includes/class-lnkdn-settings.php:163
+#: includes/class-lnkdn-settings.php:165
 msgid "After content"
 msgstr "После содержимого"
 
-#: ../includes/class-lnkdn-settings.php:166
+#: includes/class-lnkdn-settings.php:168
 msgid "Unselect all to use a shortcode only."
 msgstr "Отключите всё, чтобы использовать только шорткод."
 
-#: ../includes/class-lnkdn-settings.php:170
+#: includes/class-lnkdn-settings.php:172
 msgid "Language"
 msgstr "Язык"
 
-#: ../includes/class-lnkdn-settings.php:181
+#: includes/class-lnkdn-settings.php:183
 msgid "Select the default language for LinkedIn button(-s)."
 msgstr "Выберите стандартный язык отображения кнопок LinkedIn."
 
-#: ../includes/class-lnkdn-settings.php:191
-#: ../includes/class-lnkdn-settings.php:195
-#: ../includes/class-lnkdn-settings.php:199
+#: includes/class-lnkdn-settings.php:193 includes/class-lnkdn-settings.php:197
+#: includes/class-lnkdn-settings.php:201
 msgid ""
 "Enable to switch language automatically on multilingual website using "
 "Multilanguage plugin."
@@ -256,68 +149,66 @@ msgstr ""
 "Включите, чтобы переключать язык автоматически на многоязычном сайте, "
 "используя Multilanguage плагин."
 
-#: ../includes/class-lnkdn-settings.php:195
+#: includes/class-lnkdn-settings.php:197
 #, php-format
 msgid "Activate %s"
 msgstr "Активировать %s"
 
-#: ../includes/class-lnkdn-settings.php:199
+#: includes/class-lnkdn-settings.php:201
 msgid "Learn More"
 msgstr "Подробнее"
 
-#: ../includes/class-lnkdn-settings.php:204
+#: includes/class-lnkdn-settings.php:207
 msgid "Share Button"
 msgstr "Кнопка \"Поделиться\""
 
-#: ../includes/class-lnkdn-settings.php:207
+#: includes/class-lnkdn-settings.php:210
 msgid "URL"
 msgstr "URL"
 
-#: ../includes/class-lnkdn-settings.php:210
+#: includes/class-lnkdn-settings.php:213
 msgid "URL to be shared. Leave blank to use a current page URL."
-msgstr "Укажите стандартную сылку кнопки \"Поделиться\" или....."
+msgstr ""
+"Укажите нужную ссылку или оставьте это поле пустым, чтобы использовать "
+"ссылку на текущую страницу."
 
-#: ../includes/class-lnkdn-settings.php:214
+#: includes/class-lnkdn-settings.php:219
 msgid "Follow Button"
 msgstr "Кнопка \"Отслеживать\""
 
-#: ../includes/class-lnkdn-settings.php:217
+#: includes/class-lnkdn-settings.php:222
 msgid "Count Mode"
 msgstr "Отображение счетчика"
 
-#: ../includes/class-lnkdn-settings.php:221
+#: includes/class-lnkdn-settings.php:226
 msgid "Vertical"
 msgstr "Вертикально"
 
-#: ../includes/class-lnkdn-settings.php:225
+#: includes/class-lnkdn-settings.php:230
 msgid "Horizontal"
 msgstr "Горизонтально"
 
-#: ../includes/class-lnkdn-settings.php:229
+#: includes/class-lnkdn-settings.php:234
 msgid "No count"
 msgstr "Нет"
 
-#: ../includes/class-lnkdn-settings.php:235
+#: includes/class-lnkdn-settings.php:240
 msgid "Company or Showcase Page ID"
 msgstr "ID компании или страницы бренда"
 
-#: ../includes/class-lnkdn-settings.php:238
+#: includes/class-lnkdn-settings.php:243
 msgid "Can't find your page ID?"
 msgstr "Не можете найти ID компании?"
 
-#: ../includes/class-lnkdn-settings.php:261
+#: includes/class-lnkdn-settings.php:243
+msgid "Read the instruction"
+msgstr "Пожалуйста, ознакомьтесь с инструкцией"
+
+#: includes/class-lnkdn-settings.php:267
 msgid "LinkedIn Buttons Shortcode"
 msgstr "Шорткод кнопок LinkedIn"
 
-#: ../includes/class-lnkdn-settings.php:265
-msgid "Add LinkedIn to a widget."
-msgstr "Добавьте LinkedIn в виджет."
-
-#: ../includes/class-lnkdn-settings.php:265
-msgid "Navigate to Widgets"
-msgstr "Перейти к Виджетам"
-
-#: ../includes/class-lnkdn-settings.php:267
+#: includes/class-lnkdn-settings.php:270
 msgid ""
 "Add LinkedIn button(-s) to your posts, pages, custom post types or widgets "
 "by using the following shortcode:"
@@ -325,19 +216,19 @@ msgstr ""
 "Добавить кнопки LinkedIn на ваши записи, страницы, пользовательские типы "
 "записей или виджеты с помощью данного шорткода:"
 
-#: ../includes/class-lnkdn-settings.php:285
+#: includes/class-lnkdn-settings.php:288
 msgid "Close"
 msgstr "Закрыть"
 
-#: ../includes/class-lnkdn-settings.php:286
+#: includes/class-lnkdn-settings.php:289
 msgid "LinkedIn Buttons Preview"
 msgstr "Предварительный просмотр кнопок LinkedIn"
 
-#: ../includes/class-lnkdn-settings.php:300
+#: includes/class-lnkdn-settings.php:303
 msgid "Display Settings"
 msgstr "Настройка отображения"
 
-#: ../includes/class-lnkdn-settings.php:309
+#: includes/class-lnkdn-settings.php:312
 msgid ""
 "Please choose the necessary post types (or single pages) where LinkedIn "
 "buttons will be displayed:"
@@ -345,13 +236,97 @@ msgstr ""
 "Пожалуйста, выберите те типы записей (или отдельные страницы), где будут "
 "отображаться кнопки LinkedIn:"
 
-#: ../includes/class-lnkdn-settings.php:316
+#: includes/class-lnkdn-settings.php:319
 msgid "Show URL for pages"
 msgstr "Отображать URL для страниц"
 
-#: ../includes/class-lnkdn-settings.php:322
+#: includes/class-lnkdn-settings.php:325
 msgid "Example of the site's pages tree"
 msgstr "Пример дерева страниц сайта"
+
+#~ msgid "Add LinkedIn to a widget."
+#~ msgstr "Добавьте Linked в виджет."
+
+#~ msgid "Navigate to Widgets"
+#~ msgstr "Перейти к Виджетам"
+
+#~ msgid "Linked Widgets"
+#~ msgstr "Виджеты Linked"
+
+#~ msgid "Choose one of 5 Linked widgets"
+#~ msgstr "Выберите один из 5 виджетов Linked"
+
+#~ msgid "Member Profile Widget"
+#~ msgstr "Виджет Персонального Профиля"
+
+#~ msgid "Company Profile Widget"
+#~ msgstr "Виджет Профиля Компании"
+
+#~ msgid "Company Insider Widget"
+#~ msgstr "Виджет Инсайдера Компании"
+
+#~ msgid "Jobs You May Be Interested In Widget"
+#~ msgstr "Виджет \"Вакансии, которые могут Вас заинтересовать\""
+
+#~ msgid "Alumni Tool Widget"
+#~ msgstr "Виджет \"Инструмент Выпускника\""
+
+#~ msgid "Title"
+#~ msgstr "Заголовок"
+
+#~ msgid "Public Profile URL"
+#~ msgstr "URL общедоступного профиля"
+
+#~ msgid "Enter the Public Profile URL"
+#~ msgstr "Введите URL общедоступного профиля"
+
+#~ msgid "Display Mode"
+#~ msgstr "Режим отображения"
+
+#~ msgid "Your Jobs"
+#~ msgstr "Ваши вакансии"
+
+#~ msgid "All Jobs"
+#~ msgstr "Все вакансии"
+
+#~ msgid "Company ID"
+#~ msgstr "ID Компании"
+
+#~ msgid "Enter the Company ID"
+#~ msgstr "Введите ID Компании"
+
+#~ msgid "Inline"
+#~ msgstr "Полностью"
+
+#~ msgid "Icon"
+#~ msgstr "Иконка"
+
+#~ msgid "Show Connections"
+#~ msgstr "Отображение связей"
+
+#~ msgid "Show"
+#~ msgstr "Показывать"
+
+#~ msgid "Hide"
+#~ msgstr "Скрыть"
+
+#~ msgid "Behavior"
+#~ msgstr "Режим"
+
+#~ msgid "On Hover"
+#~ msgstr "При наведении"
+
+#~ msgid "On Click"
+#~ msgstr "При клике"
+
+#~ msgid "School ID"
+#~ msgstr "ID учебного заведения"
+
+#~ msgid "Enter the School ID"
+#~ msgstr "Введите ID учебного заведения"
+
+#~ msgid "Can't find your ID?"
+#~ msgstr "Не можете найти ID?"
 
 #~ msgid "Enter URL for \"Share\" button. Settings are not saved."
 #~ msgstr "Введите URL для кнопки \"Поделиться\". Настройки не сохранены."

@@ -18,12 +18,8 @@ tr.lnkdn-follow-options input[name="lnkdn_follow_page_name"] {
 	margin: 5px 0;
 }
 .lnkdn_buttons {
-	display: inline-block;
 	margin: 3px 0;
 	vertical-align: bottom;
-}
-.lnkdn-button-certain-theme .lnkdn-follow-button iframe {
-	margin-bottom: 2.5em;
 }
 .lnkdn-follow-button iframe {
 	margin-bottom: 0;
@@ -46,37 +42,4 @@ tr.lnkdn-follow-options input[name="lnkdn_follow_page_name"] {
 }
 div[id*="lnkdn_main"] .lnkdn-hide-option {
 	display: none;
-}
-div[id*="lnkdn_main"] select[name*="select_widget"] {
-	width: 100%;
-}
-.lnkdn_company_profile_help,
-.lnkdn_company_insider_help,
-.lnkdn_jymbii_help,
-.lnkdn_alumni_tool_help {
-	min-width: 200px;
-}
-/* link how_to_use */
-.lnkdn_how_to_use {
-	float: right;
-}
-.rtl .lnkdn_how_to_use {
-	float: left;
-}
-@media only screen and ( max-width: 782px ) {
-	.lnkdn_how_to_use {
-		float: none;
-		text-align: left;
-	}
-	.rtl .lnkdn_how_to_use {
-		text-align: right;
-	}
-}
-@media screen and (max-width: 590px) {
-	.lnkdn_company_profile_help,
-	.lnkdn_company_insider_help,
-	.lnkdn_jymbii_help,
-	.lnkdn_alumni_tool_help {
-		min-width: 135px;
-	}
 }

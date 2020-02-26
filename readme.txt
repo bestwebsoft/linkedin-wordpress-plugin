@@ -1,14 +1,14 @@
-=== LinkedIn by BestWebSoft ===
+=== BestWebSoft's LinkedIn ===
 Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: LinkedIn, linedin, linkedln, likedin, linkedin plugin, share button, follow button, linkedin widget, linkedin widgets, social buttons
-Requires at least: 3.9
-Tested up to: 5.2.2
-Stable tag: 1.1.0
+Requires at least: 4.5
+Tested up to: 5.3.2
+Stable tag: 1.1.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Add LinkedIn Share and Follow buttons to WordPress posts, pages and widgets. 5 plugins included – profile, insider, etc.
+Add LinkedIn Share and Follow buttons to WordPress posts, pages and widgets.
 
 == Description ==
 
@@ -37,28 +37,6 @@ https://www.youtube.com/watch?v=O_ramABu8Zk
 	* Vertical
 	* Horizontal
 	* No-count
-* Add LinkedIn widgets:
-	* Member profile
-	* Company profile
-	* Company insider
-	* Jobs You May Be Interested In
-	* Alumni tool
-* Customize Member and Company profile widgets:
-	* Title
-	* URL/ID
-	* Display mode
-		* Inline
-		* Icon
-	* Show/hide connections
-* Customize Jobs You May Be Interested In widget:
-	* Title
-	* Display mode
-		* Your jobs
-		* All jobs
-	* Company ID
-* Customize Company insider and Alumni tool widgets:
-	* Title
-	* ID
 * Add custom code via plugin settings page
 * Compatible with latest WordPress version
 * Incredibly simple settings for fast setup without modifying code
@@ -96,9 +74,8 @@ Some of these translations are not complete. We are constantly adding new featur
 
 = Recommended Plugins =
 
-* [Updater](https://bestwebsoft.com/products/wordpress/plugins/updater/?k=b0cd02870bd5790030e3424a6180c433) - Automatically check and update WordPress core with all installed plugins to the latest versions. Manual mode, email notifications and backups of all your files and database before updating.
-* [Google +1](https://bestwebsoft.com/products/wordpress/plugins/google-plus-one/?k=e8c27c97786f6de13bf10e8b3b18f0a3) - Add Google +1 Share, Follow, Hangout buttons and profile badge to WordPress posts, pages and widgets.
-* [Facebook Button](https://bestwebsoft.com/products/wordpress/plugins/facebook-like-button/?k=88fbc574b13350527aba6fffd6970fd7) - Add Facebook Like, Share and Profile buttons to WordPress posts, pages and widgets.
+* [Updater](https://bestwebsoft.com/products/wordpress/plugins/updater/?k=b0cd02870bd5790030e3424a6180c433) - Automatically check and update WordPress website core with all installed plugins and themes to the latest versions.
+* [Like & Share](https://bestwebsoft.com/products/wordpress/plugins/facebook-like-button/?k=88fbc574b13350527aba6fffd6970fd7) - Add Facebook Like, Share and Profile buttons to WordPress posts, pages and widgets.
 * [Multilanguage](https://bestwebsoft.com/products/wordpress/plugins/multilanguage/?k=c1d633da9c4483772615a9462bf59f27) - Translate WordPress website content to other languages manually. Create multilingual pages, posts, widgets, menus, etc.
 * [Pinterest](https://bestwebsoft.com/products/wordpress/plugins/pinterest/?k=bbe78d1a7a355da6610cb3d05fbf700e) - Add Pinterest Follow, Pin It buttons and profile widgets (Pin, Board, Profile) to WordPress posts, pages and widgets.
 * [Twitter](https://bestwebsoft.com/products/wordpress/plugins/twitter/?k=bdb19dd8cedd4526f94c7b52f049a2c3) - Add Twitter Follow, Tweet, Hashtag, and Mention buttons to WordPress posts, pages and widgets.
@@ -115,18 +92,6 @@ Some of these translations are not complete. We are constantly adding new featur
 
 It happens when your page or post isn't shared.
 
-= I've added widgets to my sidebar. Why are they cropped? =
-
-Beсause the "Company Insider" widget has 633px width and other LinkedIn widgets have 300px width.
-
-= Why don't widgets display on my site? =
-
-To display widgets, you must fill fields, such as 'Public Profile URL', 'Company ID' or 'School ID'.
-
-= Why doesn't widget 'Member Profile' display? =
-
-URL, which you add, should be public. It can be configured via "public profile settings" in your Linkedin account.
-
 = I have some problems with the plugin's work. What Information should I provide to receive proper support? =
 
 Please make sure that the problem hasn't been discussed yet on our forum (<https://support.bestwebsoft.com>). If no, please provide the following data along with your problem's description:
@@ -139,13 +104,15 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 == Screenshots ==
 
 1. LinkedIn Buttons in the front-end.
-2. LinkedIn Widgets in front-end: Member Profile, Company Profile and "Jobs You May Be Interested In".
-3. LinkedIn Widgets in front-end: Company Insider and "Alumni Tool".
-4. LinkedIn Settings Page.
-5. Adding shortcode into the content.
-6. Adding LinkedIn Widget in the sidebar.
+2. LinkedIn Settings Page.
+3. Adding shortcode into the content.
 
 == Changelog ==
+
+= V1.1.1 - 19.02.2020 =
+* Update : All functionality was updated for WordPress 5.3.2.
+* Update : Plugin was renamed.
+* Update : Widgets was removed due to a change in the linkedin API.
 
 = V1.1.0 - 4.09.2019 =
 * Update: The deactivation feedback has been changed. Misleading buttons have been removed.
@@ -191,6 +158,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Css-style was added.
 
 == Upgrade Notice ==
+
+= V1.1.1 =
+* The compatibility with new WordPress version updated.
 
 = V1.1.0 =
 * Usability improved.

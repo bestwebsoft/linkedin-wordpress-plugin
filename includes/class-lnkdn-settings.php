@@ -3,9 +3,6 @@
  * Displays the content on the plugin settings page
  */
 
-if ( ! class_exists( 'Bws_Settings_Tabs' ) )
-	require_once( dirname( dirname( __FILE__ ) ) . '/bws_menu/class-bws-settings.php' );
-
 if ( ! class_exists( 'Lnkdn_Settings_Tabs' ) ) {
 	class Lnkdn_Settings_Tabs extends Bws_Settings_Tabs {
 		/**
@@ -65,6 +62,7 @@ if ( ! class_exists( 'Lnkdn_Settings_Tabs' ) ) {
 		 */
 		public function save_options() {
 			global $wpdb, $lnkdn_lang_codes;
+			$message = $notice = $error = '';
 
 			$this->options['follow']						= isset( $_REQUEST['lnkdn_follow'] ) ? 1 : 0 ;
 			$this->options['follow_page_name']				= preg_replace( "/[^0-9]*/" , "", $_REQUEST['lnkdn_follow_page_name'] );
@@ -73,18 +71,22 @@ if ( ! class_exists( 'Lnkdn_Settings_Tabs' ) ) {
 			$this->options['posts']							= isset( $_REQUEST['lnkdn_posts'] ) ? 1 : 0 ;
 			$this->options['share']							= isset( $_REQUEST['lnkdn_share'] ) ? 1 : 0 ;
 			$this->options['use_multilanguage_locale']		= isset( $_REQUEST['lnkdn_use_multilanguage_locale'] ) ? 1 : 0;
-			$this->options['position']						= isset( $_REQUEST['lnkdn_position'] ) ? $_REQUEST['lnkdn_position'] : array();
-			$this->options['lang']							= esc_html( $_REQUEST['lnkdn_lang'] );
-			$this->options['share_url'] 					= isset( $_REQUEST['lnkdn_share_url'] ) ? esc_url( trim( $_REQUEST['lnkdn_share_url'] ) ) : '' ;
-			$this->options['follow_count_mode']				= isset( $_REQUEST['lnkdn_follow_count_mode'] ) ? strval( $_REQUEST['lnkdn_follow_count_mode'] ) : '';
+			$this->options['position'] = array();
+			if ( ! empty ( $_REQUEST['lnkdn_position'] ) && is_array( $_REQUEST['lnkdn_position'] ) ) {
+				foreach ( $_REQUEST['lnkdn_position'] as $position ) {
+					if ( in_array( $position, array( 'before_post', 'after_post' ) ) ) {
+						$this->options['position'][] = $position;
+					}
+				}
+			}
 
+			$this->options['lang'] = ( isset( $_REQUEST['lnkdn_lang'] ) && array_key_exists( $_REQUEST['lnkdn_lang'], $lnkdn_lang_codes ) ) ? $_REQUEST['lnkdn_lang'] : $this->options['lang'];
+			$this->options['share_url'] 					= isset( $_REQUEST['lnkdn_share_url'] ) ? esc_url( trim( $_REQUEST['lnkdn_share_url'] ) ) : '' ;
 			if ( filter_var( $this->options['share_url'], FILTER_VALIDATE_URL ) === false ) {
 				$this->options['share_url'] = '';
 			}
 
-			if ( array_key_exists( $this->options['lang'], $lnkdn_lang_codes ) ) {
-				$this->options['lang'] = $_REQUEST['lnkdn_lang'];
-			}
+			$this->options['follow_count_mode']				= ( isset( $_REQUEST['lnkdn_follow_count_mode'] ) && in_array( $_POST['lnkdn_follow_count_mode'], array( 'top', 'right' ) ) ) ? $_REQUEST['lnkdn_follow_count_mode'] : '';
 
 			if ( 1 == $this->options['follow'] && empty( $this->options['follow_page_name'] ) ) {
 				$error = __( 'Enter the Company/Showcase Page ID for "Follow" button. Settings are not saved.', 'bws-linkedin' );
@@ -118,11 +120,11 @@ if ( ! class_exists( 'Lnkdn_Settings_Tabs' ) ) {
 					<td>
 						<fieldset>
 							<label>
-								<input type="checkbox" value="1" name="lnkdn_share"<?php checked( 1, $this->options['share'] ); ?> /> <?php _e( 'Share', 'bws-linkedin' ); ?>
+								<input type="checkbox" value="1" class="bws_option_affect" data-affect-show=".lnkdn_share_hide" name="lnkdn_share" <?php checked( $this->options['share'], 1 ); ?> /> <?php _e( 'Share', 'bws-linkedin' ); ?>
 							</label>
 							<br />
 							<label>
-								<input type="checkbox" value="1" name="lnkdn_follow"<?php checked( 1, $this->options['follow'] ); ?> /> <?php _e( 'Follow', 'bws-linkedin' ); ?>
+								<input type="checkbox" value="1" class="bws_option_affect" data-affect-show=".lnkdn_follow_hide" name="lnkdn_follow"<?php checked( 1, $this->options['follow'] ); ?> /> <?php _e( 'Follow', 'bws-linkedin' ); ?>
 							</label>
 						</fieldset>
 					</td>
@@ -201,44 +203,48 @@ if ( ! class_exists( 'Lnkdn_Settings_Tabs' ) ) {
 					</td>
 				</tr>
 			</table>
-			<div class="bws_tab_sub_label lnkdn_share_enabled"><?php _e( 'Share Button', 'bws-linkedin' ); ?></div>
-			<table class="form-table lnkdn_settings_form lnkdn_share_enabled">
-				<tr>
-					<th><?php _e( 'URL', 'bws-linkedin' ); ?></th>
-					<td>
-						<input type="text" name="lnkdn_share_url" value="<?php echo $this->options['share_url']; ?>">
-						<div class="bws_info"><?php _e( 'URL to be shared. Leave blank to use a current page URL.', 'bws-linkedin' ); ?></div>
-					</td>
-				</tr>
-			</table>
-			<div class="bws_tab_sub_label lnkdn_follow_enabled"><?php _e( 'Follow Button', 'bws-linkedin' ); ?></div>
-			<table class="form-table lnkdn_settings_form lnkdn_follow_enabled">
-				<tr>
-					<th><?php _e( 'Count Mode', 'bws-linkedin' ); ?></th>
-					<td>
-						<fieldset>
-							<label>
-								<input type="radio" name="lnkdn_follow_count_mode" value="top" <?php checked( 'top', $this->options['follow_count_mode'] ); ?> /> <?php _e( 'Vertical', 'bws-linkedin' ); ?>
-							</label>
-							<br />
-							<label>
-								<input type="radio" name="lnkdn_follow_count_mode" value="right" <?php checked( 'right', $this->options['follow_count_mode'] ); ?> /> <?php _e( 'Horizontal', 'bws-linkedin' ); ?>
-							</label>
-							<br />
-							<label>
-								<input type="radio" name="lnkdn_follow_count_mode" value="" <?php checked( '', $this->options['follow_count_mode'] ); ?> /> <?php _e( 'No count', 'bws-linkedin' ); ?>
-							</label>
-						</fieldset>
-					</td>
-				</tr>
-				<tr>
-					<th><?php _e( 'Company or Showcase Page ID', 'bws-linkedin' ); ?></th>
-					<td>
-						<input type="text" name="lnkdn_follow_page_name" <?php if ( 1 == $this->options['follow'] ) echo 'required="required"'; ?> value="<?php if ( preg_match( "/^[0-9]{4,8}$/", preg_replace( "/[^0-9]*/" , "", $this->options['follow_page_name'] ) ) ) { echo preg_replace( "/[^0-9]*/" , "", $this->options['follow_page_name'] ); } ?>" />
-						<div class="bws_info"><?php _e( "Can't find your page ID?", 'bws-linkedin' ); ?>&nbsp;<a href='https://support.bestwebsoft.com/hc/en-us/articles/115002405226'><?php _e( 'Read the instruction', 'bws-linkedin' ); ?></a></div>
-					</td>
-				</tr>
-			</table>
+			<div class="lnkdn_share_hide">
+				<div class="bws_tab_sub_label lnkdn_share_enabled"><?php _e( 'Share Button', 'bws-linkedin' ); ?></div>
+				<table class="form-table lnkdn_settings_form lnkdn_share_enabled">
+					<tr>
+						<th><?php _e( 'URL', 'bws-linkedin' ); ?></th>
+						<td>
+							<input type="text" name="lnkdn_share_url" value="<?php echo $this->options['share_url']; ?>">
+							<div class="bws_info"><?php _e( 'URL to be shared. Leave blank to use a current page URL.', 'bws-linkedin' ); ?></div>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="lnkdn_follow_hide">
+				<div class="bws_tab_sub_label lnkdn_follow_enabled"><?php _e( 'Follow Button', 'bws-linkedin' ); ?></div>
+				<table class="form-table lnkdn_settings_form lnkdn_follow_enabled">
+					<tr>
+						<th><?php _e( 'Count Mode', 'bws-linkedin' ); ?></th>
+						<td>
+							<fieldset>
+								<label>
+									<input type="radio" name="lnkdn_follow_count_mode" value="top" <?php checked( 'top', $this->options['follow_count_mode'] ); ?> /> <?php _e( 'Vertical', 'bws-linkedin' ); ?>
+								</label>
+								<br />
+								<label>
+									<input type="radio" name="lnkdn_follow_count_mode" value="right" <?php checked( 'right', $this->options['follow_count_mode'] ); ?> /> <?php _e( 'Horizontal', 'bws-linkedin' ); ?>
+								</label>
+								<br />
+								<label>
+									<input type="radio" name="lnkdn_follow_count_mode" value="" <?php checked( '', $this->options['follow_count_mode'] ); ?> /> <?php _e( 'No count', 'bws-linkedin' ); ?>
+								</label>
+							</fieldset>
+						</td>
+					</tr>
+					<tr>
+						<th><?php _e( 'Company or Showcase Page ID', 'bws-linkedin' ); ?></th>
+						<td>
+							<input type="text" name="lnkdn_follow_page_name" <?php if ( 1 == $this->options['follow'] ) echo 'required="required"'; ?> value="<?php if ( preg_match( "/^[0-9]{4,8}$/", preg_replace( "/[^0-9]*/" , "", $this->options['follow_page_name'] ) ) ) { echo preg_replace( "/[^0-9]*/" , "", $this->options['follow_page_name'] ); } ?>" />
+							<div class="bws_info"><?php _e( "Can't find your page ID?", 'bws-linkedin' ); ?>&nbsp;<a href='https://support.bestwebsoft.com/hc/en-us/articles/115002405226'><?php _e( 'Read the instruction', 'bws-linkedin' ); ?></a></div>
+						</td>
+					</tr>
+				</table>
+			</div>
 		<?php }
 
 		/**
@@ -261,10 +267,7 @@ if ( ! class_exists( 'Lnkdn_Settings_Tabs' ) ) {
 					<?php _e( 'LinkedIn Buttons Shortcode', 'bws-linkedin' ); ?>
 				</h3>
 				<div class="inside">
-					<?php if( ! $this->is_network_options ) { ?>
-						<p><?php _e( 'Add LinkedIn to a widget.', 'bws-linkedin' ); ?> <a href="widgets.php"><?php _e( 'Navigate to Widgets', 'bws-linkedin' ); ?></a></p>
-					<?php }
-					_e( "Add LinkedIn button(-s) to your posts, pages, custom post types or widgets by using the following shortcode:", 'bws-linkedin' );
+					<?php _e( "Add LinkedIn button(-s) to your posts, pages, custom post types or widgets by using the following shortcode:", 'bws-linkedin' );
 					bws_shortcode_output( '[bws_linkedin display=&#34;share,follow&#34;]' ); ?>
 				</div>
 			</div>
