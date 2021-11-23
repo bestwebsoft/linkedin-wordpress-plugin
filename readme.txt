@@ -3,7 +3,7 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: LinkedIn, linedin, linkedln, likedin, linkedin plugin, share button, follow button, linkedin widget, linkedin widgets, social buttons
 Requires at least: 4.5
-Tested up to: 5.3.2
+Tested up to: 5.7
 Stable tag: 1.1.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -12,9 +12,12 @@ Add LinkedIn Share and Follow buttons to WordPress posts, pages and widgets.
 
 == Description ==
 
-LinkedIn plugin is a useful social tool which adds Follow and Share buttons to your Wordpress website posts, pages or widgets. This is a great way to drop the whole LinkedIn functionality in your website and consumer validation for your brand.
+BestWebSoft's LinkedIn plugin is a useful social tool which adds Follow and Share buttons to your Wordpress website posts, pages or widgets. This is a great way to drop the whole LinkedIn functionality in your website and consumer validation for your brand.
 
 Customize the appearance, configure settings, and enable other advanced options to promote your public profile!
+
+
+[View Demo](https://bestwebsoft.com/demo-linkedin-for-wordpress/?ref=readme)
 
 https://www.youtube.com/watch?v=O_ramABu8Zk
 
@@ -56,7 +59,7 @@ If you have a feature suggestion or idea you'd like to see in the plugin, we'd l
 
 = Documentation & Videos =
 
-* [[Doc] How to Use](https://docs.google.com/document/d/1fc4WbNSuL-eV1gSXWR_BkMEsjy7jyFS5CRG4k7SWEeU/)
+* [[Doc] User Guide](https://docs.google.com/document/d/1fc4WbNSuL-eV1gSXWR_BkMEsjy7jyFS5CRG4k7SWEeU/)
 * [[Doc] Installation](https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/)
 * [[Doc] Purchase](https://docs.google.com/document/d/1EUdBVvnm7IHZ6y0DNyldZypUQKpB8UVPToSc_LdOYQI/)
 

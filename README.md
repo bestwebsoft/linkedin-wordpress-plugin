@@ -1,8 +1,9 @@
-<a href="https://bestwebsoft.com/products/wordpress/plugins/linkedin/" target=_blank>Linked (LinkedIn) WordPress Plugin</a>
+<a href="https://bestwebsoft.com/products/wordpress/plugins/linkedin/" target=_blank>BesWebSoft's LinkedIn WordPress Plugin</a>
 ========================
 
-<p>LinkedIn plugin is a useful social tool which adds Follow and Share buttons to your WordPress website posts, pages or widgets. This is a great way to drop the whole LinkedIn functionality in your website and consumer validation for your brand.</p>
+<p>BestWebSoft&#8217;s LinkedIn plugin is a useful social tool which adds Follow and Share buttons to your WordPress website posts, pages or widgets. This is a great way to drop the whole LinkedIn functionality in your website and consumer validation for your brand.</p>
 <p>Customize the appearance, configure settings, and enable other advanced options to promote your public profile!</p>
+<p><a href="https://bestwebsoft.com/demo-linkedin-for-wordpress/?ref=readme" rel="nofollow ugc">View Demo</a></p>
 <p><span class="embed-youtube" style="text-align:center; display: block;"></span></p>
 <h4>Free Features</h4>
 <ul>
@@ -53,14 +54,12 @@
 <p>If you have a feature suggestion or idea you&#8217;d like to see in the plugin, we&#8217;d love to hear about it! <a href="https://support.bestwebsoft.com/hc/en-us/requests/new" rel="nofollow ugc">Suggest a Feature</a></p>
 <h4>Documentation &amp; Videos</h4>
 <ul>
-<li><a href="https://bestwebsoft.com/documentation/bestwebsofts-linkedin/bestwebsofts-linkedin-user-guide/" rel="nofollow ugc">[Doc] How to Use</a></li>
-<li><a href="https://bestwebsoft.com/documentation/how-to-install-a-wordpress-product/how-to-install-a-wordpress-plugin/" rel="nofollow ugc">[Doc] Installation</a></li>
-<li><a href="https://bestwebsoft.com/documentation/how-to-purchase-a-wordpress-plugin/how-to-purchase-wordpress-plugin-from-bestwebsoft/" rel="nofollow ugc">[Doc] Purchase</a></li>
+<li><a href="https://docs.google.com/document/d/1fc4WbNSuL-eV1gSXWR_BkMEsjy7jyFS5CRG4k7SWEeU/" rel="nofollow ugc">[Doc] User Guide</a></li>
+<li><a href="https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/" rel="nofollow ugc">[Doc] Installation</a></li>
+<li><a href="https://docs.google.com/document/d/1EUdBVvnm7IHZ6y0DNyldZypUQKpB8UVPToSc_LdOYQI/" rel="nofollow ugc">[Doc] Purchase</a></li>
 </ul>
 <h4>Help &amp; Support</h4>
 <p>Visit our Help Center if you have any questions, our friendly Support Team is happy to help — <a href="https://support.bestwebsoft.com/" rel="nofollow ugc">https://support.bestwebsoft.com/</a></p>
-<h4>Affiliate Program</h4>
-<p>Earn 20% commission by selling the premium WordPress plugins and themes by BestWebSoft — <a href="https://bestwebsoft.com/affiliate/" rel="nofollow">https://bestwebsoft.com/affiliate/</a></p>
 <h4>Translation</h4>
 <ul>
 <li>Czech (cs_CZ) (thanks to <a href="mailto:&#107;&#117;&#x63;&#x65;&#114;&#x61;&#x6d;&#105;&#064;&#x67;&#109;&#097;&#x69;&#108;&#046;&#x63;&#x6f;&#109;" rel="nofollow ugc">Michal Kučera</a> www.n0lim.it)</li>

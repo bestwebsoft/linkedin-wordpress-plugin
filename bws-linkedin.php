@@ -1,5 +1,5 @@
 <?php
-/*
+/*##
 Plugin Name: BestWebSoft's LinkedIn
 Plugin URI: https://bestwebsoft.com/products/wordpress/plugins/linkedin/
 Description: Add LinkedIn Share and Follow buttons to WordPress posts, pages and widgets.
@@ -46,7 +46,7 @@ if ( ! function_exists( 'lnkdn_add_admin_menu' ) ) {
 		add_action( 'load-' . $settings, 'lnkdn_add_tabs' );
 	}
 }
-/* end lnkdn_add_admin_menu */
+/* end lnkdn_add_admin_menu ##*/
 
 if ( ! function_exists( 'lnkdn_plugins_loaded' ) ) {
 	function lnkdn_plugins_loaded() {
@@ -67,11 +67,11 @@ if ( ! function_exists( 'lnkdn_init' ) ) {
 			$lnkdn_plugin_info = get_plugin_data( __FILE__ );
 		}
 
-		/* add general functions */
+		/*## add general functions */
 		require_once( dirname( __FILE__ ) . '/bws_menu/bws_include.php' );
 		bws_include_init( plugin_basename( __FILE__ ) );
 
-		bws_wp_min_version_check( plugin_basename( __FILE__ ), $lnkdn_plugin_info, '4.5' );/* check compatible with current WP version */
+		bws_wp_min_version_check( plugin_basename( __FILE__ ), $lnkdn_plugin_info, '4.5' );/* check compatible with current WP version ##*/
 
 		/* Get options from the database */
 		if ( ! is_admin() || ( isset( $_GET['page'] ) && ( "linkedin.php" == $_GET['page'] || "social-buttons.php" == $_GET['page'] ) ) ) {
@@ -87,29 +87,28 @@ if ( ! function_exists( 'lnkdn_init' ) ) {
 /* Function for admin_init */
 if ( ! function_exists( 'lnkdn_admin_init' ) ) {
 	function lnkdn_admin_init() {
-		/* Add variable for bws_menu */
-		global $bws_plugin_info, $lnkdn_plugin_info, $bws_shortcode_list, $pagenow, $lnkdn_options ;
-		/* Function for bws menu */
+		global $bws_plugin_info, $lnkdn_plugin_info, $bws_shortcode_list, $pagenow, $lnkdn_options;
+
+		/*## Function for bws menu */
 		if ( empty( $bws_plugin_info ) )	{
 			$bws_plugin_info = array( 'id' => '588', 'version' => $lnkdn_plugin_info["Version"] );
 		}
-		/* Add LinkedIn to global $bws_shortcode_list */
-		$bws_shortcode_list['lnkdn'] = array( 'name' => 'LinkedIn Button', 'js_function' => 'lnkdn_shortcode_init' );
-		
-		/*pls show banner go pro */
+
+        /*pls */
 		if ( 'plugins.php' == $pagenow ) {			
 			if ( function_exists( 'bws_plugin_banner_go_pro' ) ) {
 				lnkdn_settings();
 				bws_plugin_banner_go_pro( $lnkdn_options, $lnkdn_plugin_info, 'lnkdn', 'linkedin', '23b248c24d3fbef44d7ac493141591ab', '588', 'bws-linkedin' );
 			}
 		}
-		/* pls*/
+        /* ##*/ /* pls*/
+
+		/* Add LinkedIn to global $bws_shortcode_list */
+		$bws_shortcode_list['lnkdn'] = array( 'name' => 'LinkedIn Button', 'js_function' => 'lnkdn_shortcode_init' );
 	}
 }
 
-/**
- * Function for activation
- */
+/*## Function for activation */
 if ( ! function_exists( 'lnkdn_plugin_activate' ) ) {
 	function lnkdn_plugin_activate() {
 		/* registering uninstall hook */
@@ -122,6 +121,7 @@ if ( ! function_exists( 'lnkdn_plugin_activate' ) ) {
 		}
 	}
 }
+/* ##*/
 
 if ( ! function_exists ( 'lnkdn_settings' ) ) {
 	function lnkdn_settings() {
@@ -137,7 +137,9 @@ if ( ! function_exists ( 'lnkdn_settings' ) ) {
 
 		if ( ! isset( $lnkdn_options['plugin_option_version'] ) || $lnkdn_options['plugin_option_version'] != $lnkdn_plugin_info['Version'] ) {
 
+			/*## */
 			lnkdn_plugin_activate();
+			/* ##*/
 			$options_defaults = lnkdn_get_options_default();
 			$lnkdn_options = array_merge( $options_defaults, $lnkdn_options );
 			$lnkdn_options['plugin_option_version'] = $options_defaults['plugin_option_version'];
@@ -172,7 +174,7 @@ if ( ! function_exists( 'lnkdn_get_options_default' ) ) {
 	}
 }
 
-/* Add settings page in admin area */
+/*## Add settings page in admin area */
 if ( ! function_exists( 'lnkdn_settings_page' ) ) {
 	function lnkdn_settings_page() {
 		if ( ! class_exists( 'Bws_Settings_Tabs' ) )
@@ -193,7 +195,7 @@ if ( ! function_exists( 'lnkdn_settings_page' ) ) {
 	<?php }
 }
 
-/* Function for forming buttons tags */
+/* Function for forming buttons tags ##*/
 if ( ! function_exists( 'lnkdn_return_button' ) ) {
 	function lnkdn_return_button( $request ) {
 		global $lnkdn_options;
@@ -407,7 +409,7 @@ if ( ! function_exists( 'lnkdn_add_body_class' ) ) {
 	}
 }
 
-/* Functions creates other links on plugins page. */
+/*## Functions creates other links on plugins page. */
 if ( ! function_exists( 'lnkdn_action_links' ) ) {
 	function lnkdn_action_links( $links, $file ) {
 		if ( ! is_network_admin() ) {
@@ -500,7 +502,7 @@ if ( ! function_exists( 'lnkdn_uninstall' ) ) {
 register_activation_hook( __FILE__, 'lnkdn_plugin_activate' );
 /* Calling a function add administrative menu. */
 add_action( 'admin_menu', 'lnkdn_add_admin_menu' );
-/* Initialization */
+/* Initialization ##*/
 add_action( 'init', 'lnkdn_init' );
 add_action( 'admin_init', 'lnkdn_admin_init' );
 add_action( 'plugins_loaded', 'lnkdn_plugins_loaded' );
@@ -516,9 +518,9 @@ add_filter( 'the_content', 'lnkdn_position' );
 add_filter( 'bws_shortcode_button_content', 'lnkdn_shortcode_button_content' );
 /* Adding class in 'body' Twenty Fifteen/Sixteen Theme for LinkedIn Buttons */
 add_filter( 'body_class', 'lnkdn_add_body_class' );
-/* Additional links on the plugin page */
+/*## Additional links on the plugin page */
 add_filter( 'plugin_action_links', 'lnkdn_action_links', 10, 2 );
 add_filter( 'plugin_row_meta', 'lnkdn_register_plugin_links', 10, 2 );
 /* Adding banner */
 add_action( 'admin_notices', 'lnkdn_admin_notices' );
-/* end */
+/* end ##*/
