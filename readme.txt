@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: LinkedIn, linedin, linkedln, likedin, linkedin plugin, share button, follow button, linkedin widget, linkedin widgets, social buttons
 Requires at least: 4.5
-Tested up to: 5.7
-Stable tag: 1.1.1
+Tested up to: 5.9
+Stable tag: 1.1.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -59,13 +59,17 @@ If you have a feature suggestion or idea you'd like to see in the plugin, we'd l
 
 = Documentation & Videos =
 
-* [[Doc] User Guide](https://docs.google.com/document/d/1fc4WbNSuL-eV1gSXWR_BkMEsjy7jyFS5CRG4k7SWEeU/)
-* [[Doc] Installation](https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/)
-* [[Doc] Purchase](https://docs.google.com/document/d/1EUdBVvnm7IHZ6y0DNyldZypUQKpB8UVPToSc_LdOYQI/)
+* [[Doc] User Guide](https://bestwebsoft.com/documentation/bestwebsofts-linkedin/bestwebsofts-linkedin-user-guide/)
+* [[Doc] Installation](https://bestwebsoft.com/documentation/how-to-install-a-wordpress-product/how-to-install-a-wordpress-plugin/)
+* [[Doc] Purchase](https://bestwebsoft.com/documentation/how-to-purchase-a-wordpress-plugin/how-to-purchase-wordpress-plugin-from-bestwebsoft/)
 
 = Help & Support =
 
 Visit our Help Center if you have any questions, our friendly Support Team is happy to help — <https://support.bestwebsoft.com/>
+
+= Affiliate Program =
+
+Earn 20% commission by selling the premium WordPress plugins and themes by BestWebSoft — https://bestwebsoft.com/affiliate/
 
 = Translation =
 
@@ -78,10 +82,10 @@ Some of these translations are not complete. We are constantly adding new featur
 = Recommended Plugins =
 
 * [Updater](https://bestwebsoft.com/products/wordpress/plugins/updater/?k=b0cd02870bd5790030e3424a6180c433) - Automatically check and update WordPress website core with all installed plugins and themes to the latest versions.
-* [Like & Share](https://bestwebsoft.com/products/wordpress/plugins/facebook-like-button/?k=88fbc574b13350527aba6fffd6970fd7) - Add Facebook Like, Share and Profile buttons to WordPress posts, pages and widgets.
+* [BestWebSoft’s Link & Share](https://bestwebsoft.com/products/wordpress/plugins/facebook-like-button/?k=88fbc574b13350527aba6fffd6970fd7) - Add Facebook Like, Share and Profile buttons to WordPress posts, pages and widgets.
 * [Multilanguage](https://bestwebsoft.com/products/wordpress/plugins/multilanguage/?k=c1d633da9c4483772615a9462bf59f27) - Translate WordPress website content to other languages manually. Create multilingual pages, posts, widgets, menus, etc.
-* [Pinterest](https://bestwebsoft.com/products/wordpress/plugins/pinterest/?k=bbe78d1a7a355da6610cb3d05fbf700e) - Add Pinterest Follow, Pin It buttons and profile widgets (Pin, Board, Profile) to WordPress posts, pages and widgets.
-* [Twitter](https://bestwebsoft.com/products/wordpress/plugins/twitter/?k=bdb19dd8cedd4526f94c7b52f049a2c3) - Add Twitter Follow, Tweet, Hashtag, and Mention buttons to WordPress posts, pages and widgets.
+* [BestWebSoft’s Pinterest](https://bestwebsoft.com/products/wordpress/plugins/pinterest/?k=bbe78d1a7a355da6610cb3d05fbf700e) - Add Pinterest Follow, Pin It buttons and profile widgets (Pin, Board, Profile) to WordPress posts, pages and widgets.
+* [BestWebSoft's Twitter](https://bestwebsoft.com/products/wordpress/plugins/twitter/?k=bdb19dd8cedd4526f94c7b52f049a2c3) - Add Twitter Follow, Tweet, Hashtag, and Mention buttons to WordPress posts, pages and widgets.
 
 == Installation ==
 
@@ -102,7 +106,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 - The link to the page where the problem occurs
 - The name of the plugin and its version. If you are using a pro version - your order number.
 - The version of your WordPress installation
-- Copy and paste into the message your system status report. Please read more here: [Instruction on System Status](https://docs.google.com/document/d/1Wi2X8RdRGXk9kMszQy1xItJrpN0ncXgioH935MaBKtc/)
+- Copy and paste into the message your system status report. Please read more here: [Instruction on System Status](https://bestwebsoft.com/documentation/admin-panel-issues/system-status/)
 
 == Screenshots ==
 
@@ -111,6 +115,11 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 3. Adding shortcode into the content.
 
 == Changelog ==
+
+= V1.1.2 - 20.03.2022 =
+* Update : All functionality was updated for WordPress 5.9.
+* Update : BWS plugins section was updated.
+* Bugfix : The issue on the plugin settings page has been fixed.
 
 = V1.1.1 - 19.02.2020 =
 * Update : All functionality was updated for WordPress 5.3.2.
@@ -161,6 +170,11 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Css-style was added.
 
 == Upgrade Notice ==
+
+= V1.1.2 =
+* The compatibility with new WordPress version updated.
+* Bugs fixed.
+* Plugin optimization completed.
 
 = V1.1.1 =
 * The compatibility with new WordPress version updated.
