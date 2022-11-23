@@ -6,7 +6,7 @@ Description: Add LinkedIn Share and Follow buttons to WordPress posts, pages and
 Author: BestWebSoft
 Text Domain: bws-linkedin
 Domain Path: /languages
-Version: 1.1.3
+Version: 1.1.4
 Author URI: https://bestwebsoft.com
 License: GPLv3 or later
  */

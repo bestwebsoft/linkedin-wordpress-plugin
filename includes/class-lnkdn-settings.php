@@ -68,7 +68,12 @@ if ( ! class_exists( 'Lnkdn_Settings_Tabs' ) ) {
 			global $wpdb, $lnkdn_lang_codes;
 			$message = $notice = $error = '';
 
-			if ( check_admin_referer( 'lnkdn_settings_nonce' ) ) {
+			if ( ! isset( $_POST['lnkdn_settings_nonce_field'] ) 
+					|| ! wp_verify_nonce( $_POST['lnkdn_settings_nonce_field'], 'lnkdn_settings_nonce_action' ) 
+			) {
+				 esc_html_e( 'Sorry, your nonce did not verify', 'bws-linkedin' );
+				 exit;
+			} else {
 				$this->options['follow']                   = isset( $_REQUEST['lnkdn_follow'] ) ? 1 : 0;
 				$this->options['follow_page_name']         = isset( $_REQUEST['lnkdn_follow_page_name'] ) ? preg_replace( '/[^0-9]*/', '', sanitize_text_field( wp_unslash( $_REQUEST['lnkdn_follow_page_name'] ) ) ) : '';
 				$this->options['homepage']                 = isset( $_REQUEST['lnkdn_homepage'] ) ? 1 : 0;
@@ -275,7 +280,7 @@ if ( ! class_exists( 'Lnkdn_Settings_Tabs' ) ) {
 				</table>
 			</div>
 			<?php
-			wp_nonce_field( 'lnkdn_settings_nonce' );
+			wp_nonce_field( 'lnkdn_settings_nonce_action', 'lnkdn_settings_nonce_field' );
 		}
 
 		/**

@@ -2,9 +2,9 @@
 Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: LinkedIn, linedin, linkedln, likedin, linkedin plugin, share button, follow button, linkedin widget, linkedin widgets, social buttons
-Requires at least: 4.5
-Tested up to: 5.9
-Stable tag: 1.1.3
+Requires at least: 5.6
+Tested up to: 6.1
+Stable tag: 1.1.4
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -116,6 +116,11 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Changelog ==
 
+
+= V1.1.4 - 23.11.2022 =
+* Bugfix : "The link you followed has expired" bug has been fixed. 
+* Bugfix : "Settings are not saved" bug has been fixed. 
+
 = V1.1.3 - 26.04.2022 =
 * Bugfix : Deactivation Feedback fix.
 
@@ -173,6 +178,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Css-style was added.
 
 == Upgrade Notice ==
+
+= V1.1.4 =
+* Bugs fixed.
 
 = V1.1.3 =
 * Bugs fixed.
