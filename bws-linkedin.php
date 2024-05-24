@@ -6,7 +6,7 @@ Description: Add LinkedIn Share and Follow buttons to WordPress posts, pages and
 Author: BestWebSoft
 Text Domain: bws-linkedin
 Domain Path: /languages
-Version: 1.1.4
+Version: 1.1.5
 Author URI: https://bestwebsoft.com
 License: GPLv3 or later
  */
@@ -28,8 +28,10 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-/* Add BWS menu */
 if ( ! function_exists( 'lnkdn_add_admin_menu' ) ) {
+	/**
+	 * Add BWS menu
+	 */
 	function lnkdn_add_admin_menu() {
 		global $submenu, $lnkdn_plugin_info, $wp_version;
 
@@ -49,17 +51,20 @@ if ( ! function_exists( 'lnkdn_add_admin_menu' ) ) {
 		add_action( 'load-' . $settings, 'lnkdn_add_tabs' );
 	}
 }
-/* end lnkdn_add_admin_menu ##*/
 
 if ( ! function_exists( 'lnkdn_plugins_loaded' ) ) {
+	/**
+	 * Internationalization
+	 */
 	function lnkdn_plugins_loaded() {
-		/* Internationalization */
 		load_plugin_textdomain( 'bws-linkedin', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 	}
 }
 
-/* Initialization */
 if ( ! function_exists( 'lnkdn_init' ) ) {
+	/**
+	 * Plugin init
+	 */
 	function lnkdn_init() {
 		global $lnkdn_plugin_info, $lnkdn_lang_codes;
 
@@ -110,8 +115,10 @@ if ( ! function_exists( 'lnkdn_init' ) ) {
 	}
 }
 
-/* Function for admin_init */
 if ( ! function_exists( 'lnkdn_admin_init' ) ) {
+	/**
+	 * Function for admin_init
+	 */
 	function lnkdn_admin_init() {
 		global $bws_plugin_info, $lnkdn_plugin_info, $bws_shortcode_list, $pagenow, $lnkdn_options;
 
@@ -140,8 +147,10 @@ if ( ! function_exists( 'lnkdn_admin_init' ) ) {
 	}
 }
 
-/*## Function for activation */
 if ( ! function_exists( 'lnkdn_plugin_activate' ) ) {
+	/**
+	 * Function for activation
+	 */
 	function lnkdn_plugin_activate() {
 		/* registering uninstall hook */
 		if ( is_multisite() ) {
@@ -153,9 +162,11 @@ if ( ! function_exists( 'lnkdn_plugin_activate' ) ) {
 		}
 	}
 }
-/* ##*/
 
 if ( ! function_exists( 'lnkdn_settings' ) ) {
+	/**
+	 * Settings for plugin
+	 */
 	function lnkdn_settings() {
 		global $lnkdn_options, $lnkdn_plugin_info;
 
@@ -169,9 +180,7 @@ if ( ! function_exists( 'lnkdn_settings' ) ) {
 
 		if ( ! isset( $lnkdn_options['plugin_option_version'] ) || $lnkdn_options['plugin_option_version'] !== $lnkdn_plugin_info['Version'] ) {
 
-			/*## */
 			lnkdn_plugin_activate();
-			/* ##*/
 			$options_defaults                       = lnkdn_get_options_default();
 			$lnkdn_options                          = array_merge( $options_defaults, $lnkdn_options );
 			$lnkdn_options['plugin_option_version'] = $options_defaults['plugin_option_version'];
@@ -184,6 +193,9 @@ if ( ! function_exists( 'lnkdn_settings' ) ) {
 }
 
 if ( ! function_exists( 'lnkdn_get_options_default' ) ) {
+	/**
+	 * Default options for plugin
+	 */
 	function lnkdn_get_options_default() {
 		global $lnkdn_plugin_info;
 
@@ -208,8 +220,10 @@ if ( ! function_exists( 'lnkdn_get_options_default' ) ) {
 	}
 }
 
-/*## Add settings page in admin area */
 if ( ! function_exists( 'lnkdn_settings_page' ) ) {
+	/**
+	 * Add settings page in admin area
+	 */
 	function lnkdn_settings_page() {
 		if ( ! class_exists( 'Bws_Settings_Tabs' ) ) {
 			require_once dirname( __FILE__ ) . '/bws_menu/class-bws-settings.php';
@@ -234,8 +248,13 @@ if ( ! function_exists( 'lnkdn_settings_page' ) ) {
 	}
 }
 
-/* Function for forming buttons tags ##*/
 if ( ! function_exists( 'lnkdn_return_button' ) ) {
+	/**
+	 * Function for forming buttons tags
+	 *
+	 * @param steing $request Param for button.
+	 * @return string $follow Button html.
+	 */
 	function lnkdn_return_button( $request ) {
 		global $lnkdn_options;
 
@@ -261,8 +280,13 @@ if ( ! function_exists( 'lnkdn_return_button' ) ) {
 	}
 }
 
-/* LinkedIn buttons on page */
 if ( ! function_exists( 'lnkdn_position' ) ) {
+	/**
+	 * LinkedIn buttons on page
+	 *
+	 * @param string $content Post content.
+	 * @return string $content Post content.
+	 */
 	function lnkdn_position( $content ) {
 		global $lnkdn_options;
 
@@ -299,6 +323,9 @@ if ( ! function_exists( 'lnkdn_position' ) ) {
 }
 
 if ( ! function_exists( 'lnkdn_admin_head' ) ) {
+	/**
+	 * Add styles and scripts to admin header
+	 */
 	function lnkdn_admin_head() {
 		global $lnkdn_plugin_info;
 		wp_enqueue_style( 'lnkdn_icon', plugins_url( 'css/icon.css', __FILE__ ), array(), $lnkdn_plugin_info['Version'] );
@@ -314,8 +341,10 @@ if ( ! function_exists( 'lnkdn_admin_head' ) ) {
 	}
 }
 
-/* lnkdn script add */
 if ( ! function_exists( 'lnkdn_js' ) ) {
+	/**
+	 * Add scripts
+	 */
 	function lnkdn_js() {
 		global $lnkdn_options, $lnkdn_shortcode_add_script, $lnkdn_js_added;
 
@@ -332,6 +361,13 @@ if ( ! function_exists( 'lnkdn_js' ) ) {
 }
 
 if ( ! function_exists( 'lnkdn_add_lang_to_script' ) ) {
+	/**
+	 * Add kangusges to script
+	 *
+	 * @param string $tag    Tag.
+	 * @param string $handle File name.
+	 * @return string $tag
+	 */
 	function lnkdn_add_lang_to_script( $tag, $handle ) {
 		global $lnkdn_options, $lnkdn_lang_codes, $mltlngg_current_language;
 
@@ -365,17 +401,24 @@ if ( ! function_exists( 'lnkdn_add_lang_to_script' ) ) {
 }
 
 if ( ! function_exists( 'lnkdn_pagination_callback' ) ) {
+	/**
+	 * Callback for pagination
+	 *
+	 * @param string $content Pagination content.
+	 * @return string $content Pagination content.
+	 */
 	function lnkdn_pagination_callback( $content ) {
 		$content .= "if ( typeof( IN ) != 'undefined' ) { IN.parse(); }";
 		return $content;
 	}
 }
 
-/**
- * LinkedIn Buttons shortcode
- * [bws_linkedin display="share,follow"]
- */
 if ( ! function_exists( 'lnkdn_shortcode' ) ) {
+	/**
+	 * LinkedIn Buttons shortcode [bws_linkedin display="share,follow"]
+	 *
+	 * @param array $atts Attributes for shortcode.
+	 */
 	function lnkdn_shortcode( $atts ) {
 		global $lnkdn_options, $lnkdn_shortcode_add_script;
 
@@ -398,8 +441,12 @@ if ( ! function_exists( 'lnkdn_shortcode' ) ) {
 	}
 }
 
-/* add shortcode content */
 if ( ! function_exists( 'lnkdn_shortcode_button_content' ) ) {
+	/**
+	 * Add shortcode content
+	 *
+	 * @param string $content Content.
+	 */
 	function lnkdn_shortcode_button_content( $content ) {
 		global $wp_version;
 		?>
@@ -437,14 +484,19 @@ if ( ! function_exists( 'lnkdn_shortcode_button_content' ) ) {
 					} );
 				} ) ( jQuery );
 			}";
-		wp_register_script( 'lnkdn_bws_shortcode_button', '' );
+		wp_register_script( 'lnkdn_bws_shortcode_button', '', array(), null, true );
 		wp_enqueue_script( 'lnkdn_bws_shortcode_button' );
 		wp_add_inline_script( 'lnkdn_bws_shortcode_button', sprintf( $script ) );
 	}
 }
 
-/* Adding class in 'body' Twenty Fifteen/Sixteen Theme for LinkedIn Buttons */
 if ( ! function_exists( 'lnkdn_add_body_class' ) ) {
+	/**
+	 * Adding class in 'body' Twenty Fifteen/Sixteen Theme for LinkedIn Buttons
+	 *
+	 * @param array $classes Array with classes.
+	 * @return array $classes Updated array with classes.
+	 */
 	function lnkdn_add_body_class( $classes ) {
 		$current_theme = wp_get_theme();
 		if ( 'Twenty Fifteen' === $current_theme->get( 'Name' ) || 'Twenty Sixteen' === $current_theme->get( 'Name' ) ) {
@@ -457,8 +509,14 @@ if ( ! function_exists( 'lnkdn_add_body_class' ) ) {
 	}
 }
 
-/*## Functions creates other links on plugins page. */
 if ( ! function_exists( 'lnkdn_action_links' ) ) {
+	/**
+	 * Action plugin links function.
+	 *
+	 * @param   array $links   Action link array.
+	 * @param   file  $file    Plugin file.
+	 * @return  array    $links   Returned link array.
+	 */
 	function lnkdn_action_links( $links, $file ) {
 		if ( ! is_network_admin() ) {
 			/* Static so we don't call plugin_basename on every plugin row. */
@@ -476,6 +534,13 @@ if ( ! function_exists( 'lnkdn_action_links' ) ) {
 }
 
 if ( ! function_exists( 'lnkdn_register_plugin_links' ) ) {
+	/**
+	 * Register plugin links function
+	 *
+	 * @param   array $links   Action link array.
+	 * @param   file  $file    Plugin file.
+	 * @return  array    $links   Returned link array.
+	 */
 	function lnkdn_register_plugin_links( $links, $file ) {
 		$base = plugin_basename( __FILE__ );
 		if ( $file === $base ) {
@@ -490,6 +555,9 @@ if ( ! function_exists( 'lnkdn_register_plugin_links' ) ) {
 }
 
 if ( ! function_exists( 'lnkdn_admin_notices' ) ) {
+	/**
+	 * Display plugin banner.
+	 */
 	function lnkdn_admin_notices() {
 		global $hook_suffix, $lnkdn_plugin_info;
 
@@ -503,8 +571,10 @@ if ( ! function_exists( 'lnkdn_admin_notices' ) ) {
 	}
 }
 
-/* Add help tab */
 if ( ! function_exists( 'lnkdn_add_tabs' ) ) {
+	/**
+	 * Add help tab
+	 */
 	function lnkdn_add_tabs() {
 		$screen = get_current_screen();
 		$args   = array(
@@ -516,6 +586,9 @@ if ( ! function_exists( 'lnkdn_add_tabs' ) ) {
 }
 
 if ( ! function_exists( 'lnkdn_uninstall' ) ) {
+	/**
+	 * Uninstall the PromoBar.
+	 */
 	function lnkdn_uninstall() {
 		if ( ! function_exists( 'get_plugins' ) ) {
 			require_once ABSPATH . 'wp-admin/includes/plugin.php';

@@ -1,0 +1,244 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2024-05-24 15:54+0300\n"
+"PO-Revision-Date: 2024-05-24 15:54+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_html_e;esc_attr__;esc_attr_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: bws_menu\n"
+
+#: bws-linkedin.php:38 bws-linkedin.php:39 bws-linkedin.php:237
+#: includes/class-lnkdn-settings.php:123
+msgid "LinkedIn Settings"
+msgstr "Réglages LinkedIn"
+
+#: bws-linkedin.php:39 bws-linkedin.php:528 bws-linkedin.php:548
+#: includes/class-lnkdn-settings.php:28
+msgid "Settings"
+msgstr "Préférences"
+
+#: bws-linkedin.php:45
+msgid "Upgrade to Pro"
+msgstr "Passer à la version Pro"
+
+#: bws-linkedin.php:240
+msgid "WARNING"
+msgstr "AVERTISSEMENT"
+
+#: bws-linkedin.php:241
+msgid "The plugin works correctly only if JavaScript is enabled."
+msgstr "Le plugin ne fonctionne correctement que si JavaScript est activé."
+
+#: bws-linkedin.php:457
+msgid "LinkedIn Share Button"
+msgstr "Bouton de partage LinkedIn"
+
+#: bws-linkedin.php:462
+msgid "LinkedIn Follow Button"
+msgstr "Bouton de suivi LinkedIn"
+
+#: bws-linkedin.php:550
+msgid "FAQ"
+msgstr "FAQ"
+
+#: bws-linkedin.php:551
+msgid "Support"
+msgstr "Support"
+
+#: includes/class-lnkdn-settings.php:30
+msgid "Display"
+msgstr "Afficher"
+
+#: includes/class-lnkdn-settings.php:33
+msgid "Misc"
+msgstr "Divers"
+
+#: includes/class-lnkdn-settings.php:34
+msgid "Custom Code"
+msgstr "Code personnalisé"
+
+#: includes/class-lnkdn-settings.php:35
+msgid "License Key"
+msgstr "Clé de licence"
+
+#: includes/class-lnkdn-settings.php:72
+msgid "Sorry, your nonce did not verify"
+msgstr "Désolé, votre annonce n' a pas été vérifié"
+
+#: includes/class-lnkdn-settings.php:100
+msgid ""
+"Enter the Company/Showcase Page ID for \"Follow\" button. Settings are not "
+"saved."
+msgstr ""
+"Saisissez l'ID de la page de la société/du showcase pour le bouton "
+"\"Suivre\". Les paramètres ne sont pas sauvegardés."
+
+#: includes/class-lnkdn-settings.php:105
+msgid "Settings saved"
+msgstr "Paramètres sauvegardés"
+
+#: includes/class-lnkdn-settings.php:126
+msgid "General"
+msgstr "Général"
+
+#: includes/class-lnkdn-settings.php:129
+msgid "Buttons"
+msgstr "Boutons"
+
+#: includes/class-lnkdn-settings.php:133
+msgid "Share"
+msgstr "Partager"
+
+#: includes/class-lnkdn-settings.php:137
+msgid "Follow"
+msgstr "Suivre"
+
+#: includes/class-lnkdn-settings.php:143
+msgid "Display on"
+msgstr "S'affiche sur"
+
+#: includes/class-lnkdn-settings.php:148
+msgid "Home page"
+msgstr "Page d'accueil"
+
+#: includes/class-lnkdn-settings.php:153
+msgid "Posts"
+msgstr "Articles"
+
+#: includes/class-lnkdn-settings.php:158
+msgid "Pages"
+msgstr "Pages"
+
+#: includes/class-lnkdn-settings.php:165
+msgid "Buttons Position"
+msgstr "Position des Boutons"
+
+#: includes/class-lnkdn-settings.php:176
+msgid "Before content"
+msgstr "Avant le contenu"
+
+#: includes/class-lnkdn-settings.php:187
+msgid "After content"
+msgstr "Après le contenu"
+
+#: includes/class-lnkdn-settings.php:190
+msgid "Unselect all to use a shortcode only."
+msgstr "Désélectionnez tout pour n'utiliser qu'un code court."
+
+#: includes/class-lnkdn-settings.php:194
+msgid "Language"
+msgstr "Langue"
+
+#: includes/class-lnkdn-settings.php:207
+msgid "Select the default language for LinkedIn button(-s)."
+msgstr "Sélectionnez la langue par défaut pour le(s) bouton(s) LinkedIn."
+
+#: includes/class-lnkdn-settings.php:219 includes/class-lnkdn-settings.php:223
+#: includes/class-lnkdn-settings.php:229
+msgid ""
+"Enable to switch language automatically on multilingual website using "
+"Multilanguage plugin."
+msgstr ""
+"Permet de changer automatiquement la langue sur un site web multilingue en "
+"utilisant le plugin Multilanguage."
+
+#: includes/class-lnkdn-settings.php:223
+#, php-format
+msgid "Activate %s"
+msgstr "Activer %s"
+
+#: includes/class-lnkdn-settings.php:229
+msgid "Learn More"
+msgstr "En savoir plus"
+
+#: includes/class-lnkdn-settings.php:235
+msgid "Share Button"
+msgstr "Bouton de partage"
+
+#: includes/class-lnkdn-settings.php:238
+msgid "URL"
+msgstr "URL"
+
+#: includes/class-lnkdn-settings.php:241
+msgid "URL to be shared. Leave blank to use a current page URL."
+msgstr "URL à partager. Laissez vide pour utiliser l'URL de la page actuelle."
+
+#: includes/class-lnkdn-settings.php:247
+msgid "Follow Button"
+msgstr "Bouton Suivez-nous"
+
+#: includes/class-lnkdn-settings.php:250
+msgid "Count Mode"
+msgstr "Mode de comptage"
+
+#: includes/class-lnkdn-settings.php:254
+msgid "Vertical"
+msgstr "Vertical"
+
+#: includes/class-lnkdn-settings.php:258
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#: includes/class-lnkdn-settings.php:262
+msgid "No count"
+msgstr "Pas de compteur"
+
+#: includes/class-lnkdn-settings.php:268
+msgid "Company or Showcase Page ID"
+msgstr "ID de la page de l'entreprise ou de la vitrine"
+
+#: includes/class-lnkdn-settings.php:275
+msgid "Can't find your page ID?"
+msgstr "Vous ne trouvez pas votre identifiant de page ?"
+
+#: includes/class-lnkdn-settings.php:275
+msgid "Read the instruction"
+msgstr "Lire l'instruction"
+
+#: includes/class-lnkdn-settings.php:302
+msgid "LinkedIn Buttons Shortcode"
+msgstr "Shortcode pour les boutons LinkedIn"
+
+#: includes/class-lnkdn-settings.php:306
+msgid ""
+"Add LinkedIn button(-s) to your posts, pages, custom post types or widgets "
+"by using the following shortcode:"
+msgstr ""
+"Ajoutez le(s) bouton(s) LinkedIn à vos articles, pages, types d'articles "
+"personnalisés ou widgets en utilisant le shortcode suivant :"
+
+#: includes/class-lnkdn-settings.php:325
+msgid "Close"
+msgstr "Fermer"
+
+#: includes/class-lnkdn-settings.php:326
+msgid "LinkedIn Buttons Preview"
+msgstr "Aperçu des boutons LinkedIn"
+
+#: includes/class-lnkdn-settings.php:342
+msgid "Display Settings"
+msgstr "Paramètres d'affichage"
+
+#: includes/class-lnkdn-settings.php:351
+msgid ""
+"Please choose the necessary post types (or single pages) where LinkedIn "
+"buttons will be displayed:"
+msgstr ""
+"Veuillez choisir les types d'articles nécessaires (ou les pages "
+"individuelles) où les boutons LinkedIn seront affichés :"
+
+#: includes/class-lnkdn-settings.php:358
+msgid "Show URL for pages"
+msgstr "Afficher l'URL des pages"
+
+#: includes/class-lnkdn-settings.php:364
+msgid "Example of the site's pages tree"
+msgstr "Exemple d'arborescence des pages du site"
